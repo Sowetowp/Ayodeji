@@ -1,0 +1,66 @@
+.sidedp{
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    margin-top: 45px;
+    object-fit: cover;
+    object-position: 5% 5%;
+    border: solid;
+    border-color: rgb(51, 142, 119);
+}
+.toggle{
+    border: none;
+    background-color: transparent;
+    width: 70%;
+    height: fit-content;
+    margin-top: 30vh;
+    margin-bottom: 25vh;
+    outline: none;
+}
+.mmain{
+    position: fixed;
+}
+.sidebar{
+    width: 5%;
+    background-color: rgb(11 18 35);
+    height: 100vh;
+    border-right: solid 1px;
+    border-color: rgb(49, 57, 60);
+}
+.mbut{
+    height: 50px;
+    width: 40px;
+    margin-top: 40vh;
+    position: fixed;
+    color: rgb(13, 252, 172);
+    background-color: rgba(113, 245, 208, 0.157);
+    border-color: rgba(62, 248, 195, 0.507);
+    border-left: none;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+    z-index: 100;
+    display: none;
+}
+.ifram{
+    width: 95%;
+    height: 100vh;
+}
+.brand{
+    transform: rotate(270deg);
+    color: rgb(219, 219, 240);
+}
+.frame{
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width: 1140px) {
+    .sidebar {
+        display: none;
+    }
+    .mbut{
+        display: block;
+    }
+    .ifram{
+        width: 100%;
+    }
+}
