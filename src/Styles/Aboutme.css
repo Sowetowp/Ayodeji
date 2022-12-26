@@ -177,6 +177,21 @@
     .ana{
         width: 420px;
     }
+    @keyframes examp {
+        from {left:410px; top:10px;}
+        to {left:410px; top:320px;}
+    }
+    @keyframes exam {
+        from {left:0px; top:360px;}
+        to {left:390px; top:360px;}
+    }
+    @keyframes xample {
+        from {left: 10px;}
+        to {left: 387px;}
+    }
+    .amhiaa{
+        margin-left: -20px;
+    }
 }
 @media screen and (max-width: 576px) {
     .shift {
@@ -199,6 +214,32 @@
     }
     .amhiaa{
         margin-left: -20px;
+    }
+    .about{
+        margin-top: 17vh;
+    }
+}
+@media screen and (max-width: 667px) {
+    .shift {
+        width: 330px;
+    }
+    .ana{
+        width: 350px;
+    }
+    @keyframes examp {
+        from {left:340px; top:10px;}
+        to {left:340px; top:320px;}
+    }
+    @keyframes exam {
+        from {left:0px; top:360px;}
+        to {left:320px; top:360px;}
+    }
+    @keyframes xample {
+        from {left: 10px;}
+        to {left: 317px;}
+    }
+    .amhiaa{
+        margin-left: -30px;
     }
     .about{
         margin-top: 17vh;
