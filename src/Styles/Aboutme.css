@@ -213,10 +213,16 @@
         to {left: 347px;}
     }
     .amhiaa{
-        margin-left: -20px;
+        margin-left: -35px;
     }
     .about{
         margin-top: 17vh;
+    }
+    .tdd{
+        line-height: normal;
+    }
+    .tddd{
+        line-height: normal;
     }
 }
 @media screen and (max-width: 667px) {

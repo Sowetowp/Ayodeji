@@ -57,7 +57,7 @@
 .crbd{
     padding-bottom: 100px;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 776px) {
     .hide{
         display: none;
     }
