@@ -27,7 +27,7 @@ const AboutMe = () => {
                         </div>
                     </div>
                     <div className='col-xl py-3 amhiaa'>
-                        <div className='m-3'>
+                        <div className=''>
                             <p className='hia ms-5'>Hi, I am <span>Amzat Abdulmalik</span></p>
                             <table className="table table-borderless ms-5">
                                 <tbody>
