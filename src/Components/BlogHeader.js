@@ -15,25 +15,25 @@ const BlogHeader = () => {
                     <div class="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul class="navbar-nav bhul">
                         <li class="nav-item">
-                        <a class="nav-link" href="#" target='/'><i>0.1 </i>HOME</a>
+                        <a class="nav-link" href="" target=''><i>0.1 </i>HOME</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#"><i>0.2 </i>ABOUT</a>
+                        <a class="nav-link" href=""><i>0.2 </i>ABOUT</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#"><i>0.3 </i>RESUME</a>
+                        <a class="nav-link" href=""><i>0.3 </i>RESUME</a>
                         </li> 
                         <li class="nav-item">
-                        <a class="nav-link" href="#"><i>0.4 </i>WORKS</a>
+                        <a class="nav-link" href=""><i>0.4 </i>WORKS</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#"><i>0.5 </i>BLOGS</a>
+                        <a class="nav-link" href=""><i>0.5 </i>BLOGS</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#"><i>0.6 </i>CONTACT</a>
+                        <a class="nav-link" href=""><i>0.6 </i>CONTACT</a>
                         </li>  
                         <li class="nav-item">
-                        <a class="nav-link" href="#"><button>HIRE ME</button></a>
+                        <a class="nav-link" href="mailto:ayodejiamzat@gmail.com"><button>HIRE ME</button></a>
                         </li>  
                     </ul>
                     </div>

@@ -7,7 +7,7 @@ const Myskills = () => {
   const number1 = useRef();
   const number2 = useRef();
   const number3 = useRef();
-  const number4 = useRef();
+  // const number4 = useRef();
   let counter = 0;
   setInterval(() => {
     if(counter == 95){
@@ -17,7 +17,7 @@ const Myskills = () => {
       number1.current.innerHTML = counter + "%"
       number2.current.innerHTML = counter + "%"
       number3.current.innerHTML = counter + "%"
-      number4.current.innerHTML = counter + "%"
+      // number4.current.innerHTML = counter + "%"
     }
   }, 20);
 
@@ -52,7 +52,7 @@ const Myskills = () => {
                       <circle cx="80" cy="80" r="70" strokeLinecap='round' />
                     </svg>
                   </div>
-                  <p className='msbed'>Back-end Development</p>
+                  <p className='msbed'>Full-stack Development</p>
                 </div>
               </div>
               <div className='col-md text-center'>
@@ -73,7 +73,7 @@ const Myskills = () => {
                       <circle cx="80" cy="80" r="70" strokeLinecap='round' />
                     </svg>
                   </div>
-                  <p className='msbed'>Front-end Development</p>
+                  <p className='msbed'>Back-end Development</p>
                 </div>
               </div>
               <div className='col-md text-center'>
@@ -94,10 +94,10 @@ const Myskills = () => {
                       <circle cx="80" cy="80" r="70" strokeLinecap='round' />
                     </svg>
                   </div>
-                  <p className='msbed'>Back-end Development</p>
+                  <p className='msbed'>Front-end Development</p>
                 </div>
               </div>
-              <div className='col-md text-center'>
+              {/* <div className='col-md text-center'>
                 <div className='mscont'>
                   <div className='msback'>
                     <div className='outer'>
@@ -116,8 +116,8 @@ const Myskills = () => {
                     </svg>
                   </div>
                   <p className='msbed'>Front-end Development</p>
-                </div>
-              </div>
+                </div> */}
+              {/* </div> */}
             </div>
           </div>
           <div className='container-fluid mt-5'>
@@ -135,7 +135,7 @@ const Myskills = () => {
                 <div className='ful'>
                   <div className='se'></div>
                 </div>
-                <p>Redux - <span>(95%)</span></p>
+                <p>Express - <span>(95%)</span></p>
                 <div className='ful'>
                   <div className='se'></div>
                 </div>
@@ -145,15 +145,19 @@ const Myskills = () => {
                 <div className='ful'>
                   <div className='se'></div>
                 </div>
-                <p>React Native - <span>(0%)</span></p>
+                {/* <p>React Native - <span>(0%)</span></p>
                 <div className='ful'>
                   <div className='zero'></div>
-                </div>
-                <p>Typescript - <span>(0%)</span></p>
+                </div> */}
+                {/* <p>Typescript - <span>(0%)</span></p>
                 <div className='ful'>
                   <div className='zero'></div>
+                </div> */}
+                <p>Redux - <span>(95%)</span></p>
+                <div className='ful'>
+                  <div className='se'></div>
                 </div>
-                <p>Nosql - <span>(0%)</span></p>
+                <p>Nosql - <span>(95%)</span></p>
                 <div className='ful'>
                   <div className='se'></div>
                 </div>

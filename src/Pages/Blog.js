@@ -13,16 +13,16 @@ import Home from './Home'
 const Blog = () => {
   return (
     <>
-        <BlogHeader/>
-        <Home/>
-        <AboutMe/>
-        <Myskills/>
-        <Myservices/>
-        <Myresume/>
-        <Myworks/>
-        <Reviews/>
-        <Contact/>
-        <Blogfooter/>
+      <BlogHeader/>
+      <Home/>
+      <AboutMe/>
+      <Myskills/>
+      <Myservices/>
+      <Myresume/>
+      <Myworks/>
+      <Reviews/>
+      <Contact/>
+      <Blogfooter/>
     </>
   )
 }

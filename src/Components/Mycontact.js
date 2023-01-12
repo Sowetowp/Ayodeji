@@ -22,7 +22,7 @@ const Mycontact = () => {
                 <div className='row'>
                 <div className='cu1 col-md'>
                     <p className='cup1'>Contact Information</p>
-                    <p className='cup2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. A omnis, iusto harum possimus non praesentium qui facere.</p>
+                    <p className='cup2'>Reach out to me and let's drive results! You can find my contact information on the page, I am always available to discuss potential opportunities and collaborations. Let's connect.</p>
                     <div className='cu3'>
                         <div className='cuimg'>
                         <img src={phone}/>

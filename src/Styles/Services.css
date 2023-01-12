@@ -29,7 +29,8 @@
 .lip{
     color: rgb(212, 212, 243 );
     margin-top: 20px;
-    font-size: 16px;
+    font-size: 14px;
+    min-height: 130px;
 }
 /* @media screen and (max-width: 1140px) {
     
