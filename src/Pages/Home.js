@@ -31,7 +31,7 @@ const Home = () => {
             <a href='mailto:ayodejiamzat@gmail.com'><button><img src={facebook}/></button></a>
             <a target="_blank" href='https://twitter.com/amzat_abdmalik?s=11&t=5RvOaHdVfPfpYh2LQdQnIw'><button ><img src={twitter}/></button></a>
             <a target="_blank" href="https://github.com/Sowetowp"><button ><img src={github}/></button></a>
-            <a target="_blank" href="https://www.linkedin.com/in/amzat-ayodeji-a0647321b/"><button><img src={Linkedin}/></button></a>
+            <a target="_blank" href="https://www.linkedin.com/in/abdulmalik-amzat-a0647321b/"><button><img src={Linkedin}/></button></a>
           </nav>
         </div>
       </div>

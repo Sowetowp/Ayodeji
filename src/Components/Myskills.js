@@ -139,6 +139,10 @@ const Myskills = () => {
                 <div className='ful'>
                   <div className='se'></div>
                 </div>
+                <p>Bootstrap - <span>(95%)</span></p>
+                <div className='ful'>
+                  <div className='se'></div>
+                </div>
               </div>
               <div className='col-md prog1'>
                 <p>Node Js - <span>(95%)</span></p>
@@ -157,7 +161,15 @@ const Myskills = () => {
                 <div className='ful'>
                   <div className='se'></div>
                 </div>
-                <p>Nosql - <span>(95%)</span></p>
+                <p>Nosql(MongoDB) - <span>(95%)</span></p>
+                <div className='ful'>
+                  <div className='se'></div>
+                </div>
+                <p>Git & GitHub - <span>(95%)</span></p>
+                <div className='ful'>
+                  <div className='se'></div>
+                </div>
+                <p>Postman - <span>(95%)</span></p>
                 <div className='ful'>
                   <div className='se'></div>
                 </div>

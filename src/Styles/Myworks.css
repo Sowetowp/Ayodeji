@@ -8,3 +8,7 @@
     font-size: 12px;
     font-weight: 700;
 }
+.gob{
+    z-index: 100;
+    position: relative;
+}

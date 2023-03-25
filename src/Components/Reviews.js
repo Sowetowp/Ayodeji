@@ -165,8 +165,8 @@ const Reviews = () => {
                 </div>
             </div>
             <div className='crbd d-flex justify-content-center'>
-                <button onClick={sub} className='crbdbb'><img src={prev}/></button>
-                <button onClick={add} className='crbdbb'><img src={next}/></button>
+                <button onClick={sub} className='crbdbb px-3'><img src={prev}/></button>
+                <button onClick={add} className='crbdbb px-3'><img src={next}/></button>
             </div>
         </div>
     </>
