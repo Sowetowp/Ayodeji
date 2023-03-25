@@ -73,13 +73,16 @@
 .cu2 button{
     border-radius: 8px;
     background-color: aquamarine;
-    width: 110px;
-    height: 40px;
+    min-width: 110px;
+    min-height: 40px;
     border: none;
     margin-top: 15px;
     color: black;
     font-size: 13px;
     font-weight: 600;
+}
+.cu2 button:active{
+    cursor: progress;
 }
 .cu2{
     background-color: rgb(26, 44, 60);

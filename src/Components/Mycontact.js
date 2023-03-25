@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import "../Styles/Aboutme.css"
 import "../Styles/Contact.css"
 import email from "../Assets/Images/email.svg"
@@ -8,6 +9,20 @@ import location from "../Assets/Images/location.svg"
 
 
 const Mycontact = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        emailjs.sendForm('service_paphksk', 'template_hg9pf8t', form.current, 'L6t7aCq3EzNcwAkkI')
+        .then((result) => {
+            alert("email sent")
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+
+    };
+    
   return (
     <>
         <div className='container-fluid p-0 aboutme'>
@@ -56,24 +71,24 @@ const Mycontact = () => {
                     </div>
                 </div>
                 <div className='col-md cfo'>
-                    <form className='cu2' action='mailto:ayodejiamzat@gmail.com'>
+                    <form className='cu2' ref={form} onSubmit={sendEmail}>
                         <label>Name</label>
                         <br></br>
-                        <input placeholder='Enter Your Name'/>
+                        <input placeholder='Enter Your Name' name="user_name"/>
                         <br></br>
                         <label>Email</label>
                         <br></br>
-                        <input placeholder='Enter Your Email...'/>
+                        <input placeholder='Enter Your Email...' name="user_email"/>
                         <br></br>
                         <label>Subject</label>
                         <br></br>
-                        <input placeholder='Enter Subject...'/>
+                        <input placeholder='Enter Subject...' name='subject'/>
                         <br></br>
                         <label>Message</label>
                         <br></br>
-                        <textarea placeholder='Enter Your Message...'/>
+                        <textarea placeholder='Enter Your Message...' name="message"/>
                         <br></br>
-                        <button type='submit'>SEND MAIL</button>
+                        <button type="submit" value="Send">SEND MAIL</button>
                     </form>
                 </div>
                 </div>
