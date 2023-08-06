@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Modal from "react-bootstrap/Modal";
 import "bootstrap/dist/css/bootstrap.min.css";
 import toolhire from "../Assets/Images/toolhire.jpg"
+import ecom from "../Assets/Images/ecom.jpg"
 
 const All = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -13,14 +14,77 @@ const All = () => {
     const hideModal = () => {
         setIsOpen(false);
     };
+    const [isOpen2, setIsOpen2] = useState(false);
+
+    const showModal2 = () => {
+        setIsOpen2(true);
+    };
+
+    const hideModal2 = () => {
+        setIsOpen2(false);
+    };
   return (
     <>
         <div className='container-fluid pt-3'>
             <div className='row'>
                 <div className='col-md-4'>
                     <div className='fedd'>
-                        <a target="_blank" href='https://toolhire.netlify.app/'><img src={toolhire} style={{width:"100%", height:"40vh"}}/></a>
+                        <a target="_blank" href='https://swpe.netlify.app/home'><img src={ecom} style={{width:"100%", height:"40vh"}}/></a>
                         <p className='workt mt-3'>PROJECT 1</p>
+                        <div>
+                            <p className='workbf mb-3 mt-1'>A full-stack Ecommerce website{`(Under Construction)`}</p>
+                            <div className='d-flex justify-content-between'>
+                                <button type="button" className='workb btn btn-primar' onClick={showModal2}>DETAILS</button>
+                                <a target="_blank" href='https://swpe.netlify.app/home'><button className='workb btn btn-primar' type='button'>VIEW</button></a>
+                            </div>
+                        </div>
+                        <Modal show={isOpen2} onHide={hideModal2}>
+                            <Modal.Header>
+                                <Modal.Title>An Ecommerce website</Modal.Title>
+                                <button type="button" className="btn-close" onClick={hideModal2}></button>
+                            </Modal.Header>
+                            <Modal.Body>
+                                I am excited to showcase a recent project in my portfolio - an e-commerce website that I have developed using the MERN (MongoDB, Express.js, React, Node.js) stack. This dynamic and feature-rich e-commerce platform is currently under construction and represents a significant milestone in my journey as a web developer.
+                                <br></br>
+                                <span style={{fontWeight:"700"}}>Project Details:</span>
+                                <br/>
+                                - Website Type: E-Commerce
+                                <br/>
+                                - Technology Stack: MERN (MongoDB, Express.js, React, Node.js)
+                                <br/>
+                                - Development Status: Under Construction
+                                <br></br>
+                                <span style={{fontWeight:"700"}}>Key Features (Work in Progress):</span>
+                                <br/>
+                                - User-friendly product browsing and searching
+                                <br/>
+                                - Seamless shopping cart and checkout experience
+                                <br/>
+                                - User authentication and account management
+                                <br/>
+                                - Interactive product pages with detailed information
+                                <br></br>
+
+                                While the website is still undergoing development and refinement, I wanted to share a glimpse of my technical skills and design capabilities through this project. The chosen MERN stack ensures a robust and efficient foundation for the website's functionalities, while my dedication to creating an intuitive user experience is evident in every aspect of the design.
+
+                                Please note that as this project is still in progress, some features and sections may be placeholders or undergoing further enhancement. I am committed to bringing this e-commerce website to completion and delivering a polished and functional platform that users will enjoy using.
+                                <br/>
+                                Thank you for taking the time to explore this work in progress. Feel free to reach out to me if you have any questions or would like to know more about the development process.
+                                <br></br>
+                                Best regards,
+                                <br/>
+                                <span style={{fontWeight:"700"}}>MAL!K</span>
+                            </Modal.Body>
+                            <Modal.Footer>
+                                <button onClick={hideModal2} type="button" class="btn btn-danger">Close</button>
+                            </Modal.Footer>
+                        </Modal>
+                    </div>
+                </div>
+                <div className='col-md-4'>
+                    <div className='fedd'>
+                        <a target="_blank" href='https://toolhire.netlify.app/'><img src={toolhire} style={{width:"100%", height:"40vh"}}/></a>
+                        <p className='workt mt-3'>PROJECT 2</p>
                         <div>
                             <p className='workbf mb-3 mt-1'>A full-stack tool hire site</p>
                             <div className='d-flex justify-content-between'>

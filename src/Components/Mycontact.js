@@ -13,7 +13,7 @@ const Mycontact = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
-        emailjs.sendForm('service_paphksk', 'template_hg9pf8t', form.current, 'L6t7aCq3EzNcwAkkI')
+        emailjs.sendForm('service_paphksk', 'template_hg9pf8t', form.current, 'pfOhM6ujfpEqO1rOt')
         .then((result) => {
             alert("email sent")
             console.log(result.text);

@@ -61,7 +61,9 @@ const AboutMe = () => {
                                     </tr>
                                 </tbody>
                             </table>
-                            <button className='dre ms-5'>DOWNLOAD RESUME</button>
+                            <a href="https://drive.google.com/uc?export=download&id=1w3366gjVImRsBeQAtDhDTokbn7plHL66" download="cv.png">
+                                <button className='dre ms-5'>DOWNLOAD RESUME</button>
+                            </a>
                         </div>
                     </div>
                 </div>
