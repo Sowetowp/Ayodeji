@@ -13,10 +13,10 @@ const AboutMe = () => {
                     <div className='move'></div>
                 </div>
             </div>
-            <div className='container'>
+            <div className='container pooo'>
                 <div className='row rowww mt-5'>
                     <div className='dd2 col-xl'>
-                        <div className='m-3'>
+                        <div className='dd200 m-3'>
                             <img src={image} className='shift'/>
                             <div className='ana'>
                                 <div className='anb'></div>

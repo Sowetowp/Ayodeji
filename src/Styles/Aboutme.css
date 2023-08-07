@@ -200,6 +200,10 @@
     .ana{
         width: 380px;
     }
+    .pooo{
+        margin: 0% !important;
+        padding: 0% !important;
+    }
     @keyframes examp {
         from {left:370px; top:10px;}
         to {left:370px; top:320px;}
