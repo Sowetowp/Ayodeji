@@ -52,7 +52,7 @@ const Myskills = () => {
                       <circle cx="80" cy="80" r="70" strokeLinecap='round' />
                     </svg>
                   </div>
-                  <p className='msbed'>Full-stack Development</p>
+                  <p className='msbed'>Front-end Development</p>
                 </div>
               </div>
               <div className='col-md text-center'>
@@ -94,7 +94,7 @@ const Myskills = () => {
                       <circle cx="80" cy="80" r="70" strokeLinecap='round' />
                     </svg>
                   </div>
-                  <p className='msbed'>Front-end Development</p>
+                  <p className='msbed'>Hosting And Management</p>
                 </div>
               </div>
               {/* <div className='col-md text-center'>
@@ -132,6 +132,10 @@ const Myskills = () => {
                   <div className='se'></div>
                 </div>
                 <p>Html & Css - <span>(95%)</span></p>
+                <div className='ful'>
+                  <div className='se'></div>
+                </div>
+                <p>Typescript - <span>(95%)</span></p>
                 <div className='ful'>
                   <div className='se'></div>
                 </div>
