@@ -23,7 +23,7 @@ const Myworks = () => {
             </div>
             <All/>
             <div className='text-center my-5'>
-                <button  className='mwlm'>LOAD MORE</button>
+                <button className='border-0 mwlm'>LOAD MORE</button>
             </div>
         </div>
     </>
