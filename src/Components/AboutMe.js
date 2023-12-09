@@ -41,7 +41,7 @@ const AboutMe = () => {
                                     </tr>
                                     <tr>
                                         <td className='tdd'><li><span>Age</span></li></td>
-                                        <td className='tddd'>: 22</td>
+                                        <td className='tddd'>: 23</td>
                                     </tr>
                                     <tr>
                                         <td className='tdd'><li><span>Nationality</span></li></td>

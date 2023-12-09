@@ -75,7 +75,7 @@ const Myresume = () => {
                 <p className='text-white mreq'>Working Experience</p>
               </div>
               <div className='d-flex justify-content-start mrmov'>
-                <div className='mrdur'><p>2022 - present</p></div>
+                <div className='mrdur'><p>2021 - present</p></div>
                 <hr className='hrrr' style={{width: "30px", height: "4px"}}></hr>
                 <div className='hrd'>
                   <hr className='hrr' style={{width: "4px", height: "20px"}}></hr>
@@ -84,13 +84,13 @@ const Myresume = () => {
                 </div>
                 <hr className='hrrrr' style={{width: "30px", height: "4px"}}></hr>
                 <div className='mrbox'>
-                  <p className='mrp1'>Full-Stack Developer</p>
+                  <p className='mrp1'>Frontend and Backend Instructor</p>
                   <p className='mrp2'>SOAIRAfrica</p>
-                  <p className='mrp3'>Full Stack Developer at Soair Africa, where I honed my skills in developing and implementing new features, debugging and troubleshooting for various projects. Proud to have been a part of the team.</p>
+                  <p className='mrp3'>Since 2021, I have been actively engaged in instructing both frontend and backend technologies as part of the Soair Africa Bootcamp. In this role, I conduct comprehensive sessions within the six-month program, facilitating learning for cohorts ranging from 50 to 300 students per session. I provide hands-on guidance to ensure that students not only acquire but also master the skills necessary for success in the dynamic field of web development.</p>
                 </div>
               </div>
               <div className='d-flex justify-content-start mrmo'>
-                <div className='mrdur'><p>2022 - present</p></div>
+                <div className='mrdur'><p>2021 - present</p></div>
                 <hr className='hrrr' style={{width: "30px", height: "4px"}}></hr>
                 <div className='hrd'>
                   <hr className='hrr' style={{width: "4px", height: "20px"}}></hr>
@@ -105,7 +105,7 @@ const Myresume = () => {
                 </div>
               </div>
               <div className='d-flex justify-content-start mrmo'>
-                <div className='mrdur'><p>2022 - present</p></div>
+                <div className='mrdur'><p>2021 - present</p></div>
                 <hr className='hrrr' style={{width: "30px", height: "4px"}}></hr>
                 <div className='hrd'>
                   <hr className='hrr' style={{width: "4px", height: "20px"}}></hr>
