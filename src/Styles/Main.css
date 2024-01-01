@@ -52,6 +52,7 @@
 .frame{
     width: 100%;
     height: 100%;
+    background: rgb(11 18 35);
 }
 @media screen and (max-width: 1140px) {
     .sidebar {
