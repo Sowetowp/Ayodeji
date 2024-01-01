@@ -58,12 +58,15 @@
     border: 2px solid #e7eae8;
     border-radius: 50%;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-self: center;
   }
   
   .revbutton:hover {
     color: rgb(8, 254, 192);
     border-color: rgb(8, 254, 192);
-    animation: bounce_513 1s infinite;
+    animation: bounce_513 1s ease;
   }
   
   @keyframes bounce_513 {
@@ -89,11 +92,14 @@
     border: 2px solid #e7eae8;
     border-radius: 50%;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-self: center;
   }
   .revbutton2:hover {
     color: rgb(8, 254, 192);
     border-color: rgb(8, 254, 192);
-    animation: bounce_5132 1s infinite;
+    animation: bounce_5132 1s ease;
   }
   
   @keyframes bounce_5132 {
