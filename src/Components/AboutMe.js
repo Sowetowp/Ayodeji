@@ -34,7 +34,7 @@ const AboutMe = () => {
                     <div className='col-xl py-3 amhiaa' data-aos="fade-up" data-aos-duration="2000">
                         <div className=''>
                             <p className='hia ms-5'>Hi, I am <span>Amzat Abdulmalik</span></p>
-                            <table className="table table-borderless ms-5">
+                            <table className="table table-borderless ms-5 mt-3">
                                 <tbody>
                                     <tr>
                                         <td className='tdd'><li><span>First Name</span></li></td>

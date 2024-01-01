@@ -4,7 +4,7 @@ import Loadable from "react-loadable";
 import { Toaster } from "react-hot-toast";
 
 const Blog = Loadable({
-	loader: () => import("./Pages/Blog"),
+	loader: () => import("./Pages/ComingSoon"),
 	loading: Preloader,
 });
 const Works = Loadable({
