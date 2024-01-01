@@ -1,11 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "../Styles/Services.css"
 import "../Styles/Aboutme.css"
 import front from "../Assets/Images/front.svg"
 import back from "../Assets/Images/back.svg"
 import full from "../Assets/Images/full.svg"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Myservices = () => {
+    useEffect(() => {
+        AOS.init();
+      }, [])
   return (
     <>
         <div className='container-fluid p-0 aboutme borderless'>
@@ -18,7 +23,7 @@ const Myservices = () => {
             </div>
             <div className='container-fluid'>
                 <div className='row mt-5'>
-                    <div className='col-md fed p-3'>
+                    <div className='col-md fed p-3' data-aos="fade-up" data-aos-duration="1000">
                         <div className='fedd'>
                             <div className='d-flex justify-content-between'>
                                 <div className='log'><img src={front}/></div>
@@ -28,7 +33,7 @@ const Myservices = () => {
                             <p className='lip'>Unlock the true potential of your website with my front-end development mastery. From visually stunning design to intuitive user-experience, I'll craft a website that engages, impresses and converts. Let's bring your vision to life and create something truly remarkable.</p>
                         </div>
                     </div>
-                    <div className='col-md fed p-3'>
+                    <div className='col-md fed p-3' data-aos="fade-up" data-aos-duration="1500">
                         <div className='fedd'>
                             <div className='d-flex justify-content-between'>
                                 <div className='log'><img src={back}/></div>
@@ -38,7 +43,7 @@ const Myservices = () => {
                             <p className='lip'>Unlock the full potential of your website or application with my expert back-end services. From server-side scripting to database management and API development, I have the skills and experience to ensure seamless integration and optimal performance.</p>
                         </div>
                     </div>
-                    <div className='col-md fed p-3'>
+                    <div className='col-md fed p-3' data-aos="fade-up" data-aos-duration="2000">
                         <div className='fedd'>
                             <div className='d-flex justify-content-between'>
                                 <div className='log'><img src={full}/></div>

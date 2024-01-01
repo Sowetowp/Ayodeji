@@ -1,30 +1,42 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import "../Styles/Aboutme.css"
 import "../Styles/Contact.css"
 import email from "../Assets/Images/email.svg"
 import phone from "../Assets/Images/phone.svg"
 import location from "../Assets/Images/location.svg"
+import Preloader from './Preloader';
+import toast from 'react-hot-toast';
 
 
 
 const Mycontact = () => {
     const form = useRef();
-
+    const [loading, setLoading] = useState(false)
     const sendEmail = (e) => {
+        setLoading(true)
         e.preventDefault();
         emailjs.sendForm('service_paphksk', 'template_hg9pf8t', form.current, 'pfOhM6ujfpEqO1rOt')
         .then((result) => {
-            alert("email sent")
-            console.log(result.text);
+            setLoading(false)
+            toast.success('Sent', {
+				position: 'top-right',
+			})
         }, (error) => {
-            console.log(error.text);
+            setLoading(false)
+            toast.error('Something went wrong', {
+				position: 'top-right',
+			})
         });
 
     };
     
   return (
     <>
+        {loading
+        ?
+        <Preloader/>
+        :
         <div className='container-fluid p-0 aboutme'>
             <div className='about'><p>CONTACT</p></div>
             <div className='container-fluid above'>
@@ -94,6 +106,7 @@ const Mycontact = () => {
                 </div>
             </div>
         </div>
+        }
     </>
   )
 }

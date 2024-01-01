@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import "../Styles/Reviews.css"
 import imag from "../Assets/Images/kk.jpg"
 import mrsam from "../Assets/Images/mrsam.jpg"
@@ -7,10 +7,14 @@ import "../Styles/Aboutme.css"
 import prev from "../Assets/Images/prev.svg"
 import next from "../Assets/Images/next.svg"
 import tola from "../Assets/Images/tola.jpeg"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const Reviews = () => {
-
+    useEffect(() => {
+        AOS.init();
+      }, [])
     const [counter1, setCounter1] = useState(0)
     const [counter2, setCounter2] = useState(0)
     const [counter3, setCounter3] = useState(0)
@@ -103,8 +107,19 @@ const Reviews = () => {
         add2()
         add3()
     }
-
-
+    const buttonRef = useRef(null);
+    
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+          if (buttonRef.current) {
+            buttonRef.current.click();
+          }
+        }, 3000);
+    
+        return () => {
+          clearInterval(intervalId);
+        };
+      }, []);
   return (
     <>
         <div className='container-fluid p-0 aboutme'>
@@ -116,7 +131,7 @@ const Reviews = () => {
                 </div>
             </div>
             <div className='container'>
-                <div className='row crrow'>
+                <div className='row crrow' data-aos="fade-up" data-aos-duration="1000">
                     <div className='col-md'>
                         <fieldset className='crfs'>
                             <legend><img src={image1[counter1 % image1.length]} className="crimg"/></legend>
@@ -166,7 +181,7 @@ const Reviews = () => {
             </div>
             <div className='crbd d-flex justify-content-center'>
                 <button onClick={sub} className='crbdbb px-3'><img src={prev}/></button>
-                <button onClick={add} className='crbdbb px-3'><img src={next}/></button>
+                <button onClick={add} ref={buttonRef} className='crbdbb px-3 nexter'><img src={next}/></button>
             </div>
         </div>
     </>

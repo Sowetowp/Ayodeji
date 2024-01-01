@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import image from "../Assets/Images/malik.jpg"
 import "../Styles/Aboutme.css"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const AboutMe = () => {
+    useEffect(() => {
+        AOS.init();
+      }, [])
   return (
     <>
         <div className='container-fluid p-0 aboutme'>
@@ -15,7 +20,7 @@ const AboutMe = () => {
             </div>
             <div className='container pooo'>
                 <div className='row rowww mt-5'>
-                    <div className='dd2 col-xl'>
+                    <div className='dd2 col-xl' data-aos="fade-up" data-aos-duration="1000">
                         <div className='dd200 m-3'>
                             <img src={image} className='shift'/>
                             <div className='ana'>
@@ -26,7 +31,7 @@ const AboutMe = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='col-xl py-3 amhiaa'>
+                    <div className='col-xl py-3 amhiaa' data-aos="fade-up" data-aos-duration="2000">
                         <div className=''>
                             <p className='hia ms-5'>Hi, I am <span>Amzat Abdulmalik</span></p>
                             <table className="table table-borderless ms-5">
@@ -61,8 +66,8 @@ const AboutMe = () => {
                                     </tr>
                                 </tbody>
                             </table>
-                            <a href="https://drive.google.com/uc?export=download&id=1w3366gjVImRsBeQAtDhDTokbn7plHL66" download="cv.png">
-                                <button className='dre ms-5'>DOWNLOAD RESUME</button>
+                            <a href="https://drive.google.com/uc?export=download&id=1VdoYsoU6vuzyXVMafAyzAc8oGzsyjul4" download="cv.png">
+                                <button className='dre ms-5 btn'>DOWNLOAD RESUME</button>
                             </a>
                         </div>
                     </div>

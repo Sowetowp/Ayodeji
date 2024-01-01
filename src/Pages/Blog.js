@@ -14,7 +14,7 @@ const Blog = () => {
   return (
     <>
       <BlogHeader/>
-      <Home/>
+      {/* <Home/> */}
       <AboutMe/>
       <Myskills/>
       <Myservices/>

@@ -12,6 +12,7 @@
     width: 100%;
     text-align: center;
     z-index: 1;
+    user-select: none;
 }
 .am{
     padding-top: 15vh;
@@ -101,6 +102,7 @@
     font-weight: 400;
     font-size: 17px;
     line-height: 12px;
+    font-family: 'Lato', sans-serif;
 }
 .anb{
     width: 30px;

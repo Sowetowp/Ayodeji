@@ -37,14 +37,14 @@
     font-weight: 500;
 }
 .demo button{
-    border-radius: 50%;
+    /* border-radius: 50%; */
     border: none;
     margin-top: 20px;
-    background-color: rgba(113, 245, 208, 0.061);
+    background-color: transparent;
 }
 .demo img{
     padding: 2px;
-    width: 50px;
+    width: 30px;
 }
 @media screen and (max-width: 576px) {
     .demo{

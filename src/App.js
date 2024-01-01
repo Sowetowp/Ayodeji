@@ -1,23 +1,39 @@
-import Main from "./Pages/Main";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
-import Home from "./Pages/Home";
-import AboutMe from "./Components/AboutMe";
-import About from "./Pages/About";
-import Myservices from "./Components/Myservices";
-import Reviews from "./Components/Reviews";
-import Myskills from "./Components/Myskills";
-import Resume from "./Pages/Resume";
-import Myresume from "./Components/Myresume";
-import Myworks from "./Components/Myworks";
-import Works from "./Pages/Works";
-import Contact from "./Pages/Contact";
-import Mycontact from "./Components/Mycontact";
-import Blog from "./Pages/Blog";
-import BlogHeader from "./Components/BlogHeader";
+import Preloader from "./Components/Preloader";
+import Loadable from "react-loadable";
+import { Toaster } from "react-hot-toast";
 
-
+const Blog = Loadable({
+	loader: () => import("./Pages/Blog"),
+	loading: Preloader,
+});
+const Works = Loadable({
+	loader: () => import("./Pages/Works"),
+	loading: Preloader,
+});
+const Resume = Loadable({
+	loader: () => import("./Pages/Resume"),
+	loading: Preloader,
+});
+const Contact = Loadable({
+	loader: () => import("./Pages/Contact"),
+	loading: Preloader,
+});
+const Home = Loadable({
+	loader: () => import("./Pages/Home"),
+	loading: Preloader,
+});
+const About = Loadable({
+	loader: () => import("./Pages/About"),
+	loading: Preloader,
+});
+const Main = Loadable({
+	loader: () => import("./Pages/Main"),
+	loading: Preloader,
+});
 function App() {
   return (
+    <>
     <Router>
       <Routes>
         <Route path="/" element={<Main/>}/>
@@ -29,6 +45,8 @@ function App() {
         <Route path="/contact" element={<Contact/>}/>
       </Routes>
     </Router>
+    <Toaster/>
+    </>
   );
 }
 

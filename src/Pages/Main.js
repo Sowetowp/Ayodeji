@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import menu from "../Assets/Images/menu.svg"
 import "../Styles/Menu.css"
 import close from "../Assets/Images/close.svg"
-import dp from "../Assets/Images/kk.jpg"
+import dp from "../Assets/Images/malik.jpg"
 import arro from "../Assets/Images/arro.svg"
 import "../Styles/Main.css"
 import "../Styles/Demo.css"
@@ -33,12 +33,12 @@ const Main = () => {
             <div className='mmd'>
                 <div className='container-fluid sa'>
                     <div className='row text-center mrow p-0'>
-                        <div className='col-2 borde'><a href='/home' target="frame" onClick={malik}><p className='menu'><i>0.1 </i>HOME</p></a></div>
-                        <div className='col-2'><a href='/about' target="frame" onClick={malik}><p className='menu'><i>0.2 </i>ABOUT</p></a></div>
-                        <div className='col-2 borde'><a href='/resume' target="frame" onClick={malik}><p className='menu'><i>0.3 </i>RESUME</p></a></div>
-                        <div className='col-2'><a href='/work' target="frame" onClick={malik}><p className='menu'><i>0.4 </i>WORKS</p></a></div>
-                        <div className='col-2 borde'><a href='/blog' target="frame" onClick={malik}><p className='menu'><i>0.5 </i>BLOGS</p></a></div>
-                        <div className='col-2'><a href='/contact' target="frame" onClick={malik}><p className='menu'><i>0.6 </i>CONTACT</p></a></div>
+                        <a  href='/home' target="frame" onClick={malik} className='col-2 borde'><p className='menu'><i>0.1 </i>HOME</p></a>
+                        <a href='/about' target="frame" onClick={malik} className='col-2'><p className='menu'><i>0.2 </i>ABOUT</p></a>
+                        <a href='/resume' target="frame" onClick={malik} className='col-2 borde'><p className='menu'><i>0.3 </i>RESUME</p></a>
+                        <a href='/work' target="frame" onClick={malik} className='col-2'><p className='menu'><i>0.4 </i>WORKS</p></a>
+                        <a href='/blog' target="frame" onClick={malik} className='col-2 borde'><p className='menu'><i>0.5 </i>BLOGS</p></a>
+                        <a href='/contact' target="frame" onClick={malik} className='col-2'><p className='menu'><i>0.6 </i>CONTACT</p></a>
                     </div>
                 </div>
             </div>
