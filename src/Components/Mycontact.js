@@ -103,7 +103,7 @@ const Mycontact = () => {
                         <br></br>
                         <textarea placeholder='Enter Your Message...' name="message"/>
                         <br></br>
-                        <button type="submit" value="Send">SEND MAIL</button>
+                        <button className='cdre' type="submit" value="Send"><span>SEND MAIL</span></button>
                     </form>
                 </div>
                 </div>
