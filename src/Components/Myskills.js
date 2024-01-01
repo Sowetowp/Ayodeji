@@ -59,7 +59,7 @@ const Myskills = () => {
           <div className='container-fluid mt-5'>
             <div className='row'>
               <div className='col-md text-center' data-aos="fade-up" data-aos-duration="1000">
-                <div className='mscont py-4 my-2'>
+                <div className='mscont py-4'>
                   <div className='msback'>
                     <div className='outer'>
                       <div className='inner'>
@@ -80,7 +80,7 @@ const Myskills = () => {
                 </div>
               </div>
               <div className='col-md text-center' data-aos="fade-up" data-aos-duration="1500">
-                <div className='mscont py-4 my-2'>
+                <div className='mscont py-4'>
                   <div className='msback'>
                     <div className='outer'>
                       <div className='inner'>
@@ -101,7 +101,7 @@ const Myskills = () => {
                 </div>
               </div>
               <div className='col-md text-center' data-aos="fade-up" data-aos-duration="2000">
-                <div className='mscont py-4 my-2'>
+                <div className='mscont py-4'>
                   <div className='msback'>
                     <div className='outer'>
                       <div className='inner'>
@@ -122,7 +122,7 @@ const Myskills = () => {
                 </div>
               </div>
               <div data-aos="fade-up" data-aos-duration="2500" className='col-md text-center'>
-                <div className='mscont py-4 my-2'>
+                <div className='mscont py-4'>
                   <div className='msback'>
                     <div className='outer'>
                       <div className='inner'>

@@ -116,7 +116,50 @@
     justify-content: center;
     align-items: center;
     margin: 5px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
 }
-.small-icons img{
+.small-icons svg{
     width: 15px;
+}
+.bdre:after {
+content: " ";
+width: 100%;
+height: 0%;
+background: aquamarine;
+position: absolute;
+transition: all 0.4s ease-in-out;
+top: 0;
+}
+
+.bdre:hover::after {
+top: auto;
+bottom: 0;
+height: 100%;
+}
+
+.bdre svg {
+text-align: center;
+text-decoration: none;
+z-index: 20;
+transition: all 0.3s ease-in-out;
+}
+
+.bdre:hover svg {
+animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+0% {
+    transform: scale(1);
+}
+
+50% {
+    transform: scale(0.95);
+}
+
+100% {
+    transform: scale(1);
+}
 }

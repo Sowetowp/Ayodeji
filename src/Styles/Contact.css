@@ -9,8 +9,9 @@
 }
 .cup2{
     color: white;
-    font-size: 14px;
+    font-size: 13px;
     margin-top: 15px;
+    font-family: 'Lato', sans-serif;
 }
 .cu3{
     margin-top: 30px;
@@ -50,10 +51,17 @@
     border-radius: 8px;
     background-color: rgb(16, 34, 50);
     border: none;
-    outline-color: aquamarine;
+    /* outline-color: aquamarine; */
+    outline: none;
     margin-top: 5px;
     margin-bottom: 10px;
     color: white;
+}
+.cu2 input:hover{
+    border: solid 1px aquamarine;
+}
+.cu2 input:focus{
+    border: solid 1px aquamarine;
 }
 .cu2 label{
     color: white;
@@ -67,8 +75,17 @@
     border-radius: 8px;
     border: none;
     min-height: 167px;
-    outline-color: aquamarine;
+    outline: none;
     color: white;
+}
+.cu2 textarea:hover{
+    border: solid 1px aquamarine;
+}
+.cu2 textarea:focus{
+    border: solid 1px aquamarine;
+}
+.cua1, .cua2{
+    font-family: 'Lato', sans-serif;
 }
 .cu2 button{
     border-radius: 8px;

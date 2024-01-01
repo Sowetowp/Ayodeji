@@ -19,6 +19,7 @@
     z-index: 7;
     margin: 2px;
     padding: 20px;
+    transition: margin-top 0.8s linear;
 }
 .fdev{
     color: white;
@@ -45,3 +46,6 @@
 /* @media screen and (max-width: 1140px) {
     
 } */
+.fedd:hover{
+    margin-top: -4px;
+}

@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import "../Styles/Aboutme.css"
 import "../Styles/Contact.css"
@@ -7,10 +7,13 @@ import phone from "../Assets/Images/phone.svg"
 import location from "../Assets/Images/location.svg"
 import Preloader from './Preloader';
 import toast from 'react-hot-toast';
-
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Mycontact = () => {
+    useEffect(() => {
+        AOS.init();
+      }, [])
     const form = useRef();
     const [loading, setLoading] = useState(false)
     const sendEmail = (e) => {
@@ -37,7 +40,7 @@ const Mycontact = () => {
         ?
         <Preloader/>
         :
-        <div className='container-fluid p-0 aboutme'>
+        <div className='container-fluid px-0 aboutme pb-5'>
             <div className='about'><p>CONTACT</p></div>
             <div className='container-fluid above'>
                 <p className='am'>CONTACT ME</p>
@@ -47,9 +50,9 @@ const Mycontact = () => {
             </div>
             <div className='container-fluid conmd my-5'>
                 <div className='row'>
-                <div className='cu1 col-md'>
+                <div className='cu1 col-md' data-aos="fade-up" data-aos-duration="1000">
                     <p className='cup1'>Contact Information</p>
-                    <p className='cup2'>Reach out to me and let's drive results! You can find my contact information on the page, I am always available to discuss potential opportunities and collaborations. Let's connect.</p>
+                    <p className='cup2'>Reach out to me and let's drive results! I am always available to discuss potential opportunities and collaborations. Let's connect.</p>
                     <div className='cu3'>
                         <div className='cuimg'>
                         <img src={phone}/>
@@ -82,7 +85,7 @@ const Mycontact = () => {
                         </div>
                     </div>
                 </div>
-                <div className='col-md cfo'>
+                <div className='col-md cfo' data-aos="fade-up" data-aos-duration="1000">
                     <form className='cu2' ref={form} onSubmit={sendEmail}>
                         <label>Name</label>
                         <br></br>

@@ -66,8 +66,8 @@ const AboutMe = () => {
                                     </tr>
                                 </tbody>
                             </table>
-                            <a href="https://drive.google.com/uc?export=download&id=1VdoYsoU6vuzyXVMafAyzAc8oGzsyjul4" download="cv.png">
-                                <button className='dre ms-5 btn'>DOWNLOAD RESUME</button>
+                            <a style={{textDecoration:"none"}} href="https://drive.google.com/uc?export=download&id=1VdoYsoU6vuzyXVMafAyzAc8oGzsyjul4" download="cv.png">
+                                <button className='dre ms-5 btn'><span>DOWNLOAD RESUME</span></button>
                             </a>
                         </div>
                     </div>

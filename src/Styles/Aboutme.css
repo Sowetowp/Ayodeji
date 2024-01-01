@@ -76,16 +76,6 @@
 .hia span{
     color: rgb(20, 223, 166);
 }
-.dre{
-    color: black;
-    background-color: rgb(20, 223, 166);
-    height: 50px;
-    width: 190px;
-    border-radius: 6px;
-    font-size: 12px;
-    font-weight: 500;
-    margin-top: 10px;
-}
 .tdd{
     color: rgb(20, 223, 166);
     font-weight: 600;
@@ -255,5 +245,67 @@
     }
     .about{
         margin-top: 17vh;
+    }
+}
+
+.dre {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    background: rgb(20, 223, 166);
+    box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    cursor: pointer;
+    border: none;
+    height: 50px;
+    width: 190px;
+    margin-top: 10px;
+  }
+  
+  .dre:after {
+    content: " ";
+    width: 100%;
+    height: 0%;
+    background: white;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+    top: 0;
+  }
+  
+  .dre:hover::after {
+    top: auto;
+    bottom: 0;
+    height: 100%;
+  }
+  
+  .dre span {
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    z-index: 20;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .dre:hover span {
+    color: black;
+    animation: scaleUp 0.3s ease-in-out;
+  }
+  
+  @keyframes scaleUp {
+    0% {
+      transform: scale(1);
+    }
+  
+    50% {
+      transform: scale(0.95);
+    }
+  
+    100% {
+      transform: scale(1);
     }
 }

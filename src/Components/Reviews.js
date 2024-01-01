@@ -114,7 +114,7 @@ const Reviews = () => {
           if (buttonRef.current) {
             buttonRef.current.click();
           }
-        }, 3000);
+        }, 4000);
     
         return () => {
           clearInterval(intervalId);
@@ -179,9 +179,13 @@ const Reviews = () => {
                     </div>
                 </div>
             </div>
-            <div className='crbd d-flex justify-content-center'>
-                <button onClick={sub} className='crbdbb px-3'><img src={prev}/></button>
-                <button onClick={add} ref={buttonRef} className='crbdbb px-3 nexter'><img src={next}/></button>
+            <div className='revbtndiv pt-5'>
+                <button onClick={sub} className='revbutton2 mx-2'>
+                <span>←</span>
+                </button>
+                <button onClick={add} ref={buttonRef} className='revbutton mx-2'>
+                <span>→</span>
+                </button>
             </div>
         </div>
     </>
