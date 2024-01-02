@@ -6190,7 +6190,7 @@ textarea.form-control-lg {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 99999999999999999999999999999999999999030;
+  z-index: 2147483647;
 }
 
 .fixed-bottom {

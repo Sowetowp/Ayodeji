@@ -6174,7 +6174,7 @@ textarea.form-control-lg {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 999999999999999999999991030;
+  z-index: 2147483647;
 }
 
 .fixed-bottom {
