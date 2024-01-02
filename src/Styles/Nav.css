@@ -93,7 +93,7 @@
     padding-top: 1px;
     padding-bottom: 1px;
     border: solid 1px rgb(20, 223, 166);
-    border-radius: 5px;
+    border-radius: 4px;
 }
 .spanfortext{
     font-size: 10px;
@@ -130,7 +130,7 @@
     transform: rotate(-45deg);
   }
   .palette path {
-    fill: rgb(20, 223, 166);
+    fill: rgba(20, 223, 166, 0.358);
     stroke-width: 0;
   }
   .drop1 {

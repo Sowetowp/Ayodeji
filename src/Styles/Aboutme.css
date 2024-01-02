@@ -38,7 +38,7 @@
     height: 4.8px;
     background-color: rgb(0, 255, 255);
     animation-name: example;
-    animation-duration: 1s;
+    animation-duration: 2s;
     position: relative;
     animation-timing-function: linear;
     animation-iteration-count: infinite;

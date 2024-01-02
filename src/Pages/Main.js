@@ -45,29 +45,7 @@ const Main = () => {
         </>
     )
     }
-
-    // const Demo = () => {
-    //     return (
-          <>
-              {/* <div className='container-fluid demo'>
-                  <div className='d-flex justify-content-between'>
-                      <p className='dep1'><span>AMZAT</span>.</p>
-                      <button onClick={switc}><img src={close}/></button>
-                  </div>
-                  <div className='deas'>
-                      <a href='/home' target="frame" onClick={malik}><p className=''><span>0.1 </span>HOME</p></a>
-                      <a href='/about' target="frame" onClick={malik}><p className=''><span>0.2 </span>ABOUT</p></a>
-                      <a href='/resume' target="frame" onClick={malik}><p className=''><span>0.3 </span>RESUME</p></a>
-                      <a href='/work' target="frame" onClick={malik}><p className=''><span>0.4 </span>WORKS</p></a>
-                      <a href='/blog' target="frame" onClick={malik}><p className=''><span>0.5 </span>BLOGS</p></a>
-                      <a href='/contact' target="frame" onClick={malik}><p className=''><span>0.6 </span>CONTACT</p></a>
-                  </div>
-                  <p className='thir'>~201035~</p>
-              </div> */}
-          </>
-    //     )
-    //   }
-
+    
   return (
     <>  
         <div className='d-flex container-fluid mmain p-0'>
