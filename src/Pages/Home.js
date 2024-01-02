@@ -7,8 +7,8 @@ import Linkedin from "../Assets/Images/linkedin.svg"
 import threads from "../Assets/Images/threads-seeklogo.com-2.svg"
 import image from "../Assets/Images/malik.jpg"
 import { Typewriter, useTypewriter } from 'react-simple-typewriter'
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Nav from '../Components/Nav'
 
 const Home = () => {
@@ -16,9 +16,9 @@ const Home = () => {
     words: ['Amzat Abdulmalik', 'a Full-stack Developer', 'a Web Designer'],
     loop: 0
   })
-  // useEffect(() => {
-  //   AOS.init();
-  // }, [])
+  useEffect(() => {
+    AOS.init();
+  }, [])
   const [color, setColor] = useState("rgb(212, 212, 243 )")
   const sub = ()=> {
     setColor("rgb(11, 18, 35)")
