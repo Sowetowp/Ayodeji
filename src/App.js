@@ -2,6 +2,7 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import Preloader from "./Components/Preloader";
 import Loadable from "react-loadable";
 import { Toaster } from "react-hot-toast";
+import Nav from "./Components/Nav";
 
 const Blog = Loadable({
 	loader: () => import("./Pages/ComingSoon"),
@@ -36,7 +37,7 @@ function App() {
     <>
     <Router>
       <Routes>
-        <Route path="/" element={<Main/>}/>
+        <Route path="/" element={<Nav/>}/>
         <Route path="/home" element={<Home/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/resume" element={<Resume/>}/>
