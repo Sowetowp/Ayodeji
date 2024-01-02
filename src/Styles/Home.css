@@ -31,7 +31,7 @@
     position: absolute;
     margin-top: 7px;
     margin-left: 7px;
-}
+} */
 .spin{
     position: relative;
     background-image: linear-gradient(transparent, 10%, rgb(51, 142, 119));
@@ -64,7 +64,7 @@
     color: white;
     font-weight: 700;
     margin-top: 2vh;
-} */
+}
 .type span{
     color: aquamarine;
 }
