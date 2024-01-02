@@ -56,7 +56,7 @@ const Nav = () => {
                                         </svg>
                                         <span class="file-front"></span>
                                     </span>
-                                    Home
+                                    <span>Home</span>
                                 </a>
                                 <a href="#" class="open-file px-0 list-group-item list-group-item-action">
                                     <span class="file-wrapper">
@@ -69,7 +69,7 @@ const Nav = () => {
                                         </svg>
                                         <span class="file-front"></span>
                                     </span>
-                                    About
+                                    <span>About</span>
                                 </a>
                                 <a href="#" class="open-file px-0 list-group-item list-group-item-action">
                                     <span class="file-wrapper">
@@ -82,7 +82,7 @@ const Nav = () => {
                                         </svg>
                                         <span class="file-front"></span>
                                     </span>
-                                    Resume
+                                    <span>Resume</span>
                                 </a>
                                 <a href="#" class="open-file px-0 list-group-item list-group-item-action">
                                     <span class="file-wrapper">
@@ -95,7 +95,7 @@ const Nav = () => {
                                         </svg>
                                         <span class="file-front"></span>
                                     </span>
-                                    Works
+                                    <span>Works</span>
                                 </a>
                                 <a href="#" class="open-file px-0 list-group-item list-group-item-action">
                                     <span class="file-wrapper">
@@ -108,7 +108,7 @@ const Nav = () => {
                                         </svg>
                                         <span class="file-front"></span>
                                     </span>
-                                    Blog
+                                    <span>Blog</span>
                                 </a>
                                 <a href="#" class="open-file px-0 list-group-item list-group-item-action">
                                     <span class="file-wrapper">
@@ -121,7 +121,7 @@ const Nav = () => {
                                         </svg>
                                         <span class="file-front"></span>
                                     </span>
-                                    Contact
+                                    <span>Contact</span>
                                 </a>
                             </div>
                         </div>
