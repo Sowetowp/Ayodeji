@@ -5,7 +5,7 @@ import { Toaster } from "react-hot-toast";
 import Nav from "./Components/Nav";
 
 const Blog = Loadable({
-	loader: () => import("./Pages/ComingSoon"),
+	loader: () => import("./Pages/Blog"),
 	loading: Preloader,
 });
 const Works = Loadable({
@@ -37,7 +37,7 @@ function App() {
     <>
     <Router>
       <Routes>
-        <Route path="/" element={<Nav/>}/>
+        <Route path="/" element={<Main/>}/>
         <Route path="/home" element={<Home/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/resume" element={<Resume/>}/>

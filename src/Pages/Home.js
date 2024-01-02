@@ -9,6 +9,7 @@ import image from "../Assets/Images/malik.jpg"
 import { Typewriter, useTypewriter } from 'react-simple-typewriter'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Nav from '../Components/Nav'
 
 const Home = () => {
   const [text] = useTypewriter({
@@ -48,6 +49,7 @@ const Home = () => {
   }
   return (
     <>
+      <Nav/>
       <div className='container-fluid home' style={{overflow:"hidden"}}>
         <div className='blur'></div>
         <div className='inde'>

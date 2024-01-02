@@ -13,7 +13,7 @@ const Nav = () => {
     const [input, setInput] = useState("")
   return (
     <>
-        <nav className="navbar navbar-expand-sm navbackground">
+        <nav className="navbar navbar-expand-sm navbackground fixed-top">
             <div className="container-fluid">
                 <label className="hamburger" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                     <input type="checkbox"/>
@@ -47,7 +47,7 @@ const Nav = () => {
                             <p style={{fontFamily: "'Lato', sans-serif", color:"grey"}} className='pb-2'>Links</p>
                             <div class="list-group list-group-flush">
                                 {new String("home").includes(input.toLowerCase()) &&
-                                <a href="#" class="open-file d-flex px-0 list-group-item list-group-item-action">
+                                <a href="/home" class="open-file d-flex px-0 list-group-item list-group-item-action">
                                     <span class="file-wrapper">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 71 67">
                                             <path
@@ -61,7 +61,7 @@ const Nav = () => {
                                     <span>Home</span>
                                 </a>}
                                 {new String("about").includes(input.toLowerCase()) &&
-                                <a href="#" class="open-file d-flex px-0 list-group-item list-group-item-action">
+                                <a href="/about" class="open-file d-flex px-0 list-group-item list-group-item-action">
                                     <span class="file-wrapper">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 71 67">
                                             <path
@@ -75,7 +75,7 @@ const Nav = () => {
                                     <span>About</span>
                                 </a>}
                                 {new String("resume").includes(input.toLowerCase()) &&
-                                <a href="#" class="open-file d-flex px-0 list-group-item list-group-item-action">
+                                <a href="/resume" class="open-file d-flex px-0 list-group-item list-group-item-action">
                                     <span class="file-wrapper">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 71 67">
                                             <path
@@ -89,8 +89,8 @@ const Nav = () => {
                                     <span>Resume</span>
                                 </a>}
                                 {new String("works").includes(input.toLowerCase()) &&
-                                <a href="#" class="open-file d-flex px-0 list-group-item list-group-item-action">
-                                    <span class="file-wrapper bg-danger">
+                                <a href="/work" class="open-file d-flex px-0 list-group-item list-group-item-action">
+                                    <span class="file-wrapper">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 71 67">
                                             <path
                                                 stroke-width="5"
@@ -98,12 +98,12 @@ const Nav = () => {
                                                 d="M41.7322 11.7678L42.4645 12.5H43.5H68.5V64.5H2.5V2.5H32.4645L41.7322 11.7678Z"
                                             ></path>
                                         </svg>
-                                        <span class="file-front bg-info"></span>
+                                        <span class="file-front"></span>
                                     </span>
                                     <span className=''>Works</span>
                                 </a>}
                                 {new String("blog").includes(input.toLowerCase()) &&
-                                <a href="#" class="open-file d-flex px-0 list-group-item list-group-item-action">
+                                <a href="/blog" class="open-file d-flex px-0 list-group-item list-group-item-action">
                                     <span class="file-wrapper">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 71 67">
                                             <path
@@ -117,7 +117,7 @@ const Nav = () => {
                                     <span>Blog</span>
                                 </a>}
                                 {new String("contact").includes(input.toLowerCase()) &&
-                                <a href="#" class="open-file d-flex px-0 list-group-item list-group-item-action">
+                                <a href="/contact" class="open-file d-flex px-0 list-group-item list-group-item-action">
                                     <span class="file-wrapper">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 71 67">
                                             <path

@@ -4,7 +4,7 @@ import coms from "../Assets/Images/icons8-crossed-fingers-light-skin-tone-48.png
 const cs = () => {
 	return (
 		<div id='preloader-active'>
-			<div className='preloader d-flex align-items-center justify-content-center'>
+			<div className='preloader2 d-flex align-items-center justify-content-center'>
 				<div className='blur'></div>
 				<div className='preloader-inner position-relative'>
 					{/* <div className='preloader-circle'></div> */}

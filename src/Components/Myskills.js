@@ -66,7 +66,7 @@ const Myskills = () => {
                         <div id='number' ref={number1}></div>
                       </div>
                     </div>
-                    <svg xmlns='http://www.w3.org/2000/svg' version='1.1' width="133px" height="133px">
+                    <svg className='mysvg' xmlns='http://www.w3.org/2000/svg' version='1.1' width="133px" height="133px">
                       <defs>
                         <linearGradient id='gradientcolor'>
                           <stop offset="0%" stopColor='rgb(13, 252, 172)' />
@@ -87,7 +87,7 @@ const Myskills = () => {
                         <div id='number' ref={number2}></div>
                       </div>
                     </div>
-                    <svg xmlns='http://www.w3.org/2000/svg' version='1.1' width="133px" height="133px">
+                    <svg className='mysvg' xmlns='http://www.w3.org/2000/svg' version='1.1' width="133px" height="133px">
                       <defs>
                         <linearGradient id='gradientcolor'>
                           <stop offset="0%" stopColor='rgb(13, 252, 172)' />
@@ -108,7 +108,7 @@ const Myskills = () => {
                         <div id='number' ref={number3}></div>
                       </div>
                     </div>
-                    <svg xmlns='http://www.w3.org/2000/svg' version='1.1' width="133px" height="133px">
+                    <svg className='mysvg' xmlns='http://www.w3.org/2000/svg' version='1.1' width="133px" height="133px">
                       <defs>
                         <linearGradient id='gradientcolor'>
                           <stop offset="0%" stopColor='rgb(13, 252, 172)' />
@@ -129,7 +129,7 @@ const Myskills = () => {
                         <div id='number' ref={number4}></div>
                       </div>
                     </div>
-                    <svg xmlns='http://www.w3.org/2000/svg' version='1.1' width="133px" height="133px">
+                    <svg className='mysvg' xmlns='http://www.w3.org/2000/svg' version='1.1' width="133px" height="133px">
                       <defs>
                         <linearGradient id='gradientcolor'>
                           <stop offset="0%" stopColor='rgb(13, 252, 172)' />

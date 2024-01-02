@@ -4,7 +4,7 @@
     z-index: 7;
     border-radius: 10px;
     position: relative;
-    margin-top: 2px;
+    margin-top: 10px;
     transition: margin-top 0.5s linear;
 }
 .mscont:hover{
@@ -55,7 +55,7 @@ circle{
         stroke-dashoffset: 93.6;
     }
 }
-svg{
+.mysvg{
     position: absolute;
     top: 0;
     left: 0;

@@ -46,10 +46,10 @@ const Main = () => {
     )
     }
 
-    const Demo = () => {
-        return (
+    // const Demo = () => {
+    //     return (
           <>
-              <div className='container-fluid demo'>
+              {/* <div className='container-fluid demo'>
                   <div className='d-flex justify-content-between'>
                       <p className='dep1'><span>AMZAT</span>.</p>
                       <button onClick={switc}><img src={close}/></button>
@@ -63,10 +63,10 @@ const Main = () => {
                       <a href='/contact' target="frame" onClick={malik}><p className=''><span>0.6 </span>CONTACT</p></a>
                   </div>
                   <p className='thir'>~201035~</p>
-              </div>
+              </div> */}
           </>
-        )
-      }
+    //     )
+    //   }
 
   return (
     <>  
@@ -80,7 +80,6 @@ const Main = () => {
             <div className='ifram'> 
                 <button className='mbut' onClick={switc}><img src={arro}/></button>
                 {change && <Menu/>}
-                {change && <Demo/>}
                 <iframe src='/home' name='frame' title='myiframe' className='frame'></iframe>
             </div>
         </div>
