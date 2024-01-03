@@ -42,7 +42,7 @@
 }
 
 .drewo:hover span {
-    color: black;
+    color: black !important;
     animation: scaleUp 0.3s ease-in-out;
 }
 
