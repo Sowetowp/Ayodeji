@@ -13,7 +13,7 @@ const Myworks = () => {
       body: "Creative Candle Light",
       preview: "",
       github: "",
-      stack: "ahtml"
+      stack: "node"
     },
     {
       img: canv2,
@@ -21,7 +21,7 @@ const Myworks = () => {
       body: "Creative Candle Light",
       preview: "",
       github: "",
-      stack: "areactflask"
+      stack: "flask"
     },
     {
       img: canv,
@@ -29,7 +29,7 @@ const Myworks = () => {
       body: "Creative Candle Light",
       preview: "",
       github: "",
-      stack: "anativenode"
+      stack: "anativenodereact"
     },
     {
       img: canv2,
@@ -37,7 +37,7 @@ const Myworks = () => {
       body: "Creative Candle Light",
       preview: "",
       github: "",
-      stack: "a"
+      stack: "ahtml"
     },
     {
       img: canv,
