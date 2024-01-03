@@ -10,6 +10,7 @@ import { Typewriter, useTypewriter } from 'react-simple-typewriter'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Nav from '../Components/Nav'
+import { useNavigate } from 'react-router-dom'
 
 const Home = () => {
   const [text] = useTypewriter({
@@ -47,6 +48,15 @@ const Home = () => {
   const add1 = ()=> {
     setColor1("rgb(212, 212, 243 )")
   }
+  const navigate = useNavigate()
+  useEffect(()=>{
+    const parentWindow = window.parent;
+    const parentURL = parentWindow.location.href;
+    if(window.innerWidth > 576 && parentURL.includes('/home')){
+      navigate("/")
+      console.log(parentURL)
+    }
+  },[])
   return (
     <>
       <Nav/>

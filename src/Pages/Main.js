@@ -6,6 +6,7 @@ import dp from "../Assets/Images/malik.jpg"
 import arro from "../Assets/Images/arro.svg"
 import "../Styles/Main.css"
 import "../Styles/Demo.css"
+import { useNavigate } from 'react-router-dom'
 
 
 
@@ -35,8 +36,12 @@ const Main = () => {
         switc()
         routesetter(e)
     }
-
-
+    const navigate = useNavigate()
+    useEffect(()=>{
+        if(window.innerWidth <= 576){
+            navigate("/home")
+        }
+    },[])
     const Menu = () => {
     return (
         <>
