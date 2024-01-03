@@ -109,17 +109,17 @@ const Reviews = () => {
     }
     const buttonRef = useRef(null);
     
-    useEffect(() => {
-        const intervalId = setInterval(() => {
-          if (buttonRef.current) {
-            buttonRef.current.click();
-          }
-        }, 4000);
+    // useEffect(() => {
+    //     const intervalId = setInterval(() => {
+    //       if (buttonRef.current) {
+    //         buttonRef.current.click();
+    //       }
+    //     }, 4000);
     
-        return () => {
-          clearInterval(intervalId);
-        };
-      }, []);
+    //     return () => {
+    //       clearInterval(intervalId);
+    //     };
+    //   }, []);
   return (
     <>
         <div className='container-fluid p-0 aboutme'>
