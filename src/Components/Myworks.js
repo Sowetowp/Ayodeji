@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import "../Styles/AWorks.css"
 import "../Styles/Aboutme.css"
 import canv from "../Assets/Images/portfolio-image-2.jpg"
@@ -6,14 +6,14 @@ import canv2 from "../Assets/Images/portfolio-image-3.jpg"
 import canv3 from "../Assets/Images/portfolio-image-6.jpg"
 
 const Myworks = () => {
-  const [works, setWorks] = useState([
+  const availableArray = [
     {
       img: canv3,
       title: "Candle",
       body: "Creative Candle Light",
       preview: "",
       github: "",
-      stack: ""
+      stack: "ahtml"
     },
     {
       img: canv2,
@@ -21,7 +21,7 @@ const Myworks = () => {
       body: "Creative Candle Light",
       preview: "",
       github: "",
-      stack: ""
+      stack: "areactflask"
     },
     {
       img: canv,
@@ -29,7 +29,7 @@ const Myworks = () => {
       body: "Creative Candle Light",
       preview: "",
       github: "",
-      stack: ""
+      stack: "anativenode"
     },
     {
       img: canv2,
@@ -37,7 +37,7 @@ const Myworks = () => {
       body: "Creative Candle Light",
       preview: "",
       github: "",
-      stack: ""
+      stack: "a"
     },
     {
       img: canv,
@@ -45,7 +45,7 @@ const Myworks = () => {
       body: "Creative Candle Light",
       preview: "",
       github: "",
-      stack: ""
+      stack: "a"
     },
     {
       img: canv3,
@@ -53,9 +53,14 @@ const Myworks = () => {
       body: "Creative Candle Light",
       preview: "",
       github: "",
-      stack: ""
+      stack: "a"
     }
-  ])
+  ]
+  const [works, setWorks] = useState(availableArray)
+  const filterer = useCallback((e) => {
+    const filteredArray = availableArray.filter(item => item.stack && item.stack.includes(e));
+    setWorks(filteredArray);
+  }, [availableArray]);
 
   return (
     <>
@@ -68,12 +73,12 @@ const Myworks = () => {
                 </div>
             </div>
             <div className='workType'>
-              <button className='drewo'><span>ALL</span></button>
-              <button className='drewo'><span>HTML/CSS</span></button>
-              <button className='drewo'><span>REACT JS</span></button>
-              <button className='drewo'><span>FLASK</span></button>
-              <button className='drewo'><span>NODE JS</span></button>
-              <button className='drewo'><span>REACT NATIVE</span></button>
+              <button className='drewo' onClick={() => setWorks(availableArray)}><span>ALL</span></button>
+              <button className='drewo' onClick={() => filterer("html")}><span>HTML/CSS</span></button>
+              <button className='drewo' onClick={() => filterer("react")}><span>REACT JS</span></button>
+              <button className='drewo' onClick={() => filterer("flask")}><span>FLASK</span></button>
+              <button className='drewo' onClick={() => filterer("node")}><span>NODE JS</span></button>
+              <button className='drewo' onClick={() => filterer("native")}><span>REACT NATIVE</span></button>
             </div>
             <div className='row workCanvas pt-3'>
               {works.map((e)=>
@@ -97,7 +102,7 @@ const Myworks = () => {
                 </div>
               </div>)}
             </div>
-            <div className='loadWrapper'><button className='drewo'><span>LOAD MORE</span></button></div>
+            <div className='loadWrapper pb-5'><button className='drewo mb-5'><span>LOAD MORE</span></button></div>
         </div>
     </>
   )
