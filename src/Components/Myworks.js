@@ -57,11 +57,16 @@ const Myworks = () => {
     }
   ]
   const [works, setWorks] = useState(availableArray)
+  const [bg, setBg] = useState("")
   const filterer = useCallback((e) => {
     const filteredArray = availableArray.filter(item => item.stack && item.stack.includes(e));
     setWorks(filteredArray);
+    setBg(e)
   }, [availableArray]);
-
+  const filterer2 = useCallback(() => {
+    setWorks(availableArray);
+    setBg("all")
+  }, [availableArray]);
   return (
     <>
         <div className='container-fluid p-0 aboutme mw'>
@@ -73,12 +78,12 @@ const Myworks = () => {
                 </div>
             </div>
             <div className='workType'>
-              <button className='drewo' onClick={() => setWorks(availableArray)}><span>ALL</span></button>
-              <button className='drewo' onClick={() => filterer("html")}><span>HTML/CSS</span></button>
-              <button className='drewo' onClick={() => filterer("react")}><span>REACT JS</span></button>
-              <button className='drewo' onClick={() => filterer("flask")}><span>FLASK</span></button>
-              <button className='drewo' onClick={() => filterer("node")}><span>NODE JS</span></button>
-              <button className='drewo' onClick={() => filterer("native")}><span>REACT NATIVE</span></button>
+              <button style={{backgroundColor: `${bg === "all" ? "rgb(20, 223, 166)" : "rgba(20, 223, 166, 0.171)"}`}} className='drewo' onClick={() => filterer2()}><span style={{color: `${bg === "all" ? "white" : "rgb(20, 223, 166)"}`}}>ALL</span></button>
+              <button style={{backgroundColor: `${bg === "html" ? "rgb(20, 223, 166)" : "rgba(20, 223, 166, 0.171)"}`}} className='drewo' onClick={() => filterer("html")}><span style={{color: `${bg === "html" ? "white" : "rgb(20, 223, 166)"}`}}>HTML/CSS</span></button>
+              <button style={{backgroundColor: `${bg === "react" ? "rgb(20, 223, 166)" : "rgba(20, 223, 166, 0.171)"}`}} className='drewo' onClick={() => filterer("react")}><span style={{color: `${bg === "react" ? "white" : "rgb(20, 223, 166)"}`}}>REACT JS</span></button>
+              <button style={{backgroundColor: `${bg === "flask" ? "rgb(20, 223, 166)" : "rgba(20, 223, 166, 0.171)"}`}} className='drewo' onClick={() => filterer("flask")}><span style={{color: `${bg === "flask" ? "white" : "rgb(20, 223, 166)"}`}}>FLASK</span></button>
+              <button style={{backgroundColor: `${bg === "node" ? "rgb(20, 223, 166)" : "rgba(20, 223, 166, 0.171)"}`}} className='drewo' onClick={() => filterer("node")}><span style={{color: `${bg === "node" ? "white" : "rgb(20, 223, 166)"}`}}>NODE JS</span></button>
+              <button style={{backgroundColor: `${bg === "native" ? "rgb(20, 223, 166)" : "rgba(20, 223, 166, 0.171)"}`}} className='drewo' onClick={() => filterer("native")}><span style={{color: `${bg === "native" ? "white" : "rgb(20, 223, 166)"}`}}>REACT NATIVE</span></button>
             </div>
             <div className='row workCanvas pt-3'>
               {works.map((e)=>
