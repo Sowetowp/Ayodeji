@@ -107,7 +107,7 @@ const Myworks = () => {
                 </div>
               </div>)}
             </div>
-            <div className='loadWrapper pb-5'><button className='drewo mb-5'><span>LOAD MORE</span></button></div>
+            {/* <div className='loadWrapper pb-5'><button className='drewo mb-5'><span>LOAD MORE</span></button></div> */}
         </div>
     </>
   )
