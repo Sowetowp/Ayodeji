@@ -197,31 +197,31 @@ const Nav = () => {
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="about">
+                            <a className="nav-link" href="/about">
                                 <img className='imagesInDrop' src={about}/>
                                 <span className='dropdownSpan'>About</span>
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="resume">
+                            <a className="nav-link" href="/resume">
                                 <img className='imagesInDrop' src={resume}/>
                                 <span className='dropdownSpan'>Resume</span>
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="work">
+                            <a className="nav-link" href="/work">
                                 <img className='imagesInDrop' src={works}/>
                                 <span className='dropdownSpan'>Works</span>
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="blog">
+                            <a className="nav-link" href="/blog">
                                 <img className='imagesInDrop' src={blog}/>
                                 <span className='dropdownSpan'>Blog</span>
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="contact">
+                            <a className="nav-link" href="/contact">
                                 <img className='imagesInDrop' src={contact}/>
                                 <span className='dropdownSpan'>Contact Me</span>
                             </a>
