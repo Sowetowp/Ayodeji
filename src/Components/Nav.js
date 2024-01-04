@@ -19,6 +19,7 @@ const Nav = () => {
         localStorage.setItem('myColorState2', JSON.stringify(f));
         setColor(e)
         setColor2(f)
+        window.location.reload();
     }
     const radiusStorer = (e)=>{
         localStorage.setItem('myRadiusState', JSON.stringify(e));
@@ -160,7 +161,7 @@ const Nav = () => {
                         </div>
                     </div>
                 </div>
-                <div class="dropdown dropstart">
+                <div class="dropdown ">
                     <a className="palette-button" type="button"  data-bs-toggle="dropdown">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -212,7 +213,7 @@ const Nav = () => {
                             ></circle>
                         </svg>
                     </a>
-                    <div style={{right:0}} class="dropdown-menu dropDownBg p-3">
+                    <div style={{marginLeft:"-70vw"}} class="dropdown-menu dropDownBg p-3">
                         <div className='flexundo'>
                             <div>
                                 <h5 style={{color:"white"}} className='small'>Customize</h5>
