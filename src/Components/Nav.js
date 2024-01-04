@@ -213,7 +213,7 @@ const Nav = () => {
                             ></circle>
                         </svg>
                     </a>
-                    <div style={{marginLeft:"-70vw"}} class="dropdown-menu dropDownBg p-3">
+                    <div style={{marginLeft:"-70vw"}} class="dropdown-menu dropDownBg p-3 ">
                         <div className='flexundo'>
                             <div>
                                 <h5 style={{color:"white"}} className='small'>Customize</h5>
@@ -303,37 +303,47 @@ const Nav = () => {
                     <ul className="navbar-nav">
                         <li className="nav-item">
                             <a className="nav-link" href="/home">
-                                <img className='imagesInDrop' src={home}/>
+                                {/* <img className='imagesInDrop' src={home}/> */}
+                                <svg className='imagesInDrop'  viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.867 15.8321L18.873 10.0391L14.75 5.92908C13.5057 4.69031 11.4942 4.69031 10.25 5.92908L6.13599 10.0291V15.8291C6.1393 17.5833 7.56377 19.0028 9.31799 19.0001H15.685C17.438 19.0029 18.862 17.5851 18.867 15.8321Z" stroke={color ? color : "rgba(20, 223, 166)"} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14 11.365C13.9846 12.1896 13.3064 12.8471 12.4817 12.8369C11.657 12.8267 10.9952 12.1526 11.0003 11.3279C11.0053 10.5031 11.6752 9.83718 12.5 9.83704C12.9015 9.84073 13.2852 10.0038 13.5665 10.2904C13.8478 10.5769 14.0037 10.9635 14 11.365V11.365Z" stroke={color ? color : "rgba(20, 223, 166)"} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M19.63 5.76314C19.6306 5.34892 19.2953 5.01267 18.8811 5.01209C18.4668 5.0115 18.1306 5.34682 18.13 5.76103L19.63 5.76314ZM18.874 10.0391L18.124 10.038C18.1237 10.2377 18.2031 10.4293 18.3445 10.5702L18.874 10.0391ZM19.9705 12.1912C20.2638 12.4837 20.7387 12.4829 21.0311 12.1896C21.3236 11.8963 21.3229 11.4214 21.0295 11.1289L19.9705 12.1912ZM6.66552 10.5602C6.95886 10.2678 6.95959 9.79291 6.66714 9.49957C6.3747 9.20623 5.89982 9.2055 5.60648 9.49794L6.66552 10.5602ZM3.97048 11.1289C3.67714 11.4214 3.67641 11.8963 3.96886 12.1896C4.2613 12.4829 4.73618 12.4837 5.02952 12.1912L3.97048 11.1289ZM10.5 15.1971C10.0858 15.1971 9.75 15.5329 9.75 15.9471C9.75 16.3613 10.0858 16.6971 10.5 16.6971V15.1971ZM14.5 16.6971C14.9142 16.6971 15.25 16.3613 15.25 15.9471C15.25 15.5329 14.9142 15.1971 14.5 15.1971V16.6971ZM18.13 5.76103L18.124 10.038L19.624 10.0401L19.63 5.76314L18.13 5.76103ZM18.3445 10.5702L19.9705 12.1912L21.0295 11.1289L19.4035 9.50794L18.3445 10.5702ZM5.60648 9.49794L3.97048 11.1289L5.02952 12.1912L6.66552 10.5602L5.60648 9.49794ZM10.5 16.6971H14.5V15.1971H10.5V16.6971Z" fill={color ? color : "rgba(20, 223, 166)"}/>
+                                </svg>
                                 <span className='dropdownSpan'>Home</span>
                             </a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="/about">
-                                <img className='imagesInDrop' src={about}/>
+                                {/* <img className='imagesInDrop' src={about}/> */}
+                                <svg className='imagesInDrop' fill={color ? color : "rgba(20, 223, 166)"} viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M576 736l-32-.001v-286c0-.336-.096-.656-.096-1.008s.096-.655.096-.991c0-17.664-14.336-32-32-32h-64c-17.664 0-32 14.336-32 32s14.336 32 32 32h32v256h-32c-17.664 0-32 14.336-32 32s14.336 32 32 32h128c17.664 0 32-14.336 32-32s-14.336-32-32-32zm-64-384.001c35.344 0 64-28.656 64-64s-28.656-64-64-64-64 28.656-64 64 28.656 64 64 64zm0-352c-282.768 0-512 229.232-512 512 0 282.784 229.232 512 512 512 282.784 0 512-229.216 512-512 0-282.768-229.216-512-512-512zm0 961.008c-247.024 0-448-201.984-448-449.01 0-247.024 200.976-448 448-448s448 200.977 448 448-200.976 449.01-448 449.01z"></path></g></svg>
                                 <span className='dropdownSpan'>About</span>
                             </a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="/resume">
-                                <img className='imagesInDrop' src={resume}/>
+                                {/* <img className='imagesInDrop' src={resume}/> */}
+                                <svg className='imagesInDrop' viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill={color ? color : "rgba(20, 223, 166)"}><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill={color ? color : "rgba(20, 223, 166)"} d="M119.1 25v.1c-25 3.2-47.1 32-47.1 68.8 0 20.4 7.1 38.4 17.5 50.9L99.7 157 84 159.9c-13.7 2.6-23.8 9.9-32.2 21.5-8.5 11.5-14.9 27.5-19.4 45.8-8.2 33.6-9.9 74.7-10.1 110.5h44l11.9 158.4h96.3L185 337.7h41.9c0-36.2-.3-77.8-7.8-111.7-4-18.5-10.2-34.4-18.7-45.9-8.6-11.4-19.2-18.7-34.5-21l-16-2.5L160 144c10-12.5 16.7-30.2 16.7-50.1 0-39.2-24.8-68.8-52.4-68.8-2.9 0-4.7-.1-5.2-.1zM440 33c-17.2 0-31 13.77-31 31s13.8 31 31 31 31-13.77 31-31-13.8-31-31-31zM311 55v48H208v18h103v158h-55v18h55v110H208v18h103v32h80.8c-.5-2.9-.8-5.9-.8-9 0-3.1.3-6.1.8-9H329V297h62.8c-.5-2.9-.8-5.9-.8-9 0-3.1.3-6.1.8-9H329V73h62.8c-.5-2.92-.8-5.93-.8-9 0-3.07.3-6.08.8-9H311zm129 202c-17.2 0-31 13.8-31 31s13.8 31 31 31 31-13.8 31-31-13.8-31-31-31zm0 160c-17.2 0-31 13.8-31 31s13.8 31 31 31 31-13.8 31-31-13.8-31-31-31z"></path></g></svg>
                                 <span className='dropdownSpan'>Resume</span>
                             </a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="/work">
-                                <img className='imagesInDrop' src={works}/>
+                                {/* <img className='imagesInDrop' src={works}/> */}
+                                <svg className='imagesInDrop' viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="none" stroke={color ? color : "rgba(20, 223, 166)"}><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="m26.5 36-13.1-.81a4 4 0 0 1-3.76-3.58L8.47 20.42a4 4 0 0 1 4-4.42h39.09a4 4 0 0 1 4 4.42l-1.2 11.19a4 4 0 0 1-3.76 3.58L37.5 36"></path><path d="M52 34.92V48a4 4 0 0 1-4 4H16a4 4 0 0 1-4-4V34.85"></path><path d="M27 16v-2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2"></path><rect x="26.5" y="33.25" width="11" height="5.5" rx="2.75"></rect></g></svg>
                                 <span className='dropdownSpan'>Works</span>
                             </a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="/blog">
-                                <img className='imagesInDrop' src={blog}/>
+                                {/* <img className='imagesInDrop' src={blog}/> */}
+                                <svg className='imagesInDrop' viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill={color ? color : "rgba(20, 223, 166)"}><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M780.8 535.7l-39.5-6.2 46-292.8-286.6 48-6.6-39.4 341.3-57.2z" fill={color ? color : "rgba(20, 223, 166)"}></path><path d="M626.153 367.866L760.915 236.92l27.876 28.688-134.762 130.947z" fill={color ? color : "rgba(20, 223, 166)"}></path><path d="M404.6 711.1m-87.1 0a87.1 87.1 0 1 0 174.2 0 87.1 87.1 0 1 0-174.2 0Z" fill={color ? color : "rgba(20, 223, 166)"}></path><path d="M811.4 212.4m-87.1 0a87.1 87.1 0 1 0 174.2 0 87.1 87.1 0 1 0-174.2 0Z" fill={color ? color : "rgba(20, 223, 166)"}></path><path d="M329.1 63.9c-6.9 5.6-13.5 11.5-19.9 17.8-134.8 133.1-102.3 381 72.5 553.6S807.5 840 942.3 706.9c6.4-6.3 12.4-12.9 18-19.7L329.1 63.9zM575.4 928.1c0.5-3.8 0.8-7.6 0.8-11.5 1.9-81.5-82.2-147.6-187.9-147.7-105.7-0.1-193 65.9-195 147.4-0.1 3.9 0 7.7 0.3 11.5l381.8 0.3z" fill={color ? color : "rgba(20, 223, 166)"}></path></g></svg>
                                 <span className='dropdownSpan'>Blog</span>
                             </a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="/contact">
-                                <img className='imagesInDrop' src={contact}/>
+                                {/* <img className='imagesInDrop' src={contact}/> */}
+                                <svg className='imagesInDrop' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 7.00012V12.0001M12 12.0001L14 10.0001M12 12.0001L10 10.0001M3.02832 10.0001L10.2246 14.8167C10.8661 15.2444 11.1869 15.4582 11.5336 15.5413C11.8399 15.6147 12.1593 15.6147 12.4657 15.5413C12.8124 15.4582 13.1332 15.2444 13.7747 14.8167L20.971 10.0001M10.2981 4.06892L4.49814 7.71139C3.95121 8.05487 3.67775 8.2266 3.4794 8.45876C3.30385 8.66424 3.17176 8.90317 3.09111 9.16112C3 9.45256 3 9.77548 3 10.4213V16.8001C3 17.9202 3 18.4803 3.21799 18.9081C3.40973 19.2844 3.71569 19.5904 4.09202 19.7821C4.51984 20.0001 5.0799 20.0001 6.2 20.0001H17.8C18.9201 20.0001 19.4802 20.0001 19.908 19.7821C20.2843 19.5904 20.5903 19.2844 20.782 18.9081C21 18.4803 21 17.9202 21 16.8001V10.4213C21 9.77548 21 9.45256 20.9089 9.16112C20.8282 8.90317 20.6962 8.66424 20.5206 8.45876C20.3223 8.2266 20.0488 8.05487 19.5019 7.71139L13.7019 4.06891C13.0846 3.68129 12.776 3.48747 12.4449 3.41192C12.152 3.34512 11.848 3.34512 11.5551 3.41192C11.224 3.48747 10.9154 3.68129 10.2981 4.06892Z" stroke={color ? color : "rgba(20, 223, 166)"} stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
                                 <span className='dropdownSpan'>Contact Me</span>
                             </a>
                         </li>
