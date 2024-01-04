@@ -21,7 +21,7 @@
     border-radius: 10px;
 }
 .cuimg{
-    background-color: rgba(38, 125, 103, 0.271);
+    /* background-color: rgba(38, 125, 103, 0.271); */
     border-radius: 50%;
     text-align: center;
     padding: 20px;
@@ -57,12 +57,12 @@
     margin-bottom: 10px;
     color: white;
 }
-.cu2 input:hover{
-    border: solid 1px aquamarine;
+/* .cu2 input:hover{
+    border: solid 1px;
 }
 .cu2 input:focus{
-    border: solid 1px aquamarine;
-}
+    border: solid 1px;
+} */
 .cu2 label{
     color: white;
     font-size: 13px;
@@ -78,12 +78,12 @@
     outline: none;
     color: white;
 }
-.cu2 textarea:hover{
-    border: solid 1px aquamarine;
+/* .cu2 textarea:hover{
+    border: solid 1px;
 }
 .cu2 textarea:focus{
-    border: solid 1px aquamarine;
-}
+    border: solid 1px;
+} */
 .cua1, .cua2{
     font-family: 'Lato', sans-serif;
 }
@@ -106,7 +106,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 8px;
-    background: rgb(20, 223, 166);
+    /* background: rgb(20, 223, 166); */
     box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     cursor: pointer;
@@ -136,7 +136,7 @@
     text-align: center;
     text-decoration: none;
     width: 100%;
-    color: white;
+    color: black;
     font-size: 12px;
     font-weight: 600;
     z-index: 20;

@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 4px;
-    background: rgba(20, 223, 166, 0.171);
+    /* background: rgba(20, 223, 166, 0.171); */
     /* box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2); */
     overflow: hidden;
     cursor: pointer;
@@ -34,7 +34,7 @@
     text-align: center;
     text-decoration: none;
     width: 100%;
-    color: rgb(20, 223, 166);
+    /* color: rgb(20, 223, 166); */
     font-size: 13px;
     font-weight: 600;
     z-index: 20;
@@ -116,7 +116,7 @@
     visibility: hidden;
     display: grid;
     place-items: center;
-    background: rgb(20, 223, 166);
+    /* background: rgb(20, 223, 166); */
     padding: 4px;
     /* height: fit-content;
     margin: auto; */

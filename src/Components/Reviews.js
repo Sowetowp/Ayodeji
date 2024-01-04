@@ -9,9 +9,18 @@ import next from "../Assets/Images/next.svg"
 import tola from "../Assets/Images/tola.jpeg"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import styled from 'styled-components';
+const StyledDiv = styled.div`
+  
+  &:hover {
+    
+    color: ${(props) => props.afterColor};
+    border-color: ${(props) => props.afterColor};
+    
+  }
+`;
 
-
-const Reviews = () => {
+const Reviews = ({  afterColor }) => {
     useEffect(() => {
         AOS.init();
       }, [])
@@ -120,21 +129,53 @@ const Reviews = () => {
     //       clearInterval(intervalId);
     //     };
     //   }, []);
+    const linearGradient = 'linear-gradient(to right, #ff7e5f, #feb47b)';
+      const [hcolor, hsetColor] = useState("")
+      const [hcolor2, hsetColor2] = useState("")
+      
+      useEffect(() => {
+        const handleStorageChange = () => {
+          const savedState = JSON.parse(localStorage.getItem('myColorState'));
+          const savedState2 = JSON.parse(localStorage.getItem('myColorState2'));
+          if(typeof savedState === "string"){
+              hsetColor(savedState)
+          }
+          if(typeof savedState2 === "string"){
+              hsetColor2(savedState2)
+          }
+        };
+    
+        window.addEventListener('storage', handleStorageChange);
+    
+        return () => {
+          window.removeEventListener('storage', handleStorageChange);
+        };
+      }, []);
+      useEffect(()=>{
+        const savedState = JSON.parse(localStorage.getItem('myColorState'));
+        const savedState2 = JSON.parse(localStorage.getItem('myColorState2'));
+        if(typeof savedState === "string"){
+            hsetColor(savedState)
+        }
+        if(typeof savedState2 === "string"){
+            hsetColor2(savedState2)
+        }
+      },[])
   return (
     <>
         <div className='container-fluid p-0 aboutme'>
             <div className='about'><p>REVIEWS</p></div>
             <div className='container-fluid above'>
                 <p className='am'>REVIEWS</p>
-                <div className='anime'>
-                    <div className='move'></div>
+                <div className='anime' style={{backgroundColor:`${hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`}}>
+                    <div className='move' style={{backgroundColor:`${hcolor ? hcolor : "rgb(20, 223, 166)"}`}}></div>
                 </div>
             </div>
             <div className='container'>
                 <div className='row crrow' data-aos="fade-up" data-aos-duration="1000">
                     <div className='col-md'>
                         <fieldset className='crfs'>
-                            <legend><img src={image1[counter1 % image1.length]} className="crimg"/></legend>
+                            <legend><img src={image1[counter1 % image1.length]} className="crimg" style={{borderColor:`${hcolor ? hcolor : "rgb(20, 223, 166)"}`}}/></legend>
                             <p className='reviewp1'>{name1[counter1 % name1.length]}</p>
                             <p className='reviewp2'>{rel1[counter1 % rel1.length]}</p>
                             <div className='star d-flex'>
@@ -149,7 +190,7 @@ const Reviews = () => {
                     </div>
                     <div className='col-md hide'>
                         <fieldset className='crfs'>
-                            <legend><img src={image2[counter2 % image2.length]} className="crimg"/></legend>
+                            <legend><img src={image2[counter2 % image2.length]} className="crimg" style={{borderColor:`${hcolor ? hcolor : "rgb(20, 223, 166)"}`}}/></legend>
                             <p className='reviewp1'>{name2[counter2 % name2.length]}</p>
                             <p className='reviewp2'>{rel2[counter2 % rel2.length]}</p>
                             <div className='star d-flex'>
@@ -164,7 +205,7 @@ const Reviews = () => {
                     </div>
                     <div className='col-md crcol hide'>
                         <fieldset className='crfs'>
-                            <legend><img src={image3[counter3 % image3.length]} className="crimg"/></legend>
+                            <legend><img src={image3[counter3 % image3.length]} className="crimg" style={{borderColor:`${hcolor ? hcolor : "rgb(20, 223, 166)"}`}}/></legend>
                             <p className='reviewp1'>{name3[counter3 % name3.length]}</p>
                             <p className='reviewp2'>{rel3[counter3 % rel3.length]}</p>
                             <div className='star d-flex'>
@@ -180,12 +221,12 @@ const Reviews = () => {
                 </div>
             </div>
             <div className='revbtndiv pt-5'>
-                <button onClick={sub} className='revbutton2 mx-2'>
+                <StyledDiv afterColor={hcolor ? hcolor : "rgb(20, 223, 166)"} onClick={sub} className='revbutton2 mx-2'>
                 <span>←</span>
-                </button>
-                <button onClick={add} ref={buttonRef} className='revbutton mx-2'>
+                </StyledDiv>
+                <StyledDiv afterColor={hcolor ? hcolor : "rgb(20, 223, 166)"} onClick={add} ref={buttonRef} className='revbutton mx-2'>
                 <span>→</span>
-                </button>
+                </StyledDiv>
             </div>
         </div>
     </>

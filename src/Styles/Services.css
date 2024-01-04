@@ -1,11 +1,11 @@
 .log{
     border-radius: 50%;
     background-color: rgba(51, 67, 62, 0.519);
-    text-align: center;
 }
-.log img{
+.log svg{
     padding: 12px;
     width: 80px;
+    height: 80px;
 }
 .logp{
     font-weight: 700;

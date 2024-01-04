@@ -34,7 +34,7 @@
 }
 .spin{
     position: relative;
-    background-image: linear-gradient(transparent, 10%, rgb(51, 142, 119));
+    /* background-image: linear-gradient(transparent, 10%, rgb(51, 142, 119)); */
     background-repeat: no-repeat;
     height: 184px;
     width: 184px;
@@ -66,7 +66,7 @@
     margin-top: 2vh;
 }
 .type span{
-    color: aquamarine;
+    /* color: aquamarine; */
 }
 .info{
     text-align: center;
@@ -107,7 +107,7 @@
     display: flex;
     justify-content: center;
 }
-.small-icons a{
+.bdre{
     width: 35px;
     height: 35px;
     border: solid 1px rgba(212, 212, 243, 0.224);
@@ -127,7 +127,7 @@
 content: " ";
 width: 100%;
 height: 0%;
-background: aquamarine;
+/* background: aquamarine; */
 position: absolute;
 transition: all 0.4s ease-in-out;
 top: 0;
