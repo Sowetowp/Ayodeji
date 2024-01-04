@@ -212,7 +212,7 @@ const Nav = () => {
                             ></circle>
                         </svg>
                     </a>
-                    <div class="dropdown-menu dropDownBg p-3">
+                    <div style={{right:0}} class="dropdown-menu dropDownBg p-3">
                         <div className='flexundo'>
                             <div>
                                 <h5 style={{color:"white"}} className='small'>Customize</h5>
