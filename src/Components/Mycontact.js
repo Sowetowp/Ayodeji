@@ -62,7 +62,7 @@ const Mycontact = (props) => {
         AOS.init();
       }, [])
     const form = useRef();
-    const [loading, setLoading] = useState(false)
+    const [loading, setLoading] = useState(true)
     const sendEmail = (e) => {
         setLoading(true)
         e.preventDefault();
