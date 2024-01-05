@@ -176,51 +176,51 @@ const Main = () => {
                         <div className=''>
                             <h6 className='small text-white mt-3'>Colors</h6>
                             <div className='flexcolordiv'>
-                                <a onClick={()=>colorStorer("rgba(20, 223, 166)", "rgba(20, 223, 166, 0.171)")} className='flexcolor my-2'>
+                            <a style={{border: color === "rgba(20, 223, 166)" ? "solid 1px white" : null}} onClick={()=>colorStorer("rgba(20, 223, 166)", "rgba(20, 223, 166, 0.171)")} className='flexcolor my-2'>
                                     <div className='colorcolor' style={{backgroundColor:"rgba(20, 223, 166)"}}></div>
                                     <p className=''>Turquoise</p>
                                 </a>
-                                <a onClick={()=>colorStorer("rgba(255, 0, 204)", "rgba(255, 0, 204, 0.171)")} className='flexcolor my-2'>
+                                <a style={{border: color === "rgba(255, 0, 204)" ? "solid 1px white" : null}} onClick={()=>colorStorer("rgba(255, 0, 204)", "rgba(255, 0, 204, 0.171)")} className='flexcolor my-2'>
                                     <div className='colorcolor' style={{backgroundColor:"rgba(255, 0, 204)"}}></div>
                                     <p className=''>Magenta</p>
                                 </a>
-                                <a onClick={()=>colorStorer("rgba(255, 106, 0)", "rgba(255, 106, 0, 0.171)")} className='flexcolor my-2'>
+                                <a style={{border: color === "rgba(255, 106, 0)" ? "solid 1px white" : null}} onClick={()=>colorStorer("rgba(255, 106, 0)", "rgba(255, 106, 0, 0.171)")} className='flexcolor my-2'>
                                     <div className='colorcolor' style={{backgroundColor:"rgba(255, 106, 0)"}}></div>
                                     <p className=''>Orange</p>
                                 </a>
-                                <a onClick={()=>colorStorer("rgba(220, 20, 60)", "rgba(220, 20, 60, 0.171)")} className='flexcolor my-2'>
+                                <a style={{border: color === "rgba(220, 20, 60)" ? "solid 1px white" : null}} onClick={()=>colorStorer("rgba(220, 20, 60)", "rgba(220, 20, 60, 0.171)")} className='flexcolor my-2'>
                                     <div className='colorcolor' style={{backgroundColor:"rgba(220, 20, 60)"}}></div>
                                     <p className=''>Red</p>
                                 </a>
-                                <a onClick={()=>colorStorer("rgba(120, 81, 169)", "rgba(120, 81, 169, 0.171)")} className='flexcolor my-2'>
+                                <a style={{border: color === "rgba(120, 81, 169)" ? "solid 1px white" : null}} onClick={()=>colorStorer("rgba(120, 81, 169)", "rgba(120, 81, 169, 0.171)")} className='flexcolor my-2'>
                                     <div className='colorcolor' style={{backgroundColor:"rgba(120, 81, 169)"}}></div>
                                     <p className=''>Purple</p>
                                 </a>
-                                <a onClick={()=>colorStorer("rgba(255, 179, 71)", "rgba(255, 179, 71, 0.171)")} className='flexcolor my-2'>
+                                <a style={{border: color === "rgba(255, 179, 71)" ? "solid 1px white" : null}} onClick={()=>colorStorer("rgba(255, 179, 71)", "rgba(255, 179, 71, 0.171)")} className='flexcolor my-2'>
                                     <div className='colorcolor' style={{backgroundColor:"rgba(255, 179, 71)"}}></div>
                                     <p className=''>Mango</p>
                                 </a>
-                                <a onClick={()=>colorStorer("rgba(0, 191, 255)", "rgba(0, 191, 255, 0.171)")} className='flexcolor my-2'>
+                                <a style={{border: color === "rgba(0, 191, 255)" ? "solid 1px white" : null}} onClick={()=>colorStorer("rgba(0, 191, 255)", "rgba(0, 191, 255, 0.171)")} className='flexcolor my-2'>
                                     <div className='colorcolor' style={{backgroundColor:"rgba(0, 191, 255)"}}></div>
                                     <p className=''>Blue</p>
                                 </a>
-                                <a onClick={()=>colorStorer("rgba(255, 64, 64)", "rgba(255, 64, 64, 0.171)")} className='flexcolor my-2'>
+                                <a style={{border: color === "rgba(255, 64, 64)" ? "solid 1px white" : null}} onClick={()=>colorStorer("rgba(255, 64, 64)", "rgba(255, 64, 64, 0.171)")} className='flexcolor my-2'>
                                     <div className='colorcolor' style={{backgroundColor:"rgba(255, 64, 64)"}}></div>
                                     <p className=''>Coral</p>
                                 </a>
-                                <a onClick={()=>colorStorer("rgba(255, 247, 0)", "rgba(255, 247, 0, 0.171)")} className='flexcolor my-2'>
+                                <a style={{border: color === "rgba(255, 247, 0)" ? "solid 1px white" : null}} onClick={()=>colorStorer("rgba(255, 247, 0)", "rgba(255, 247, 0, 0.171)")} className='flexcolor my-2'>
                                     <div className='colorcolor' style={{backgroundColor:"rgba(255, 247, 0)"}}></div>
                                     <p className=''>Yellow</p>
                                 </a>
-                                <a onClick={()=>colorStorer("rgba(0, 201, 87)", "rgba(0, 201, 87, 0.171)")} className='flexcolor my-2'>
+                                <a style={{border: color === "rgba(0, 201, 87)" ? "solid 1px white" : null}} onClick={()=>colorStorer("rgba(0, 201, 87)", "rgba(0, 201, 87, 0.171)")} className='flexcolor my-2'>
                                     <div className='colorcolor' style={{backgroundColor:"rgba(0, 201, 87)"}}></div>
                                     <p className=''>Green</p>
                                 </a>
-                                <a onClick={()=>colorStorer("rgba(255, 182, 193, 1)", "rgba(255, 182, 193, 0.171)")} className='flexcolor my-2'>
+                                <a style={{border: color === "rgba(255, 182, 193, 1)" ? "solid 1px white" : null}} onClick={()=>colorStorer("rgba(255, 182, 193, 1)", "rgba(255, 182, 193, 0.171)")} className='flexcolor my-2'>
                                     <div className='colorcolor' style={{backgroundColor:"rgba(255, 182, 193, 1)"}}></div>
                                     <p className=''>Pink</p>
                                 </a>
-                                <a onClick={()=>colorStorer("rgba(0, 255, 255)", "rgba(0, 255, 255, 0.171)")} className='flexcolor my-2'>
+                                <a style={{border: color === "rgba(0, 255, 255)" ? "solid 1px white" : null}} onClick={()=>colorStorer("rgba(0, 255, 255)", "rgba(0, 255, 255, 0.171)")} className='flexcolor my-2'>
                                     <div className='colorcolor' style={{backgroundColor:"rgba(0, 255, 255)"}}></div>
                                     <p className=''>Aqua</p>
                                 </a>
@@ -229,19 +229,19 @@ const Main = () => {
                         <div className=''>
                             <h6 className='small text-white mt-3'>Radius</h6>
                             <div className='flexcolordiv'>
-                                <a onClick={()=> radiusStorer(0)} className='flexcolor2 my-2'>
+                                <a style={{border: radius === 0 ? "solid 1px white" : null}} onClick={()=> radiusStorer(0)} className='flexcolor2 my-2'>
                                     <p className=''>0</p>
                                 </a>
-                                <a onClick={()=> radiusStorer(3)} className='flexcolor2 my-2'>
+                                <a style={{border: radius === 3 ? "solid 1px white" : null}} onClick={()=> radiusStorer(3)} className='flexcolor2 my-2'>
                                     <p className=''>0.3</p>
                                 </a>
-                                <a onClick={()=> radiusStorer(5)} className='flexcolor2 my-2'>
+                                <a style={{border: radius === 5 ? "solid 1px white" : null}} onClick={()=> radiusStorer(5)} className='flexcolor2 my-2'>
                                     <p className=''>0.5</p>
                                 </a>
-                                <a onClick={()=> radiusStorer(7.5)} className='flexcolor2 my-2'>
+                                <a style={{border: radius === 7.5 ? "solid 1px white" : null}} onClick={()=> radiusStorer(7.5)} className='flexcolor2 my-2'>
                                     <p className=''>0.75</p>
                                 </a>
-                                <a onClick={()=> radiusStorer(10)} className='flexcolor2 my-2'>
+                                <a style={{border: radius === 10 ? "solid 1px white" : null}} onClick={()=> radiusStorer(10)} className='flexcolor2 my-2'>
                                     <p className=''>1.0</p>
                                 </a>
                             </div>
