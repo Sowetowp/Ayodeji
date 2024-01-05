@@ -2,7 +2,7 @@
     background-color: rgb(35, 44, 65);
     /* padding: 25px; */
     z-index: 7;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     position: relative;
     margin-top: 10px;
     transition: margin-top 0.5s linear;
@@ -70,14 +70,14 @@ circle{
 .ful{
     width: 100%;
     /* background-color: rgba(113, 245, 208, 0.378); */
-    border-radius: 10px;
+    /* border-radius: 10px; */
     height: 8px;
     margin-bottom: 20px;
 }
 .se{
     /* width: 95%; */
     /* background-color: rgb(76, 206, 163); */
-    border-radius: 10px;
+    /* border-radius: 10px; */
     height: 8px;
     transition: width 5s;
 }

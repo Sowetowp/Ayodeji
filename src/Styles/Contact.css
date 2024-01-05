@@ -18,7 +18,7 @@
     display: flex;
     background-color: rgb(26, 44, 60);
     padding: 3%;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 .cuimg{
     /* background-color: rgba(38, 125, 103, 0.271); */
@@ -48,7 +48,7 @@
 .cu2 input{
     width: 100%;
     padding: 12px;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     background-color: rgb(16, 34, 50);
     border: none;
     /* outline-color: aquamarine; */
@@ -72,7 +72,7 @@
     width: 100%;
     padding: 10px;
     background-color: rgb(16, 34, 50);
-    border-radius: 8px;
+    /* border-radius: 8px; */
     border: none;
     min-height: 167px;
     outline: none;
@@ -92,7 +92,7 @@
 }
 .cu2{
     background-color: rgb(26, 44, 60);
-    border-radius: 10px;
+    /* border-radius: 10px; */
     padding: 2%;
 }
 @media screen and (max-width: 576px) {
@@ -105,7 +105,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     /* background: rgb(20, 223, 166); */
     box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
     overflow: hidden;

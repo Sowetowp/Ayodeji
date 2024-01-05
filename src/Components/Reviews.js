@@ -21,7 +21,7 @@ const StyledDiv = styled.div`
 `;
 
 const Reviews = (props) => {
-    const { prop1, prop2 } = props;
+    const { prop1, prop2, prop3 } = props;
 
     useEffect(() => {
         AOS.init();
@@ -134,11 +134,15 @@ const Reviews = (props) => {
     const linearGradient = 'linear-gradient(to right, #ff7e5f, #feb47b)';
       const [hcolor, hsetColor] = useState("")
       const [hcolor2, hsetColor2] = useState("")
-      
+      const [hrad, hsetRad] = useState(0)
       useEffect(() => {
         const handleStorageChange = () => {
           const savedState = JSON.parse(localStorage.getItem('myColorState'));
           const savedState2 = JSON.parse(localStorage.getItem('myColorState2'));
+          const savedState3 = JSON.parse(localStorage.getItem('myRadiusState'));
+          if(typeof savedState3 === "number"){
+              hsetRad(savedState3)
+          }
           if(typeof savedState === "string"){
               hsetColor(savedState)
           }
@@ -156,6 +160,10 @@ const Reviews = (props) => {
       useEffect(()=>{
         const savedState = JSON.parse(localStorage.getItem('myColorState'));
         const savedState2 = JSON.parse(localStorage.getItem('myColorState2'));
+        const savedState3 = JSON.parse(localStorage.getItem('myRadiusState'));
+          if(typeof savedState3 === "number"){
+              hsetRad(savedState3)
+          }
         if(typeof savedState === "string"){
             hsetColor(savedState)
         }
@@ -169,14 +177,14 @@ const Reviews = (props) => {
             <div className='about'><p>REVIEWS</p></div>
             <div className='container-fluid above'>
                 <p className='am'>REVIEWS</p>
-                <div className='anime' style={{backgroundColor:`${prop2 && prop2.length > 0 ? prop2 : hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`}}>
-                    <div className='move' style={{backgroundColor:`${prop1 && prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}`}}></div>
+                <div className='anime' style={{backgroundColor:`${prop2 && prop2.length > 0 ? prop2 : hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`, borderRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "10px"}}>
+                    <div className='move' style={{backgroundColor:`${prop1 && prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}`, borderRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "50%"}}></div>
                 </div>
             </div>
             <div className='container'>
                 <div className='row crrow' data-aos="fade-up" data-aos-duration="1000">
                     <div className='col-md'>
-                        <fieldset className='crfs'>
+                        <fieldset className='crfs' style={{borderRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "10px"}}>
                             <legend><img src={image1[counter1 % image1.length]} className="crimg" style={{borderColor:`${prop1 && prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}`}}/></legend>
                             <p className='reviewp1'>{name1[counter1 % name1.length]}</p>
                             <p className='reviewp2'>{rel1[counter1 % rel1.length]}</p>
@@ -191,7 +199,7 @@ const Reviews = (props) => {
                         </fieldset>
                     </div>
                     <div className='col-md hide'>
-                        <fieldset className='crfs'>
+                        <fieldset className='crfs' style={{borderRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "10px"}}>
                             <legend><img src={image2[counter2 % image2.length]} className="crimg" style={{borderColor:`${prop1 && prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}`}}/></legend>
                             <p className='reviewp1'>{name2[counter2 % name2.length]}</p>
                             <p className='reviewp2'>{rel2[counter2 % rel2.length]}</p>
@@ -206,7 +214,7 @@ const Reviews = (props) => {
                         </fieldset>
                     </div>
                     <div className='col-md crcol hide'>
-                        <fieldset className='crfs'>
+                        <fieldset className='crfs' style={{borderRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "10px"}}>
                             <legend><img src={image3[counter3 % image3.length]} className="crimg" style={{borderColor:`${prop1 && prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}`}}/></legend>
                             <p className='reviewp1'>{name3[counter3 % name3.length]}</p>
                             <p className='reviewp2'>{rel3[counter3 % rel3.length]}</p>

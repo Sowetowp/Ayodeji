@@ -14,7 +14,7 @@
 }
 .fedd{
     background-color: rgb(6, 33, 59);
-    border-radius: 20px;
+    /* border-radius: 20px; */
     position: relative;
     z-index: 7;
     margin: 2px;

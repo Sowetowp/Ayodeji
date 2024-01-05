@@ -6,15 +6,19 @@ import canv2 from "../Assets/Images/portfolio-image-3.jpg"
 import canv3 from "../Assets/Images/portfolio-image-6.jpg"
 
 const Myworks = (props) => {
-  const { prop1, prop2 } = props;
+  const { prop1, prop2, prop3 } = props;
   const linearGradient = 'linear-gradient(to right, #ff7e5f, #feb47b)';
       const [hcolor, hsetColor] = useState("")
       const [hcolor2, hsetColor2] = useState("")
-      
+      const [hrad, hsetRad] = useState(0)
       useEffect(() => {
         const handleStorageChange = () => {
           const savedState = JSON.parse(localStorage.getItem('myColorState'));
           const savedState2 = JSON.parse(localStorage.getItem('myColorState2'));
+          const savedState3 = JSON.parse(localStorage.getItem('myRadiusState'));
+          if(typeof savedState3 === "number"){
+              hsetRad(savedState3)
+          }
           if(typeof savedState === "string"){
               hsetColor(savedState)
           }
@@ -32,6 +36,10 @@ const Myworks = (props) => {
       useEffect(()=>{
         const savedState = JSON.parse(localStorage.getItem('myColorState'));
         const savedState2 = JSON.parse(localStorage.getItem('myColorState2'));
+        const savedState3 = JSON.parse(localStorage.getItem('myRadiusState'));
+        if(typeof savedState3 === "number"){
+            hsetRad(savedState3)
+        }
         if(typeof savedState === "string"){
             hsetColor(savedState)
         }
@@ -106,22 +114,22 @@ const Myworks = (props) => {
             <div className='about'><p>WORKS</p></div>
             <div className='container-fluid above'>
                 <p className='am'>MY WORKS</p>
-                <div className='anime' style={{backgroundColor:`${prop2 && prop2.length > 0 ? prop2 : hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`}}>
-                    <div className='move' style={{backgroundColor:`${prop1 && prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgba(20, 223, 166"}`}}></div>
+                <div className='anime' style={{backgroundColor:`${prop2 && prop2.length > 0 ? prop2 : hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`, borderRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "10px"}}>
+                    <div className='move' style={{backgroundColor:`${prop1 && prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgba(20, 223, 166"}`, borderRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "50%"}}></div>
                 </div>
             </div>
             <div className='workType'>
-              <button style={{backgroundColor: `${hcolor && bg === "all" ? prop1 && prop1.length > 0 ? prop1 : hcolor : prop2 && prop2.length > 0 ? prop2 : hcolor2}`}} className='drewo' onClick={() => filterer2()}><span style={{color: `${bg === "all" ? "black" : prop1 && prop1.length > 0 ? prop1 : hcolor}`}}>ALL</span></button>
-              <button style={{backgroundColor: `${hcolor && bg === "html" ? prop1 && prop1.length > 0 ? prop1 : hcolor : prop2 && prop2.length > 0 ? prop2 : hcolor2}`}} className='drewo' onClick={() => filterer("html")}><span style={{color: `${bg === "html" ? "black" : prop1 && prop1.length > 0 ? prop1 : hcolor}`}}>HTML/CSS</span></button>
-              <button style={{backgroundColor: `${hcolor && bg === "react" ? prop1 && prop1.length > 0 ? prop1 : hcolor : prop2 && prop2.length > 0 ? prop2 : hcolor2}`}} className='drewo' onClick={() => filterer("react")}><span style={{color: `${bg === "react" ? "black" : prop1 && prop1.length > 0 ? prop1 : hcolor}`}}>REACT JS</span></button>
-              <button style={{backgroundColor: `${hcolor && bg === "flask" ? prop1 && prop1.length > 0 ? prop1 : hcolor : prop2 && prop2.length > 0 ? prop2 : hcolor2}`}} className='drewo' onClick={() => filterer("flask")}><span style={{color: `${bg === "flask" ? "black" : prop1 && prop1.length > 0 ? prop1 : hcolor}`}}>FLASK</span></button>
-              <button style={{backgroundColor: `${hcolor && bg === "node" ? prop1 && prop1.length > 0 ? prop1 : hcolor : prop2 && prop2.length > 0 ? prop2 : hcolor2}`}} className='drewo' onClick={() => filterer("node")}><span style={{color: `${bg === "node" ? "black" : prop1 && prop1.length > 0 ? prop1 : hcolor}`}}>NODE JS</span></button>
-              <button style={{backgroundColor: `${hcolor && bg === "native" ? prop1 && prop1.length > 0 ? prop1 : hcolor : prop2 && prop2.length > 0 ? prop2 : hcolor2}`}} className='drewo' onClick={() => filterer("native")}><span style={{color: `${bg === "native" ? "black" : prop1 && prop1.length > 0 ? prop1 : hcolor}`}}>REACT NATIVE</span></button>
+              <button style={{backgroundColor: `${hcolor && bg === "all" ? prop1 && prop1.length > 0 ? prop1 : hcolor : prop2 && prop2.length > 0 ? prop2 : hcolor2}`, borderRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "6px"}} className='drewo' onClick={() => filterer2()}><span style={{color: `${bg === "all" ? "black" : prop1 && prop1.length > 0 ? prop1 : hcolor}`}}>ALL</span></button>
+              <button style={{backgroundColor: `${hcolor && bg === "html" ? prop1 && prop1.length > 0 ? prop1 : hcolor : prop2 && prop2.length > 0 ? prop2 : hcolor2}`, borderRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "6px"}} className='drewo' onClick={() => filterer("html")}><span style={{color: `${bg === "html" ? "black" : prop1 && prop1.length > 0 ? prop1 : hcolor}`}}>HTML/CSS</span></button>
+              <button style={{backgroundColor: `${hcolor && bg === "react" ? prop1 && prop1.length > 0 ? prop1 : hcolor : prop2 && prop2.length > 0 ? prop2 : hcolor2}`, borderRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "6px"}} className='drewo' onClick={() => filterer("react")}><span style={{color: `${bg === "react" ? "black" : prop1 && prop1.length > 0 ? prop1 : hcolor}`}}>REACT JS</span></button>
+              <button style={{backgroundColor: `${hcolor && bg === "flask" ? prop1 && prop1.length > 0 ? prop1 : hcolor : prop2 && prop2.length > 0 ? prop2 : hcolor2}`, borderRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "6px"}} className='drewo' onClick={() => filterer("flask")}><span style={{color: `${bg === "flask" ? "black" : prop1 && prop1.length > 0 ? prop1 : hcolor}`}}>FLASK</span></button>
+              <button style={{backgroundColor: `${hcolor && bg === "node" ? prop1 && prop1.length > 0 ? prop1 : hcolor : prop2 && prop2.length > 0 ? prop2 : hcolor2}`, borderRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "6px"}} className='drewo' onClick={() => filterer("node")}><span style={{color: `${bg === "node" ? "black" : prop1 && prop1.length > 0 ? prop1 : hcolor}`}}>NODE JS</span></button>
+              <button style={{backgroundColor: `${hcolor && bg === "native" ? prop1 && prop1.length > 0 ? prop1 : hcolor : prop2 && prop2.length > 0 ? prop2 : hcolor2}`, borderRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "6px"}} className='drewo' onClick={() => filterer("native")}><span style={{color: `${bg === "native" ? "black" : prop1 && prop1.length > 0 ? prop1 : hcolor}`}}>REACT NATIVE</span></button>
             </div>
             <div className='row workCanvas pt-3'>
               {works.map((e)=>
               <div className='col-xl-4 col-md-6'>
-                <div className='bgCanvas p-3'>
+                <div style={{borderRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "8px"}} className='bgCanvas p-3'>
                   <div className='canvasImgContainer'>
                     <div className='canvasImgCover'>
                       <button class="btngit" style={{backgroundColor:`${prop1 && prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgba(20, 223, 166)"}`}}>

@@ -75,13 +75,13 @@ const Home = ({  afterColor }) => {
     const handleStorageChange = () => {
       const savedState = JSON.parse(localStorage.getItem('myColorState'));
       const savedState2 = JSON.parse(localStorage.getItem('myColorState2'));
+      const savedState3 = JSON.parse(localStorage.getItem('myRadiusState'));
       if(typeof savedState === "string"){
           hsetColor(savedState)
       }
       if(typeof savedState2 === "string"){
           hsetColor2(savedState2)
       }
-      const savedState3 = JSON.parse(localStorage.getItem('myRadiusState'));
         if(typeof savedState3 === "number"){
             hsetRad(savedState3)
         }
@@ -97,7 +97,7 @@ const Home = ({  afterColor }) => {
     const savedState = JSON.parse(localStorage.getItem('myColorState'));
     const savedState2 = JSON.parse(localStorage.getItem('myColorState2'));
     const savedState3 = JSON.parse(localStorage.getItem('myRadiusState'));
-    if(typeof savedState === "number"){
+    if(typeof savedState3 === "number"){
         hsetRad(savedState3)
     }
     if(typeof savedState === "string"){

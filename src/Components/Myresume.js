@@ -8,16 +8,20 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const Myresume = (props) => {
-  const { prop1, prop2 } = props;
+  const { prop1, prop2, prop3 } = props;
 
   const linearGradient = 'linear-gradient(to right, #ff7e5f, #feb47b)';
       const [hcolor, hsetColor] = useState("")
       const [hcolor2, hsetColor2] = useState("")
-      
+      const [hrad, hsetRad] = useState(0)
       useEffect(() => {
         const handleStorageChange = () => {
           const savedState = JSON.parse(localStorage.getItem('myColorState'));
           const savedState2 = JSON.parse(localStorage.getItem('myColorState2'));
+          const savedState3 = JSON.parse(localStorage.getItem('myRadiusState'));
+          if(typeof savedState3 === "number"){
+              hsetRad(savedState3)
+          }
           if(typeof savedState === "string"){
               hsetColor(savedState)
           }
@@ -35,6 +39,10 @@ const Myresume = (props) => {
       useEffect(()=>{
         const savedState = JSON.parse(localStorage.getItem('myColorState'));
         const savedState2 = JSON.parse(localStorage.getItem('myColorState2'));
+        const savedState3 = JSON.parse(localStorage.getItem('myRadiusState'));
+        if(typeof savedState3 === "number"){
+            hsetRad(savedState3)
+        }
         if(typeof savedState === "string"){
             hsetColor(savedState)
         }
@@ -51,8 +59,8 @@ const Myresume = (props) => {
         <div className='about'><p>RESUME</p></div>
         <div className='container-fluid above'>
           <p className='am'>MY RESUME</p>
-          <div className='anime' style={{backgroundColor:`${prop2 && prop2.length > 0 ? prop2 : hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`}}>
-            <div className='move' style={{backgroundColor:`${prop1 && prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgba(20, 223, 166)"}`}}></div>
+          <div className='anime' style={{backgroundColor:`${prop2 && prop2.length > 0 ? prop2 : hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`, borderRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "10px"}}>
+            <div className='move' style={{backgroundColor:`${prop1 && prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgba(20, 223, 166)"}`, borderRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "50%"}}></div>
           </div>
         </div>
         <div className='container-fluid mt-5 mrcon mb-5'>
@@ -64,7 +72,7 @@ const Myresume = (props) => {
                 <p className='text-white mreq'>Educational Qualification</p>
               </div>
               <div className='d-flex justify-content-start mrmov' data-aos="fade-up" data-aos-duration="1000">
-                <div className='mrdur' style={{backgroundColor:`${prop2 && prop2.length > 0 ? prop2 : hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`}}><p>2006 - 2010</p></div>
+                <div className='mrdur' style={{backgroundColor:`${prop2 && prop2.length > 0 ? prop2 : hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`, borderRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "10px"}}><p>2006 - 2010</p></div>
                 <hr className='hrrr' style={{width: "30px", height: "4px"}}></hr>
                 <div className='hrd'>
                   <hr className='hrr' style={{width: "4px", height: "20px"}}></hr>
@@ -79,7 +87,7 @@ const Myresume = (props) => {
                 </div>
               </div>
               <div className='d-flex justify-content-start mrmo' data-aos="fade-up" data-aos-duration="1000">
-                <div className='mrdur' style={{backgroundColor:`${prop2 && prop2.length > 0 ? prop2 : hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`}}><p>2011 - 2017</p></div>
+                <div className='mrdur' style={{backgroundColor:`${prop2 && prop2.length > 0 ? prop2 : hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`, borderRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "10px"}}><p>2011 - 2017</p></div>
                 <hr className='hrrr' style={{width: "30px", height: "4px"}}></hr>
                 <div className='hrd'>
                   <hr className='hrr' style={{width: "4px", height: "20px"}}></hr>
@@ -94,7 +102,7 @@ const Myresume = (props) => {
                 </div>
               </div>
               <div className='d-flex justify-content-start mrmo' data-aos="fade-up" data-aos-duration="1000">
-                <div className='mrdur' style={{backgroundColor:`${prop2 && prop2.length > 0 ? prop2 : hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`}}><p>2018 - 2023</p></div>
+                <div className='mrdur' style={{backgroundColor:`${prop2 && prop2.length > 0 ? prop2 : hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`, borderRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "10px"}}><p>2018 - 2023</p></div>
                 <hr className='hrrr' style={{width: "30px", height: "4px"}}></hr>
                 <div className='hrd'>
                   <hr className='hrr' style={{width: "4px", height: "20px"}}></hr>
@@ -115,7 +123,7 @@ const Myresume = (props) => {
                 <p className='text-white mreq'>Working Experience</p>
               </div>
               <div className='d-flex justify-content-start mrmov' data-aos="fade-up" data-aos-duration="1000">
-                <div className='mrdur' style={{backgroundColor:`${prop2 && prop2.length > 0 ? prop2 : hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`}}><p>2021 - present</p></div>
+                <div className='mrdur' style={{backgroundColor:`${prop2 && prop2.length > 0 ? prop2 : hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`, borderRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "10px"}}><p>2021 - present</p></div>
                 <hr className='hrrr' style={{width: "30px", height: "4px"}}></hr>
                 <div className='hrd'>
                   <hr className='hrr' style={{width: "4px", height: "20px"}}></hr>
@@ -130,7 +138,7 @@ const Myresume = (props) => {
                 </div>
               </div>
               <div className='d-flex justify-content-start mrmo' data-aos="fade-up" data-aos-duration="1000">
-                <div className='mrdur' style={{backgroundColor:`${prop2 && prop2.length > 0 ? prop2 : hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`}}><p>2021 - present</p></div>
+                <div className='mrdur' style={{backgroundColor:`${prop2 && prop2.length > 0 ? prop2 : hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`, borderRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "10px"}}><p>2021 - present</p></div>
                 <hr className='hrrr' style={{width: "30px", height: "4px"}}></hr>
                 <div className='hrd'>
                   <hr className='hrr' style={{width: "4px", height: "20px"}}></hr>
@@ -145,7 +153,7 @@ const Myresume = (props) => {
                 </div>
               </div>
               <div className='d-flex justify-content-start mrmo' data-aos="fade-up" data-aos-duration="1000">
-                <div className='mrdur' style={{backgroundColor:`${prop2 && prop2.length > 0 ? prop2 : hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`}}><p>2021 - present</p></div>
+                <div className='mrdur' style={{backgroundColor:`${prop2 && prop2.length > 0 ? prop2 : hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`, borderRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "10px"}}><p>2021 - present</p></div>
                 <hr className='hrrr' style={{width: "30px", height: "4px"}}></hr>
                 <div className='hrd'>
                   <hr className='hrr' style={{width: "4px", height: "20px"}}></hr>
