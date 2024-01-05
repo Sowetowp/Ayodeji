@@ -20,7 +20,9 @@ const StyledDiv = styled.div`
   }
 `;
 
-const Reviews = ({  afterColor }) => {
+const Reviews = (props) => {
+    const { prop1, prop2 } = props;
+
     useEffect(() => {
         AOS.init();
       }, [])
@@ -167,15 +169,15 @@ const Reviews = ({  afterColor }) => {
             <div className='about'><p>REVIEWS</p></div>
             <div className='container-fluid above'>
                 <p className='am'>REVIEWS</p>
-                <div className='anime' style={{backgroundColor:`${hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`}}>
-                    <div className='move' style={{backgroundColor:`${hcolor ? hcolor : "rgb(20, 223, 166)"}`}}></div>
+                <div className='anime' style={{backgroundColor:`${prop2 && prop2.length > 0 ? prop2 : hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`}}>
+                    <div className='move' style={{backgroundColor:`${prop1 && prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}`}}></div>
                 </div>
             </div>
             <div className='container'>
                 <div className='row crrow' data-aos="fade-up" data-aos-duration="1000">
                     <div className='col-md'>
                         <fieldset className='crfs'>
-                            <legend><img src={image1[counter1 % image1.length]} className="crimg" style={{borderColor:`${hcolor ? hcolor : "rgb(20, 223, 166)"}`}}/></legend>
+                            <legend><img src={image1[counter1 % image1.length]} className="crimg" style={{borderColor:`${prop1 && prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}`}}/></legend>
                             <p className='reviewp1'>{name1[counter1 % name1.length]}</p>
                             <p className='reviewp2'>{rel1[counter1 % rel1.length]}</p>
                             <div className='star d-flex'>
@@ -190,7 +192,7 @@ const Reviews = ({  afterColor }) => {
                     </div>
                     <div className='col-md hide'>
                         <fieldset className='crfs'>
-                            <legend><img src={image2[counter2 % image2.length]} className="crimg" style={{borderColor:`${hcolor ? hcolor : "rgb(20, 223, 166)"}`}}/></legend>
+                            <legend><img src={image2[counter2 % image2.length]} className="crimg" style={{borderColor:`${prop1 && prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}`}}/></legend>
                             <p className='reviewp1'>{name2[counter2 % name2.length]}</p>
                             <p className='reviewp2'>{rel2[counter2 % rel2.length]}</p>
                             <div className='star d-flex'>
@@ -205,7 +207,7 @@ const Reviews = ({  afterColor }) => {
                     </div>
                     <div className='col-md crcol hide'>
                         <fieldset className='crfs'>
-                            <legend><img src={image3[counter3 % image3.length]} className="crimg" style={{borderColor:`${hcolor ? hcolor : "rgb(20, 223, 166)"}`}}/></legend>
+                            <legend><img src={image3[counter3 % image3.length]} className="crimg" style={{borderColor:`${prop1 && prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}`}}/></legend>
                             <p className='reviewp1'>{name3[counter3 % name3.length]}</p>
                             <p className='reviewp2'>{rel3[counter3 % rel3.length]}</p>
                             <div className='star d-flex'>
@@ -221,10 +223,10 @@ const Reviews = ({  afterColor }) => {
                 </div>
             </div>
             <div className='revbtndiv pt-5'>
-                <StyledDiv afterColor={hcolor ? hcolor : "rgb(20, 223, 166)"} onClick={sub} className='revbutton2 mx-2'>
+                <StyledDiv afterColor={prop1 && prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"} onClick={sub} className='revbutton2 mx-2'>
                 <span>←</span>
                 </StyledDiv>
-                <StyledDiv afterColor={hcolor ? hcolor : "rgb(20, 223, 166)"} onClick={add} ref={buttonRef} className='revbutton mx-2'>
+                <StyledDiv afterColor={prop1 && prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"} onClick={add} ref={buttonRef} className='revbutton mx-2'>
                 <span>→</span>
                 </StyledDiv>
             </div>

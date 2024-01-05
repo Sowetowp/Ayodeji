@@ -24,7 +24,8 @@ const StyledTextArea = styled.textarea`
     }
 `;
 
-const Mycontact = () => {
+const Mycontact = (props) => {
+    const { prop1, prop2 } = props;
     const linearGradient = 'linear-gradient(to right, #ff7e5f, #feb47b)';
       const [hcolor, hsetColor] = useState("")
       const [hcolor2, hsetColor2] = useState("")
@@ -74,7 +75,7 @@ const Mycontact = () => {
         }, (error) => {
             setLoading(false)
             toast.error('Something went wrong', {
-				position: 'top-right',
+				position: 'bottom-center',
 			})
         });
 
@@ -90,8 +91,8 @@ const Mycontact = () => {
             <div className='about'><p>CONTACT</p></div>
             <div className='container-fluid above'>
                 <p className='am'>CONTACT ME</p>
-                <div className='anime' style={{backgroundColor:`${hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`}}>
-                    <div className='move' style={{backgroundColor:`${hcolor ? hcolor : "rgba(20, 223, 166)"}`}}></div >
+                <div className='anime' style={{backgroundColor:`${prop2 && prop2.length > 0 ? prop2 : hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`}}>
+                    <div className='move' style={{backgroundColor:`${prop1 && prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgba(20, 223, 166)"}`}}></div >
                 </div>
             </div>
             <div className='container-fluid conmd my-5'>
@@ -100,8 +101,8 @@ const Mycontact = () => {
                     <p className='cup1'>Contact Information</p>
                     <p className='cup2'>Reach out to me and let's drive results! I am always available to discuss potential opportunities and collaborations. Let's connect.</p>
                     <div className='cu3'>
-                        <div className='cuimg' style={{backgroundColor:`${hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`}}>
-                        <svg fill={hcolor ? hcolor : "rgba(20, 223, 166)"} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M6.176 1.322l2.844-1.322 4.041 7.89-2.724 1.341c-.538 1.259 2.159 6.289 3.297 6.372.09-.058 2.671-1.328 2.671-1.328l4.11 7.932s-2.764 1.354-2.854 1.396c-7.862 3.591-19.103-18.258-11.385-22.281zm1.929 1.274l-1.023.504c-5.294 2.762 4.177 21.185 9.648 18.686l.971-.474-2.271-4.383-1.026.5c-3.163 1.547-8.262-8.219-5.055-9.938l1.007-.497-2.251-4.398z"/></svg>
+                        <div className='cuimg' style={{backgroundColor:`${prop2 && prop2.length > 0 ? prop2 : hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`}}>
+                        <svg fill={prop1 && prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgba(20, 223, 166)"} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M6.176 1.322l2.844-1.322 4.041 7.89-2.724 1.341c-.538 1.259 2.159 6.289 3.297 6.372.09-.058 2.671-1.328 2.671-1.328l4.11 7.932s-2.764 1.354-2.854 1.396c-7.862 3.591-19.103-18.258-11.385-22.281zm1.929 1.274l-1.023.504c-5.294 2.762 4.177 21.185 9.648 18.686l.971-.474-2.271-4.383-1.026.5c-3.163 1.547-8.262-8.219-5.055-9.938l1.007-.497-2.251-4.398z"/></svg>
                         </div>
                         <div className='cu4'>
                         <p className='cup3'>Contact on phone</p>
@@ -111,8 +112,8 @@ const Mycontact = () => {
                         </div>
                     </div>
                     <div className='cu3'>
-                        <div className='cuimg' style={{backgroundColor:`${hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`}}>
-                        <svg fill={hcolor ? hcolor : "rgba(20, 223, 166)"} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M22 5v14h-20v-14h20zm2-2h-24v18h24v-18zm-2 16l-6.526-6.618-3.445 3.483-3.418-3.525-6.611 6.66 5.051-8-5.051-6 10.029 7.446 9.971-7.446-4.998 6.01 4.998 7.99z"/></svg>
+                        <div className='cuimg' style={{backgroundColor:`${prop2 && prop2.length > 0 ? prop2 : hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`}}>
+                        <svg fill={prop1 && prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgba(20, 223, 166)"} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M22 5v14h-20v-14h20zm2-2h-24v18h24v-18zm-2 16l-6.526-6.618-3.445 3.483-3.418-3.525-6.611 6.66 5.051-8-5.051-6 10.029 7.446 9.971-7.446-4.998 6.01 4.998 7.99z"/></svg>
                         </div>
                         <div className='cu4'>
                         <p className='cup3'>Contact on mail</p>
@@ -122,8 +123,8 @@ const Mycontact = () => {
                         </div>
                     </div>
                     <div className='cu3'>
-                        <div className='cuimg' style={{backgroundColor:`${hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`}}>
-                        <svg fill={hcolor ? hcolor : "rgba(20, 223, 166)"} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 3c2.131 0 4 1.73 4 3.702 0 2.05-1.714 4.941-4 8.561-2.286-3.62-4-6.511-4-8.561 0-1.972 1.869-3.702 4-3.702zm0-2c-3.148 0-6 2.553-6 5.702 0 3.148 2.602 6.907 6 12.298 3.398-5.391 6-9.15 6-12.298 0-3.149-2.851-5.702-6-5.702zm0 8c-1.105 0-2-.895-2-2s.895-2 2-2 2 .895 2 2-.895 2-2 2zm8 6h-3.135c-.385.641-.798 1.309-1.232 2h3.131l.5 1h-4.264l-.344.544-.289.456h.558l.858 2h-7.488l.858-2h.479l-.289-.456-.343-.544h-2.042l-1.011-1h2.42c-.435-.691-.848-1.359-1.232-2h-3.135l-4 8h24l-4-8zm-12.794 6h-3.97l1.764-3.528 1.516 1.528h1.549l-.859 2zm8.808-2h3.75l1 2h-3.892l-.858-2z"/></svg>
+                        <div className='cuimg' style={{backgroundColor:`${prop2 && prop2.length > 0 ? prop2 : hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`}}>
+                        <svg fill={prop1 && prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgba(20, 223, 166)"} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 3c2.131 0 4 1.73 4 3.702 0 2.05-1.714 4.941-4 8.561-2.286-3.62-4-6.511-4-8.561 0-1.972 1.869-3.702 4-3.702zm0-2c-3.148 0-6 2.553-6 5.702 0 3.148 2.602 6.907 6 12.298 3.398-5.391 6-9.15 6-12.298 0-3.149-2.851-5.702-6-5.702zm0 8c-1.105 0-2-.895-2-2s.895-2 2-2 2 .895 2 2-.895 2-2 2zm8 6h-3.135c-.385.641-.798 1.309-1.232 2h3.131l.5 1h-4.264l-.344.544-.289.456h.558l.858 2h-7.488l.858-2h.479l-.289-.456-.343-.544h-2.042l-1.011-1h2.42c-.435-.691-.848-1.359-1.232-2h-3.135l-4 8h24l-4-8zm-12.794 6h-3.97l1.764-3.528 1.516 1.528h1.549l-.859 2zm8.808-2h3.75l1 2h-3.892l-.858-2z"/></svg>
                         </div>
                         <div className='cu4'>
                         <p className='cup3'>Contact address</p>
@@ -135,21 +136,21 @@ const Mycontact = () => {
                     <form className='cu2' ref={form} onSubmit={sendEmail}>
                         <label>Name</label>
                         <br></br>
-                        <StyledInput afterColor={hcolor ? hcolor : "rgb(20, 223, 166)"} placeholder='Enter Your Name' name="user_name" className='cu2input'/>
+                        <StyledInput afterColor={prop1 && prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"} placeholder='Enter Your Name' name="user_name" className='cu2input'/>
                         <br></br>
                         <label>Email</label>
                         <br></br>
-                        <StyledInput afterColor={hcolor ? hcolor : "rgb(20, 223, 166)"} placeholder='Enter Your Email...' name="user_email"/>
+                        <StyledInput afterColor={prop1 && prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"} placeholder='Enter Your Email...' name="user_email"/>
                         <br></br>
                         <label>Subject</label>
                         <br></br>
-                        <StyledInput afterColor={hcolor ? hcolor : "rgb(20, 223, 166)"} placeholder='Enter Subject...' name='subject'/>
+                        <StyledInput afterColor={prop1 && prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"} placeholder='Enter Subject...' name='subject'/>
                         <br></br>
                         <label>Message</label>
                         <br></br>
-                        <StyledTextArea afterColor={hcolor ? hcolor : "rgb(20, 223, 166)"} placeholder='Enter Your Message...' name="message"/>
+                        <StyledTextArea afterColor={prop1 && prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"} placeholder='Enter Your Message...' name="message"/>
                         <br></br>
-                        <button className='cdre' type="submit" value="Send" style={{background:`${hcolor ? hcolor : "rgb(20, 223, 166)"}`}}><span>SEND MAIL</span></button>
+                        <button className='cdre' type="submit" value="Send" style={{background:`${prop1 && prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}`}}><span>SEND MAIL</span></button>
                     </form>
                 </div>
                 </div>

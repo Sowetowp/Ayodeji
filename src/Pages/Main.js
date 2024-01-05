@@ -39,12 +39,7 @@ const Main = () => {
             routesetter(e)
         }
     }
-    const navigate = useNavigate()
-    useEffect(()=>{
-        if(window.innerWidth <= 576){
-            navigate("/home")
-        }
-    },[])
+    
     const [color, setColor] = useState("")
     const [color2, setColor2] = useState("")
     const colorStorer = (e, f)=>{
@@ -70,7 +65,14 @@ const Main = () => {
     },[colorStorer])
 
 
-
+    const navigate = useNavigate()
+    useEffect(()=>{
+        if(window.innerWidth <= 576){
+            const savedState = JSON.parse(localStorage.getItem('myAppState'));
+            console.log(savedState)
+            navigate(typeof savedState === "string" ? savedState : "/home")
+        }
+    },[])
     const Menu = () => {
     return (
         <>

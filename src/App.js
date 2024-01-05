@@ -46,7 +46,12 @@ function App() {
         <Route path="/contact" element={<Contact/>}/>
       </Routes>
     </Router>
-    <Toaster/>
+    <Toaster
+      position="top"
+      containerStyle={{
+      top: 90,
+      right: 20,
+  }}/>
     </>
   );
 }

@@ -10,32 +10,29 @@ import works from "../Assets/Images/work-on-computer-employee-software-engineer-
 import blog from "../Assets/Images/blog-svgrepo-com.svg"
 import contact from "../Assets/Images/contact-letter-box-svgrepo-com.svg"
 
-const Nav = () => {
+const Nav = ({colsetter}) => {
     const [input, setInput] = useState("")
     const [color, setColor] = useState("")
     const [color2, setColor2] = useState("")
     const colorStorer = (e, f)=>{
-        localStorage.setItem('myColorState', JSON.stringify(e));
-        localStorage.setItem('myColorState2', JSON.stringify(f));
         setColor(e)
         setColor2(f)
-        window.location.reload();
+        colsetter(e,f)
+        localStorage.setItem('myColorState', JSON.stringify(e));
+        localStorage.setItem('myColorState2', JSON.stringify(f));
     }
-    const radiusStorer = (e)=>{
-        localStorage.setItem('myRadiusState', JSON.stringify(e));
-    }
-    
-
     useEffect(()=>{
         const savedState = JSON.parse(localStorage.getItem('myColorState'));
         const savedState2 = JSON.parse(localStorage.getItem('myColorState2'));
         if(typeof savedState === "string"){
             setColor(savedState)
-        }
-        if(typeof savedState2 === "string"){
             setColor2(savedState2)
+            colsetter(savedState, savedState2)
         }
-    },[colorStorer])
+    },[])
+    const radiusStorer = (e)=>{
+        
+    }
 
   return (
     <>
