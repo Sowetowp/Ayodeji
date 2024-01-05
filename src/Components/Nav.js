@@ -58,11 +58,11 @@ const Nav = ({colsetter}) => {
                 </a>
                 <div className="modal fade" id="myModal">
                     <div className="modal-dialog">
-                        <div className="modal-content">
+                        <div className="modal-content" style={{backgroundColor:"rgb(212, 212, 243)"}}>
                         <div className="modal-header">
                             <h4 className="modal-title" style={{display:"flex", alignItems:"center"}}>
                                 <img style={{width:"15px"}} src={search}/>
-                                <input value={input} onChange={(e)=>setInput(e.target.value)} className='modalInp' placeholder='Type anything...'/>
+                                <input style={{backgroundColor:"rgb(212, 212, 243)"}} value={input} onChange={(e)=>setInput(e.target.value)} className='modalInp' placeholder='Type anything...'/>
                             </h4>
                             <button type="button" className='modalClsBtn' data-bs-dismiss="modal"><img src={closer}/></button>
                         </div>
@@ -70,7 +70,7 @@ const Nav = ({colsetter}) => {
                             <p style={{fontFamily: "'Lato', sans-serif", color:"grey"}} className='pb-2'>Links</p>
                             <div className="list-group list-group-flush">
                                 {new String("home").includes(input.toLowerCase()) &&
-                                <a href="/home" className="open-file d-flex px-0 list-group-item list-group-item-action">
+                                <a style={{backgroundColor:"rgb(212, 212, 243)"}} href="/home" className="open-file d-flex px-0 list-group-item list-group-item-action">
                                     <span className="file-wrapper">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 71 67">
                                             <path
@@ -84,7 +84,7 @@ const Nav = ({colsetter}) => {
                                     <span>Home</span>
                                 </a>}
                                 {new String("about").includes(input.toLowerCase()) &&
-                                <a href="/about" className="open-file d-flex px-0 list-group-item list-group-item-action">
+                                <a style={{backgroundColor:"rgb(212, 212, 243)"}} href="/about" className="open-file d-flex px-0 list-group-item list-group-item-action">
                                     <span className="file-wrapper">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 71 67">
                                             <path
@@ -98,7 +98,7 @@ const Nav = ({colsetter}) => {
                                     <span>About</span>
                                 </a>}
                                 {new String("resume").includes(input.toLowerCase()) &&
-                                <a href="/resume" className="open-file d-flex px-0 list-group-item list-group-item-action">
+                                <a style={{backgroundColor:"rgb(212, 212, 243)"}} href="/resume" className="open-file d-flex px-0 list-group-item list-group-item-action">
                                     <span className="file-wrapper">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 71 67">
                                             <path
@@ -112,7 +112,7 @@ const Nav = ({colsetter}) => {
                                     <span>Resume</span>
                                 </a>}
                                 {new String("works").includes(input.toLowerCase()) &&
-                                <a href="/work" className="open-file d-flex px-0 list-group-item list-group-item-action">
+                                <a style={{backgroundColor:"rgb(212, 212, 243)"}} href="/work" className="open-file d-flex px-0 list-group-item list-group-item-action">
                                     <span className="file-wrapper">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 71 67">
                                             <path
@@ -126,7 +126,7 @@ const Nav = ({colsetter}) => {
                                     <span className=''>Works</span>
                                 </a>}
                                 {new String("blog").includes(input.toLowerCase()) &&
-                                <a href="/blog" className="open-file d-flex px-0 list-group-item list-group-item-action">
+                                <a style={{backgroundColor:"rgb(212, 212, 243)"}} href="/blog" className="open-file d-flex px-0 list-group-item list-group-item-action">
                                     <span className="file-wrapper">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 71 67">
                                             <path
@@ -140,7 +140,7 @@ const Nav = ({colsetter}) => {
                                     <span>Blog</span>
                                 </a>}
                                 {new String("contact").includes(input.toLowerCase()) &&
-                                <a href="/contact" className="open-file d-flex px-0 list-group-item list-group-item-action">
+                                <a style={{backgroundColor:"rgb(212, 212, 243)"}} href="/contact" className="open-file d-flex px-0 list-group-item list-group-item-action">
                                     <span className="file-wrapper">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 71 67">
                                             <path
@@ -352,7 +352,7 @@ const Nav = ({colsetter}) => {
         </nav>
         <div className="modal fade mtmymodal2" id="myModal2">
             <div className="modal-dialog">
-                <div className="modal-content">
+                <div className="modal-content" style={{backgroundColor:"rgb(212, 212, 243)"}}>
                 <div className="modal-header border-0">
                     <h4 className="modal-title" style={{display:"flex", alignItems:"center"}}>
                         
