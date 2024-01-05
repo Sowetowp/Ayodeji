@@ -21,7 +21,7 @@ const StyledDiv = styled.div`
   }
 `;
 
-const Home = ({  afterColor }) => {
+const Home = () => {
   const [text] = useTypewriter({
     words: ['Amzat Abdulmalik', 'a Full-stack Developer', 'a Web Designer'],
     loop: 0
