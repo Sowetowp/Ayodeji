@@ -5,7 +5,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const AboutMe = (props) => {
-    const { prop1, prop2 } = props;
+    const { prop1, prop2, prop3 } = props;
 
     useEffect(() => {
         AOS.init();
@@ -13,11 +13,16 @@ const AboutMe = (props) => {
       const linearGradient = 'linear-gradient(to right, #ff7e5f, #feb47b)';
       const [hcolor, hsetColor] = useState("")
       const [hcolor2, hsetColor2] = useState("")
+      const [hrad, hsetRad] = useState("")
       
       useEffect(() => {
         const handleStorageChange = () => {
           const savedState = JSON.parse(localStorage.getItem('myColorState'));
           const savedState2 = JSON.parse(localStorage.getItem('myColorState2'));
+          const savedState3 = JSON.parse(localStorage.getItem('myRadiusState'));
+          if(typeof savedState3 === "number"){
+              hsetRad(savedState3)
+          }
           if(typeof savedState === "string"){
               hsetColor(savedState)
           }
@@ -35,6 +40,10 @@ const AboutMe = (props) => {
       useEffect(()=>{
         const savedState = JSON.parse(localStorage.getItem('myColorState'));
         const savedState2 = JSON.parse(localStorage.getItem('myColorState2'));
+        const savedState3 = JSON.parse(localStorage.getItem('myRadiusState'));
+        if(typeof savedState3 === "number"){
+            hsetRad(savedState3)
+        }
         if(typeof savedState === "string"){
             hsetColor(savedState)
         }
@@ -49,8 +58,8 @@ const AboutMe = (props) => {
             <div className='about'><p>ABOUT</p></div>
             <div className='container-fluid above'>
                 <p className='am'>ABOUT ME</p>
-                <div className='anime' style={{backgroundColor:`${prop2.length > 0 ? prop2 : hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`}}>
-                    <div className='move' style={{backgroundColor:`${prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}`}}></div>
+                <div className='anime' style={{backgroundColor:`${prop2.length > 0 ? prop2 : hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`, borderRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "10px"}}>
+                    <div className='move' style={{backgroundColor:`${prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}`, borderRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "50%"}}></div>
                 </div>
             </div>
             <div className='container pooo'>
@@ -58,11 +67,11 @@ const AboutMe = (props) => {
                     <div className='dd2 col-xl' data-aos="fade-up" data-aos-duration="1000">
                         <div className='dd200 m-3'>
                             <img src={image} className='shift'/>
-                            <div className='ana' style={{backgroundColor:`${prop2.length > 0 ? prop2 : hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`}}>
-                                <div className='anb' style={{background: `${hcolor ? `linear-gradient(transparent, 10%, ${prop1.length > 0 ? prop1 : hcolor})` : "linear-gradient(transparent, 10%, rgb(20, 223, 166))"}`}}></div>
-                                <div className='anc' style={{background: `${hcolor ? `linear-gradient(transparent, 10%, ${prop1.length > 0 ? prop1 : hcolor})` : "linear-gradient(transparent, 10%, rgb(20, 223, 166))"}`}}></div>
-                                <div className='and' style={{background: `${hcolor ? `linear-gradient(transparent, 10%, ${prop1.length > 0 ? prop1 : hcolor})` : "linear-gradient(transparent, 10%, rgb(20, 223, 166))"}`}}></div>
-                                <div className='ane' style={{background: `${hcolor ? `linear-gradient(transparent, 10%, ${prop1.length > 0 ? prop1 : hcolor})` : "linear-gradient(transparent, 10%, rgb(20, 223, 166))"}`}}></div>
+                            <div className='ana' style={{backgroundColor:`${prop2.length > 0 ? prop2 : hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`,borderRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "6px"}}>
+                                <div className='anb' style={{background: `${hcolor ? `linear-gradient(transparent, 10%, ${prop1.length > 0 ? prop1 : hcolor})` : "linear-gradient(transparent, 10%, rgb(20, 223, 166))"}`, borderBottomRightRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "3px", borderTopRightRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "3px"}}></div>
+                                <div className='anc' style={{background: `${hcolor ? `linear-gradient(transparent, 10%, ${prop1.length > 0 ? prop1 : hcolor})` : "linear-gradient(transparent, 10%, rgb(20, 223, 166))"}`, borderBottomLeftRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "3px", borderTopLeftRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "3px"}}></div>
+                                <div className='and' style={{background: `${hcolor ? `linear-gradient(transparent, 10%, ${prop1.length > 0 ? prop1 : hcolor})` : "linear-gradient(transparent, 10%, rgb(20, 223, 166))"}`, borderBottomLeftRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "3px", borderBottomRightRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "3px"}}></div>
+                                <div className='ane' style={{background: `${hcolor ? `linear-gradient(transparent, 10%, ${prop1.length > 0 ? prop1 : hcolor})` : "linear-gradient(transparent, 10%, rgb(20, 223, 166))"}`, borderTopRightRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "3px", borderTopLeftRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "3px"}}></div>
                             </div>
                         </div>
                     </div>
@@ -102,7 +111,7 @@ const AboutMe = (props) => {
                                 </tbody>
                             </table>
                             <a style={{textDecoration:"none"}} href="https://drive.google.com/uc?export=download&id=1VdoYsoU6vuzyXVMafAyzAc8oGzsyjul4" download="cv.png">
-                                <button className='dre ms-5 btn' style={{background:`${prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}`}}><span>DOWNLOAD RESUME</span></button>
+                                <button className='dre ms-5 btn' style={{background:`${prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}`, borderRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "6px"}}><span>DOWNLOAD RESUME</span></button>
                             </a>
                         </div>
                     </div>

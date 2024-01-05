@@ -10,9 +10,11 @@ import works from "../Assets/Images/work-on-computer-employee-software-engineer-
 import blog from "../Assets/Images/blog-svgrepo-com.svg"
 import contact from "../Assets/Images/contact-letter-box-svgrepo-com.svg"
 
-const Nav = ({colsetter}) => {
+const Nav = (props) => {
+    const { colsetter,  radsetter } = props;
     const [input, setInput] = useState("")
     const [color, setColor] = useState("")
+    const [radius, setRadius] = useState("")
     const [color2, setColor2] = useState("")
     const colorStorer = (e, f)=>{
         setColor(e)
@@ -31,9 +33,18 @@ const Nav = ({colsetter}) => {
         }
     },[])
     const radiusStorer = (e)=>{
-        
+        localStorage.setItem('myRadiusState', JSON.stringify(e));
+        setRadius(e)
+        radsetter(e)
     }
-
+    useEffect(()=>{
+        const savedState = JSON.parse(localStorage.getItem('myRadiusState'));
+        if(typeof savedState === "number"){
+            setRadius(savedState)
+            radsetter(savedState)
+        }
+    },[])
+    
   return (
     <>
         <nav className="navbar navbar-expand-sm navbackground fixed-top">

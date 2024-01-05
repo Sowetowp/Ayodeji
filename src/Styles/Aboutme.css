@@ -30,7 +30,7 @@
     margin: auto;
     height: 5px;
     /* background-color: rgba(113, 245, 208, 0.24); */
-    border-radius: 10px;
+    /* border-radius: 10px; */
     margin-top: 5vh;
 }
 .move{
@@ -42,7 +42,7 @@
     position: relative;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     animation-direction: normal;
 }
 @keyframes example {
@@ -65,7 +65,7 @@
     position: relative;
     /* background-color: rgba(113, 245, 208, 0.157); */
     background-repeat: no-repeat;
-    border-radius: 6px;
+    /* border-radius: 6px; */
     z-index: 1;
 }
 .hia{
@@ -103,8 +103,8 @@
     position: relative;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    border-bottom-right-radius: 3px;
-    border-top-right-radius: 3px;
+    /* border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px; */
     animation-direction: normal;
 }
 .anc{
@@ -116,8 +116,8 @@
     position: relative;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    border-bottom-left-radius: 3px;
-    border-top-left-radius: 3px;
+    /* border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px; */
     animation-direction: reverse;
 }
 .and{
@@ -129,8 +129,8 @@
     position: absolute;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    border-bottom-right-radius: 3px;
-    border-bottom-left-radius: 3px;
+    /* border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px; */
     animation-direction: normal;
 }
 .ane{
@@ -142,8 +142,8 @@
     position: relative;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    border-top-right-radius: 3px;
-    border-top-left-radius: 3px;
+    /* border-top-right-radius: 3px;
+    border-top-left-radius: 3px; */
     animation-direction: reverse;
 }
 @keyframes exampl {
@@ -253,7 +253,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 6px;
+    /* border-radius: 6px; */
     /* background: rgb(20, 223, 166); */
     box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
     overflow: hidden;

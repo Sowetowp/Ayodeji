@@ -6,9 +6,13 @@ import { useNavigate } from 'react-router-dom'
 const Contact = () => {
   const [col1, setCol1] = useState("")
   const [col2, setCol2] = useState("")
+  const [rad, setRad] = useState("")
   const colsetter = (e, f)=>{
     setCol1(e)
     setCol2(f)
+  }
+  const radsetter = (e)=>{
+    setRad(e)
   }
   const navigate = useNavigate()
   useEffect(()=>{
@@ -21,8 +25,8 @@ const Contact = () => {
   },[])
   return (
     <>
-        {window.innerWidth <= 576 &&<Nav colsetter={colsetter}/>}
-        <Mycontact prop1={col1} prop2={col2}/>
+        {window.innerWidth <= 576 &&<Nav colsetter={colsetter} radsetter={radsetter}/>}
+        <Mycontact prop1={col1} prop2={col2} prop3={rad}/>
     </>
   )
 }

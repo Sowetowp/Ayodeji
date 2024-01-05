@@ -7,9 +7,13 @@ import { useNavigate } from 'react-router-dom'
 const Blog = () => {
   const [col1, setCol1] = useState("")
   const [col2, setCol2] = useState("")
+  const [rad, setRad] = useState("")
   const colsetter = (e, f)=>{
     setCol1(e)
     setCol2(f)
+  }
+  const radsetter = (e)=>{
+    setRad(e)
   }
   const navigate = useNavigate()
   useEffect(()=>{
@@ -22,7 +26,7 @@ const Blog = () => {
   },[])
   return (
     <>
-      {window.innerWidth <= 576 &&<Nav colsetter={colsetter}/>}
+        {window.innerWidth <= 576 &&<Nav colsetter={colsetter} radsetter={radsetter}/>}
       <ComingSoon/>
     </>
   )

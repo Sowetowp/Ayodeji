@@ -42,6 +42,7 @@ const Main = () => {
     
     const [color, setColor] = useState("")
     const [color2, setColor2] = useState("")
+    const [radius, setRadius] = useState("")
     const colorStorer = (e, f)=>{
         localStorage.setItem('myColorState', JSON.stringify(e));
         localStorage.setItem('myColorState2', JSON.stringify(f));
@@ -50,9 +51,14 @@ const Main = () => {
     }
     const radiusStorer = (e)=>{
         localStorage.setItem('myRadiusState', JSON.stringify(e));
+        setRadius(e)
     }
-    
-
+    useEffect(()=>{
+        const savedState = JSON.parse(localStorage.getItem('myRadiusState'));
+        if(typeof savedState === "number"){
+            setRadius(savedState)
+        }
+    },[])
     useEffect(()=>{
         const savedState = JSON.parse(localStorage.getItem('myColorState'));
         const savedState2 = JSON.parse(localStorage.getItem('myColorState2'));
@@ -62,14 +68,13 @@ const Main = () => {
         if(typeof savedState2 === "string"){
             setColor2(savedState2)
         }
-    },[colorStorer])
+    },[])
 
 
     const navigate = useNavigate()
     useEffect(()=>{
         if(window.innerWidth <= 576){
             const savedState = JSON.parse(localStorage.getItem('myAppState'));
-            console.log(savedState)
             navigate(typeof savedState === "string" ? savedState : "/home")
         }
     },[])

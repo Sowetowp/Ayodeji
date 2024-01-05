@@ -8,9 +8,13 @@ import { useNavigate } from 'react-router-dom'
 const About = () => {
   const [col1, setCol1] = useState("")
   const [col2, setCol2] = useState("")
+  const [rad, setRad] = useState("")
   const colsetter = (e, f)=>{
     setCol1(e)
     setCol2(f)
+  }
+  const radsetter = (e)=>{
+    setRad(e)
   }
   const navigate = useNavigate()
   useEffect(()=>{
@@ -23,10 +27,10 @@ const About = () => {
   },[])
   return (
     <>
-        {window.innerWidth <= 576 &&<Nav colsetter={colsetter}/>}
-        <AboutMe prop1={col1} prop2={col2}/>
-        <Myservices prop1={col1} prop2={col2}/>
-        <Reviews prop1={col1} prop2={col2}/>
+        {window.innerWidth <= 576 &&<Nav colsetter={colsetter} radsetter={radsetter}/>}
+        <AboutMe prop1={col1} prop2={col2} prop3={rad}/>
+        <Myservices prop1={col1} prop2={col2} prop3={rad}/>
+        <Reviews prop1={col1} prop2={col2} prop3={rad}/>
     </>
   )
 }
