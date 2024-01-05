@@ -69,7 +69,7 @@ const Nav = ({colsetter}) => {
                         <div className="modal-body">
                             <p style={{fontFamily: "'Lato', sans-serif", color:"grey"}} className='pb-2'>Links</p>
                             <div className="list-group list-group-flush">
-                                {new String("home").includes(input.toLowerCase()) &&
+                                {new String("homegithublinkedintwitterxthreads").includes(input.toLowerCase()) &&
                                 <a style={{backgroundColor:"rgb(212, 212, 243)"}} href="/home" className="open-file d-flex px-0 list-group-item list-group-item-action">
                                     <span className="file-wrapper">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 71 67">
@@ -83,7 +83,7 @@ const Nav = ({colsetter}) => {
                                     </span>
                                     <span>Home</span>
                                 </a>}
-                                {new String("about").includes(input.toLowerCase()) &&
+                                {new String("aboutinfoservicesreview").includes(input.toLowerCase()) &&
                                 <a style={{backgroundColor:"rgb(212, 212, 243)"}} href="/about" className="open-file d-flex px-0 list-group-item list-group-item-action">
                                     <span className="file-wrapper">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 71 67">
@@ -97,7 +97,7 @@ const Nav = ({colsetter}) => {
                                     </span>
                                     <span>About</span>
                                 </a>}
-                                {new String("resume").includes(input.toLowerCase()) &&
+                                {new String("resumeexperiencesskills").includes(input.toLowerCase()) &&
                                 <a style={{backgroundColor:"rgb(212, 212, 243)"}} href="/resume" className="open-file d-flex px-0 list-group-item list-group-item-action">
                                     <span className="file-wrapper">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 71 67">
@@ -111,7 +111,7 @@ const Nav = ({colsetter}) => {
                                     </span>
                                     <span>Resume</span>
                                 </a>}
-                                {new String("works").includes(input.toLowerCase()) &&
+                                {new String("worksexperiencesprojectsportfolio").includes(input.toLowerCase()) &&
                                 <a style={{backgroundColor:"rgb(212, 212, 243)"}} href="/work" className="open-file d-flex px-0 list-group-item list-group-item-action">
                                     <span className="file-wrapper">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 71 67">
@@ -125,7 +125,7 @@ const Nav = ({colsetter}) => {
                                     </span>
                                     <span className=''>Works</span>
                                 </a>}
-                                {new String("blog").includes(input.toLowerCase()) &&
+                                {new String("blognewsupdate").includes(input.toLowerCase()) &&
                                 <a style={{backgroundColor:"rgb(212, 212, 243)"}} href="/blog" className="open-file d-flex px-0 list-group-item list-group-item-action">
                                     <span className="file-wrapper">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 71 67">
@@ -139,7 +139,7 @@ const Nav = ({colsetter}) => {
                                     </span>
                                     <span>Blog</span>
                                 </a>}
-                                {new String("contact").includes(input.toLowerCase()) &&
+                                {new String("contactmaillocationfeedback").includes(input.toLowerCase()) &&
                                 <a style={{backgroundColor:"rgb(212, 212, 243)"}} href="/contact" className="open-file d-flex px-0 list-group-item list-group-item-action">
                                     <span className="file-wrapper">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 71 67">
