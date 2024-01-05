@@ -44,7 +44,10 @@ const Nav = (props) => {
             radsetter(savedState)
         }
     },[])
-    
+    const reset = ()=>{
+        colorStorer("rgba(20, 223, 166)", "rgba(20, 223, 166, 0.171)")
+        radiusStorer(5)
+    }
   return (
     <>
         <nav className="navbar navbar-expand-sm navbackground fixed-top">
@@ -227,7 +230,7 @@ const Nav = (props) => {
                                 <h5 style={{color:"white"}} className='small'>Customize</h5>
                                 <h6 style={{color:"grey", fontSize:"12px"}} className='small'>Modify the theme as per your preference.</h6>
                             </div>
-                            <a className='undocursor' onClick={()=>colorStorer("rgba(20, 223, 166)", "rgba(20, 223, 166, 0.171)")}>
+                            <a className='undocursor' onClick={()=>reset()}>
                                 <svg className="undo" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(0)" stroke="#fafafa"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.096"></g><g id="SVGRepo_iconCarrier"> <path d="M21 3V8M21 8H16M21 8L18 5.29168C16.4077 3.86656 14.3051 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.2832 21 19.8675 18.008 20.777 14" stroke="#ffffff" stroke-width="2.016" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
                             </a>
                         </div>
