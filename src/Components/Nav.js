@@ -83,7 +83,7 @@ const Nav = ({colsetter}) => {
                                     </span>
                                     <span>Home</span>
                                 </a>}
-                                {new String("aboutinfoservicesreview").includes(input.toLowerCase()) &&
+                                {new String("aboutinfoservicesreviewprofile").includes(input.toLowerCase()) &&
                                 <a style={{backgroundColor:"rgb(236, 236, 244)"}} href="/about" className="open-file d-flex px-0 list-group-item list-group-item-action">
                                     <span className="file-wrapper">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 71 67">
