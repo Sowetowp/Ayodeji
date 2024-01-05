@@ -64,7 +64,7 @@ const All = () => {
                                 <span style={{fontWeight:"700"}}>MAL!K</span>
                             </Modal.Body>
                             <Modal.Footer>
-                                <button onClick={hideModal22} type="button" class="btn btn-danger">Close</button>
+                                <button onClick={hideModal22} type="button" className="btn btn-danger">Close</button>
                             </Modal.Footer>
                         </Modal>
                     </div>
@@ -118,7 +118,7 @@ const All = () => {
                                 <span style={{fontWeight:"700"}}>MAL!K</span>
                             </Modal.Body>
                             <Modal.Footer>
-                                <button onClick={hideModal2} type="button" class="btn btn-danger">Close</button>
+                                <button onClick={hideModal2} type="button" className="btn btn-danger">Close</button>
                             </Modal.Footer>
                         </Modal>
                     </div>
@@ -143,7 +143,7 @@ const All = () => {
                                 As part of my journey to becoming a proficient developer, I crafted a Tool Hire platform utilizing the MERN stack along with Redux. This project served as a valuable playground to hone my backend API skills. While it primarily focused on backend functionality, the MERN stack - MongoDB, Express.js, React.js, and Node.js - combined with Redux provided a comprehensive environment for me to deepen my understanding of server-side processes. This hands-on experience significantly contributed to my growth as a developer, laying the foundation for more complex and dynamic projects in the future.
                             </Modal.Body>
                             <Modal.Footer>
-                                <button onClick={hideModal} type="button" class="btn btn-danger">Close</button>
+                                <button onClick={hideModal} type="button" className="btn btn-danger">Close</button>
                             </Modal.Footer>
                         </Modal>
                     </div>

@@ -43,7 +43,7 @@ const All2 = () => {
                                 The tool hire booking system was designed to meet the hiring company's requirements, allowing the company to manage tool availability and collect payments with ease. Admin access was provided for managing user details and tool availability, while customer access was provided for viewing and placing orders. The project aimed to provide a comprehensive solution that met the needs of the hiring company and its customers.
                             </Modal.Body>
                             <Modal.Footer>
-                                <button onClick={hideModal} type="button" class="btn btn-danger">Close</button>
+                                <button onClick={hideModal} type="button" className="btn btn-danger">Close</button>
                             </Modal.Footer>
                         </Modal>
                     </div>

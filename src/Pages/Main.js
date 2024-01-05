@@ -111,7 +111,7 @@ const Main = () => {
                 <button className='toggle' onClick={malik}><img src={image[counter % image.length]}/></button>
                 {/* <p className='brand'>~201035~</p> */}
                 
-                <div class="dropdown dropend">
+                <div className="dropdown dropend">
                     <a className="palette2-button" type="button"  data-bs-toggle="dropdown">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -163,14 +163,14 @@ const Main = () => {
                             ></circle>
                         </svg>
                     </a>
-                    <div class="dropdown-menu dropDownBg p-3">
+                    <div className="dropdown-menu dropDownBg p-3">
                         <div className='flexundo'>
                             <div>
                                 <h5 style={{color:"white"}} className='small'>Customize</h5>
                                 <h6 style={{color:"grey", fontSize:"12px"}} className='small'>Modify the theme as per your preference.</h6>
                             </div>
                             <a className='undocursor' onClick={()=>reset()}>
-                                <svg className="undo" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(0)" stroke="#fafafa"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.096"></g><g id="SVGRepo_iconCarrier"> <path d="M21 3V8M21 8H16M21 8L18 5.29168C16.4077 3.86656 14.3051 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.2832 21 19.8675 18.008 20.777 14" stroke="#ffffff" stroke-width="2.016" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                                <svg className="undo" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(0)" stroke="#fafafa"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" stroke="#CCCCCC" strokeWidth="0.096"></g><g id="SVGRepo_iconCarrier"> <path d="M21 3V8M21 8H16M21 8L18 5.29168C16.4077 3.86656 14.3051 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.2832 21 19.8675 18.008 20.777 14" stroke="#ffffff" strokeWidth="2.016" strokeLinecap="round" strokeLinejoin="round"></path> </g></svg>
                             </a>
                         </div>
                         <div className=''>
@@ -251,7 +251,7 @@ const Main = () => {
             </div>
             <div className='ifram'> 
                 <button className='mbut' onClick={switc} style={{backgroundColor:color2 ? color2 : "rgba(20, 223, 166, 0.171)", borderColor:color2 ? color2 : "rgba(20, 223, 166, 0.171)"}}>
-                <svg fill={color ? color : "rgba(20, 223, 166)"} clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z" fill-rule="nonzero"/></svg>
+                <svg fill={color ? color : "rgba(20, 223, 166)"} clipRule="evenodd" fillRule="evenodd" strokeLinejoin="round" strokeMiterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z" fillRule="nonzero"/></svg>
                 </button>
                 {change && <Menu/>}
                 <iframe src={typeof route === "string" ? route : "/home"} name='frame' title='myiframe' className='frame'></iframe>

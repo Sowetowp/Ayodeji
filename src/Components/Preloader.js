@@ -57,7 +57,7 @@ const Preloader = () => {
 						/> */}
 					{/* </div> */}
 					
-					<div class="loaderr"></div>
+					<div className="loaderr"></div>
 				</div>
 			</div>
 		</div>
