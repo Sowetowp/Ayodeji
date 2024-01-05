@@ -90,7 +90,7 @@ const Myworks = (props) => {
     }
   ]
   const [works, setWorks] = useState(availableArray)
-  const [bg, setBg] = useState("")
+  const [bg, setBg] = useState("all")
   const filterer = useCallback((e) => {
     const filteredArray = availableArray.filter(item => item.stack && item.stack.includes(e));
     setWorks(filteredArray);

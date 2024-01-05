@@ -99,7 +99,7 @@ const Myskills = (props) => {
               <div className='col-md text-center' data-aos="fade-up" data-aos-duration="1000">
                 <div className='mscont py-4'>
                   <div className='msback'>
-                    <div className='outer' style={{backgroundColor:`${prop1 && prop1.length > 0 ? prop1 : hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`}}>
+                    <div className='outer' style={{backgroundColor:`${prop2 && prop2.length > 0 ? prop2 : hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`}}>
                       <div className='inner'>
                         <div id='number' ref={number1}></div>
                       </div>
@@ -120,7 +120,7 @@ const Myskills = (props) => {
               <div className='col-md text-center' data-aos="fade-up" data-aos-duration="1500">
                 <div className='mscont py-4'>
                   <div className='msback'>
-                    <div className='outer' style={{backgroundColor:`${prop1 && prop1.length > 0 ? prop1 : hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`}}>
+                    <div className='outer' style={{backgroundColor:`${prop2 && prop2.length > 0 ? prop2 : hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`}}>
                       <div className='inner'>
                         <div id='number' ref={number2}></div>
                       </div>
@@ -141,7 +141,7 @@ const Myskills = (props) => {
               <div className='col-md text-center' data-aos="fade-up" data-aos-duration="2000">
                 <div className='mscont py-4'>
                   <div className='msback'>
-                    <div className='outer' style={{backgroundColor:`${prop1 && prop1.length > 0 ? prop1 : hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`}}>
+                    <div className='outer' style={{backgroundColor:`${prop2 && prop2.length > 0 ? prop2 : hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`}}>
                       <div className='inner'>
                         <div id='number' ref={number3}></div>
                       </div>
@@ -162,7 +162,7 @@ const Myskills = (props) => {
               <div data-aos="fade-up" data-aos-duration="2500" className='col-md text-center'>
                 <div className='mscont py-4'>
                   <div className='msback'>
-                    <div className='outer' style={{backgroundColor:`${prop1 && prop1.length > 0 ? prop1 : hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`}}>
+                    <div className='outer' style={{backgroundColor:`${prop2 && prop2.length > 0 ? prop2 : hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`}}>
                       <div className='inner'>
                         <div id='number' ref={number4}></div>
                       </div>
