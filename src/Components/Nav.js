@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import "../Styles/Nav.css"
 import home from "../Assets/Images/home-17-svgrepo-com.svg"
 import dp from "../Assets/Images/malik.jpg"
@@ -48,6 +48,9 @@ const Nav = (props) => {
         colorStorer("rgba(20, 223, 166)", "rgba(20, 223, 166, 0.171)")
         radiusStorer(5)
     }
+    const routesetter = useCallback((e)=>{
+        localStorage.setItem('myAppState', JSON.stringify(e));
+    },[])
   return (
     <>
         <nav className="navbar navbar-expand-sm navbackground fixed-top">
@@ -84,7 +87,7 @@ const Nav = (props) => {
                             <p style={{fontFamily: "'Lato', sans-serif", color:"grey"}} className='pb-2'>Links</p>
                             <div className="list-group list-group-flush">
                                 {new String("homegithublinkedintwitterxthreads").includes(input.toLowerCase()) &&
-                                <a style={{backgroundColor:"rgb(236, 236, 244)"}} href="/home" className="open-file d-flex px-0 list-group-item list-group-item-action">
+                                <a onClick={()=>routesetter("/home")} style={{backgroundColor:"rgb(236, 236, 244)"}} href="/home" className="open-file d-flex px-0 list-group-item list-group-item-action">
                                     <span className="file-wrapper">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 71 67">
                                             <path
@@ -98,7 +101,7 @@ const Nav = (props) => {
                                     <span>Home</span>
                                 </a>}
                                 {new String("aboutinfoservicesreviewprofile").includes(input.toLowerCase()) &&
-                                <a style={{backgroundColor:"rgb(236, 236, 244)"}} href="/about" className="open-file d-flex px-0 list-group-item list-group-item-action">
+                                <a onClick={()=>routesetter("/about")} style={{backgroundColor:"rgb(236, 236, 244)"}} href="/about" className="open-file d-flex px-0 list-group-item list-group-item-action">
                                     <span className="file-wrapper">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 71 67">
                                             <path
@@ -112,7 +115,7 @@ const Nav = (props) => {
                                     <span>About</span>
                                 </a>}
                                 {new String("resumeexperiencesskills").includes(input.toLowerCase()) &&
-                                <a style={{backgroundColor:"rgb(236, 236, 244)"}} href="/resume" className="open-file d-flex px-0 list-group-item list-group-item-action">
+                                <a onClick={()=>routesetter("/resume")} style={{backgroundColor:"rgb(236, 236, 244)"}} href="/resume" className="open-file d-flex px-0 list-group-item list-group-item-action">
                                     <span className="file-wrapper">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 71 67">
                                             <path
@@ -126,7 +129,7 @@ const Nav = (props) => {
                                     <span>Resume</span>
                                 </a>}
                                 {new String("worksexperiencesprojectsportfolio").includes(input.toLowerCase()) &&
-                                <a style={{backgroundColor:"rgb(236, 236, 244)"}} href="/work" className="open-file d-flex px-0 list-group-item list-group-item-action">
+                                <a onClick={()=>routesetter("/work")} style={{backgroundColor:"rgb(236, 236, 244)"}} href="/work" className="open-file d-flex px-0 list-group-item list-group-item-action">
                                     <span className="file-wrapper">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 71 67">
                                             <path
@@ -140,7 +143,7 @@ const Nav = (props) => {
                                     <span className=''>Works</span>
                                 </a>}
                                 {new String("blognewsupdate").includes(input.toLowerCase()) &&
-                                <a style={{backgroundColor:"rgb(236, 236, 244)"}} href="/blog" className="open-file d-flex px-0 list-group-item list-group-item-action">
+                                <a onClick={()=>routesetter("/blog")} style={{backgroundColor:"rgb(236, 236, 244)"}} href="/blog" className="open-file d-flex px-0 list-group-item list-group-item-action">
                                     <span className="file-wrapper">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 71 67">
                                             <path
@@ -154,7 +157,7 @@ const Nav = (props) => {
                                     <span>Blog</span>
                                 </a>}
                                 {new String("contactmaillocationfeedback").includes(input.toLowerCase()) &&
-                                <a style={{backgroundColor:"rgb(236, 236, 244)"}} href="/contact" className="open-file d-flex px-0 list-group-item list-group-item-action">
+                                <a onClick={()=>routesetter("/contact")} style={{backgroundColor:"rgb(236, 236, 244)"}} href="/contact" className="open-file d-flex px-0 list-group-item list-group-item-action">
                                     <span className="file-wrapper">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 71 67">
                                             <path
@@ -315,7 +318,7 @@ const Nav = (props) => {
                 <div className="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <a className="nav-link" href="/home">
+                            <a onClick={()=>routesetter("/home")} className="nav-link" href="/home">
                                 {/* <img className='imagesInDrop' src={home}/> */}
                                 <svg className='imagesInDrop'  viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fillRule="evenodd" clipRule="evenodd" d="M18.867 15.8321L18.873 10.0391L14.75 5.92908C13.5057 4.69031 11.4942 4.69031 10.25 5.92908L6.13599 10.0291V15.8291C6.1393 17.5833 7.56377 19.0028 9.31799 19.0001H15.685C17.438 19.0029 18.862 17.5851 18.867 15.8321Z" stroke={color ? color : "rgba(20, 223, 166)"} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -326,35 +329,35 @@ const Nav = (props) => {
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/about">
+                            <a onClick={()=>routesetter("/about")} className="nav-link" href="/about">
                                 {/* <img className='imagesInDrop' src={about}/> */}
                                 <svg className='imagesInDrop' fill={color ? color : "rgba(20, 223, 166)"} viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M576 736l-32-.001v-286c0-.336-.096-.656-.096-1.008s.096-.655.096-.991c0-17.664-14.336-32-32-32h-64c-17.664 0-32 14.336-32 32s14.336 32 32 32h32v256h-32c-17.664 0-32 14.336-32 32s14.336 32 32 32h128c17.664 0 32-14.336 32-32s-14.336-32-32-32zm-64-384.001c35.344 0 64-28.656 64-64s-28.656-64-64-64-64 28.656-64 64 28.656 64 64 64zm0-352c-282.768 0-512 229.232-512 512 0 282.784 229.232 512 512 512 282.784 0 512-229.216 512-512 0-282.768-229.216-512-512-512zm0 961.008c-247.024 0-448-201.984-448-449.01 0-247.024 200.976-448 448-448s448 200.977 448 448-200.976 449.01-448 449.01z"></path></g></svg>
                                 <span className='dropdownSpan'>About</span>
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/resume">
+                            <a onClick={()=>routesetter("/resume")} className="nav-link" href="/resume">
                                 {/* <img className='imagesInDrop' src={resume}/> */}
                                 <svg className='imagesInDrop' viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill={color ? color : "rgba(20, 223, 166)"}><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill={color ? color : "rgba(20, 223, 166)"} d="M119.1 25v.1c-25 3.2-47.1 32-47.1 68.8 0 20.4 7.1 38.4 17.5 50.9L99.7 157 84 159.9c-13.7 2.6-23.8 9.9-32.2 21.5-8.5 11.5-14.9 27.5-19.4 45.8-8.2 33.6-9.9 74.7-10.1 110.5h44l11.9 158.4h96.3L185 337.7h41.9c0-36.2-.3-77.8-7.8-111.7-4-18.5-10.2-34.4-18.7-45.9-8.6-11.4-19.2-18.7-34.5-21l-16-2.5L160 144c10-12.5 16.7-30.2 16.7-50.1 0-39.2-24.8-68.8-52.4-68.8-2.9 0-4.7-.1-5.2-.1zM440 33c-17.2 0-31 13.77-31 31s13.8 31 31 31 31-13.77 31-31-13.8-31-31-31zM311 55v48H208v18h103v158h-55v18h55v110H208v18h103v32h80.8c-.5-2.9-.8-5.9-.8-9 0-3.1.3-6.1.8-9H329V297h62.8c-.5-2.9-.8-5.9-.8-9 0-3.1.3-6.1.8-9H329V73h62.8c-.5-2.92-.8-5.93-.8-9 0-3.07.3-6.08.8-9H311zm129 202c-17.2 0-31 13.8-31 31s13.8 31 31 31 31-13.8 31-31-13.8-31-31-31zm0 160c-17.2 0-31 13.8-31 31s13.8 31 31 31 31-13.8 31-31-13.8-31-31-31z"></path></g></svg>
                                 <span className='dropdownSpan'>Resume</span>
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/work">
+                            <a onClick={()=>routesetter("/work")} className="nav-link" href="/work">
                                 {/* <img className='imagesInDrop' src={works}/> */}
                                 <svg className='imagesInDrop' viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="none" stroke={color ? color : "rgba(20, 223, 166)"}><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="m26.5 36-13.1-.81a4 4 0 0 1-3.76-3.58L8.47 20.42a4 4 0 0 1 4-4.42h39.09a4 4 0 0 1 4 4.42l-1.2 11.19a4 4 0 0 1-3.76 3.58L37.5 36"></path><path d="M52 34.92V48a4 4 0 0 1-4 4H16a4 4 0 0 1-4-4V34.85"></path><path d="M27 16v-2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2"></path><rect x="26.5" y="33.25" width="11" height="5.5" rx="2.75"></rect></g></svg>
                                 <span className='dropdownSpan'>Works</span>
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/blog">
+                            <a onClick={()=>routesetter("/blog")} className="nav-link" href="/blog">
                                 {/* <img className='imagesInDrop' src={blog}/> */}
                                 <svg className='imagesInDrop' viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg" aria-labelledby="newsIconTitle" stroke={color ? color : "rgba(20, 223, 166)"} strokeWidth="1" strokeLinecap="square" strokeLinejoin="miter" fill="none" color={color ? color : "rgba(20, 223, 166)"}><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <title id="newsIconTitle">News</title> <path d="M22 5L22 17C22 18.3333333 21.3333333 19 20 19 18.6666667 19 18 18.3333333 18 17L18 5 2 5 2 16C2 18 3 19 5 19 7 19 12 19 20 19M6 14L7 14M11 14L14 14M6 10L14 10"></path> </g></svg>
                                 <span className='dropdownSpan'>Blog</span>
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/contact">
+                            <a onClick={()=>routesetter("/contact")} className="nav-link" href="/contact">
                                 {/* <img className='imagesInDrop' src={contact}/> */}
                                 <svg className='imagesInDrop' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 7.00012V12.0001M12 12.0001L14 10.0001M12 12.0001L10 10.0001M3.02832 10.0001L10.2246 14.8167C10.8661 15.2444 11.1869 15.4582 11.5336 15.5413C11.8399 15.6147 12.1593 15.6147 12.4657 15.5413C12.8124 15.4582 13.1332 15.2444 13.7747 14.8167L20.971 10.0001M10.2981 4.06892L4.49814 7.71139C3.95121 8.05487 3.67775 8.2266 3.4794 8.45876C3.30385 8.66424 3.17176 8.90317 3.09111 9.16112C3 9.45256 3 9.77548 3 10.4213V16.8001C3 17.9202 3 18.4803 3.21799 18.9081C3.40973 19.2844 3.71569 19.5904 4.09202 19.7821C4.51984 20.0001 5.0799 20.0001 6.2 20.0001H17.8C18.9201 20.0001 19.4802 20.0001 19.908 19.7821C20.2843 19.5904 20.5903 19.2844 20.782 18.9081C21 18.4803 21 17.9202 21 16.8001V10.4213C21 9.77548 21 9.45256 20.9089 9.16112C20.8282 8.90317 20.6962 8.66424 20.5206 8.45876C20.3223 8.2266 20.0488 8.05487 19.5019 7.71139L13.7019 4.06891C13.0846 3.68129 12.776 3.48747 12.4449 3.41192C12.152 3.34512 11.848 3.34512 11.5551 3.41192C11.224 3.48747 10.9154 3.68129 10.2981 4.06892Z" stroke={color ? color : "rgba(20, 223, 166)"} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path> </g></svg>
                                 <span className='dropdownSpan'>Contact Me</span>
