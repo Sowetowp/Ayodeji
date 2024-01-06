@@ -19,6 +19,7 @@ const Contact = () => {
     const parentWindow = window.parent;
     const parentURL = parentWindow.location.href;
     if(window.innerWidth > 576 && parentURL.includes('/contact')){
+      localStorage.setItem('myAppState', JSON.stringify("/contact"));
       const savedState = JSON.parse(localStorage.getItem('myParam'));
       navigate(`/${savedState}`)
       console.log(parentURL)

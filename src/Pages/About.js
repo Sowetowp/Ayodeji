@@ -21,6 +21,7 @@ const About = () => {
     const parentWindow = window.parent;
     const parentURL = parentWindow.location.href;
     if(window.innerWidth > 576 && parentURL.includes('/about')){
+      localStorage.setItem('myAppState', JSON.stringify("/about"));
       const savedState = JSON.parse(localStorage.getItem('myParam'));
       navigate(`/${savedState}`)
       console.log(parentURL)

@@ -20,6 +20,7 @@ const Resume = () => {
     const parentWindow = window.parent;
     const parentURL = parentWindow.location.href;
     if(window.innerWidth > 576 && parentURL.includes('/resume')){
+      localStorage.setItem('myAppState', JSON.stringify("/resume"));
       const savedState = JSON.parse(localStorage.getItem('myParam'));
       navigate(`/${savedState}`)
       console.log(parentURL)
