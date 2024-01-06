@@ -37,7 +37,8 @@ function App() {
     <>
     <Router>
       <Routes>
-        <Route path="/" element={<Main/>}/>
+        <Route path={"/:param"} element={<Main/>}/>
+        <Route path={"/"} element={<Main/>}/>
         <Route path="/home" element={<Home/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/resume" element={<Resume/>}/>

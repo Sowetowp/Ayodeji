@@ -57,15 +57,7 @@ const Home = () => {
   const add1 = ()=> {
     setColor1("rgb(212, 212, 243 )")
   }
-  const navigate = useNavigate()
-  useEffect(()=>{
-    const parentWindow = window.parent;
-    const parentURL = parentWindow.location.href;
-    if(window.innerWidth > 576 && parentURL.includes('/home')){
-      navigate("/")
-      console.log(parentURL)
-    }
-  },[])
+  
   const linearGradient = 'linear-gradient(to right, #ff7e5f, #feb47b)';
   const [hcolor, hsetColor] = useState("")
   const [hcolor2, hsetColor2] = useState("")
@@ -107,6 +99,43 @@ const Home = () => {
         hsetColor2(savedState2)
     }
   },[])
+  const possibleClickers = [
+    {
+      code:"hcx",
+      name:"X user", 
+      from: "making the journey all the way from my X profile.", 
+      hope: "I hope you enjoy navigating through my portfolio and find it both entertaining and engaging.", 
+      look:" I'm eagerly anticipating your comments and feedback!"
+    },
+    {
+      code:"qrp", 
+      name: "Amazon hiring team", 
+      from: "especially after reviewing the Upwork proposal I submitted for the web developer role in your organization.", 
+      hope:"I hope you find my skills and experience align well with what you're looking for.", 
+      look:"Looking forward to the possibility of working together! 🚀"
+    },
+  ]
+  const [clicker, setClicker] = useState({})
+  useEffect(()=>{
+    const savedState = JSON.parse(localStorage.getItem('myParam'));
+    
+    if(savedState !== "default"){
+      const findClicker = possibleClickers.filter((e)=>e.code === savedState)
+      if(findClicker.length > 0){
+        setClicker(findClicker[0])
+      }
+    }
+  },[])
+  const navigate = useNavigate()
+  useEffect(()=>{
+    const parentWindow = window.parent;
+    const parentURL = parentWindow.location.href;
+    if(window.innerWidth > 576 && parentURL.includes('/home')){
+      const savedState = JSON.parse(localStorage.getItem('myParam'));
+      navigate(`/${savedState}`)
+      console.log(parentURL)
+    }
+  },[])
   const [col1, setCol1] = useState("")
   const [col2, setCol2] = useState("")
   const [rad, setRad] = useState("")
@@ -130,7 +159,7 @@ const Home = () => {
           <div data-aos="fade-up" data-aos-duration="2000" className='type text-center'>
             <p>Hi, I am <span style={{color:col1 && col1.length > 0 ? col1 : hcolor ? hcolor : "rgb(20, 223, 166)"}}>{text}</span></p>
           </div>
-          <p data-aos="fade-up" data-aos-duration="2000" className='info'>Welcome to my digital playground where creativity and technology merge! My portfolio is where I showcase my skills and passion for crafting visually stunning and user-friendly web and mobile applications. Dive in and take a look at some of my past projects, and you'll see why I'm passionate about what I do. Thank you for visiting and I hope you enjoy exploring my work!</p>
+          <p data-aos="fade-up" data-aos-duration="2000" className='info'>{clicker.name ? `Hi ${clicker.name}! It's exciting to see you here on my portfolio, ${clicker.from} Thank you for taking the time to explore my work.${clicker.hope} Should you have any questions or wish to discuss further, please feel free to reach out via the contact page. ${clicker.look}` : "Welcome to my digital playground where creativity and technology merge! My portfolio is where I showcase my skills and passion for crafting visually stunning and user-friendly web and mobile applications. Dive in and take a look at some of my past projects, and you'll see why I'm passionate about what I do. Thank you for visiting and I hope you enjoy exploring my work!"}</p>
           <div className='small-icons mt-3' data-aos-offset="-200" data-aos="fade-up" data-aos-duration="2500">
             <a href="https://github.com/Sowetowp"  target="_blank">
             <StyledDiv afterColor={col1 && col1.length > 0 ? col1 : hcolor ? hcolor : "rgb(20, 223, 166)"} onMouseEnter={sub} onMouseLeave={add} className='bdre' style={{borderRadius: typeof rad === "number" ? rad + "px" : typeof hrad === "number" ? hrad + "px" : "4px"}}>

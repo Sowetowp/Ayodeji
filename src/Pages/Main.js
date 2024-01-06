@@ -6,12 +6,20 @@ import dp from "../Assets/Images/malik.jpg"
 import arro from "../Assets/Images/arro.svg"
 import "../Styles/Main.css"
 import "../Styles/Demo.css"
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import closer from "../Assets/Images/close-square-svgrepo-com.svg"
 
 
 
 const Main = () => {
+    const { param } = useParams();
+    useEffect(()=>{
+        if(param){
+            localStorage.setItem('myParam', JSON.stringify(param));
+        }else{
+            localStorage.setItem('myParam', JSON.stringify("default"));
+        }
+    }, [])
     const [route, setRoute] = useState("/home")
     const routesetter = useCallback((e)=>{
         setRoute(e)
