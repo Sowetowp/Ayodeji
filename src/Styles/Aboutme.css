@@ -46,203 +46,15 @@
     animation-direction: normal;
 }
 @keyframes example {
-    from {left: 0px; top: 0.1px;}
-    to {left: 96%; top: 0.1px;}
-}
-.shift{
-    width: 580px;
-    height: 360px;
-    object-fit: cover;
-    object-position: 5% 5%;
-    position: absolute;
-    margin-left: 10px;
-    margin-top: 10px;
-    z-index: 2;
-}
-.ana{
-    width: 600px;
-    height: 380px;
-    position: relative;
-    /* background-color: rgba(113, 245, 208, 0.157); */
-    background-repeat: no-repeat;
-    /* border-radius: 6px; */
-    z-index: 1;
-}
-.hia{
-    color: white;
-    font-size: 30px;
-    font-weight: 700;
-}
-.hia span{
-    /* color: rgb(20, 223, 166); */
-}
-.tdd{
-    /* color: rgb(20, 223, 166); */
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 12px;
-    width: 200px;
-    list-style: square;
-}
-.tdd span{
-    color: white;
-}
-.tddd{
-    color: white;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 12px;
-    font-family: 'Lato', sans-serif;
-}
-.anb{
-    width: 30px;
-    height: 10px;
-    /* background-image: linear-gradient(to right, transparent, 40%, rgb(20, 223, 166)); */
-    animation-name: xample;
-    animation-duration: 3s;
-    position: relative;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    /* border-bottom-right-radius: 3px;
-    border-top-right-radius: 3px; */
-    animation-direction: normal;
-}
-.anc{
-    width: 30px;
-    height: 10px;
-    /* background-image: linear-gradient(to right, rgb(20, 223, 166), 40%, transparent); */
-    animation-name: exam;
-    animation-duration: 3s;
-    position: relative;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    /* border-bottom-left-radius: 3px;
-    border-top-left-radius: 3px; */
-    animation-direction: reverse;
-}
-.and{
-    width: 10px;
-    height: 30px;
-    /* background-image: linear-gradient(transparent, 40%, rgb(20, 223, 166)); */
-    animation-name: examp;
-    animation-duration: 3s;
-    position: absolute;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    /* border-bottom-right-radius: 3px;
-    border-bottom-left-radius: 3px; */
-    animation-direction: normal;
-}
-.ane{
-    width: 10px;
-    height: 30px;
-    /* background-image: linear-gradient(rgb(20, 223, 166), 40%, transparent); */
-    animation-name: exampl;
-    animation-duration: 3s;
-    position: relative;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    /* border-top-right-radius: 3px;
-    border-top-left-radius: 3px; */
-    animation-direction: reverse;
-}
-@keyframes exampl {
-    from {top: -15px;}
-    to {top: 320px;}
-}
-@keyframes examp {
-    from {left:590px; top:10px;}
-    to {left:590px; top:320px;}
-}
-@keyframes exam {
-    from {left:0px; top:360px;}
-    to {left:570px; top:360px;}
-}
-@keyframes xample {
-    from {left: 10px;}
-    to {left: 567px;}
-}
-@media screen and (max-width: 768px) {
-    .shift {
-        width: 400px;
-    }
-    .ana{
-        width: 420px;
-    }
-    @keyframes examp {
-        from {left:410px; top:10px;}
-        to {left:410px; top:320px;}
-    }
-    @keyframes exam {
-        from {left:0px; top:360px;}
-        to {left:390px; top:360px;}
-    }
-    @keyframes xample {
-        from {left: 10px;}
-        to {left: 387px;}
-    }
-    .amhiaa{
-        margin-left: -20px;
-    }
+    from {left: 0%; top: 0%;}
+    to {left: calc(100% - 5px); top: 0%;}
 }
 @media screen and (max-width: 576px) {
-    .shift {
-        width: 360px;
-    }
-    .ana{
-        width: 380px;
-    }
-    .pooo{
-        margin: 0% !important;
-        padding: 0% !important;
-    }
-    @keyframes examp {
-        from {left:370px; top:10px;}
-        to {left:370px; top:320px;}
-    }
-    @keyframes exam {
-        from {left:0px; top:360px;}
-        to {left:350px; top:360px;}
-    }
-    @keyframes xample {
-        from {left: 10px;}
-        to {left: 347px;}
-    }
-    .amhiaa{
-        margin-left: -35px;
-    }
     .about{
         margin-top: 17vh;
     }
-    .tdd{
-        line-height: normal;
-    }
-    .tddd{
-        line-height: normal;
-    }
 }
 @media screen and (max-width: 667px) {
-    .shift {
-        width: 330px;
-    }
-    .ana{
-        width: 350px;
-    }
-    @keyframes examp {
-        from {left:340px; top:10px;}
-        to {left:340px; top:320px;}
-    }
-    @keyframes exam {
-        from {left:0px; top:360px;}
-        to {left:320px; top:360px;}
-    }
-    @keyframes xample {
-        from {left: 10px;}
-        to {left: 317px;}
-    }
-    .amhiaa{
-        margin-left: -30px;
-    }
     .about{
         margin-top: 17vh;
     }
@@ -307,5 +119,99 @@
   
     100% {
       transform: scale(1);
+    }
+}
+
+.anb2{
+    position: absolute;
+    height: 10px;
+    width: 30px;
+    animation: right 4s linear infinite reverse;
+}
+.anc2{
+    position: absolute;
+    height: 10px;
+    width: 30px;
+    animation: left 4s linear infinite normal;
+}
+.and2{
+    position: absolute;
+    height: 30px;
+    width: 10px;
+    animation: down 4s linear infinite normal;
+}
+.ane2{
+    position: absolute;
+    height: 30px;
+    width: 10px;
+    animation: top 4s linear infinite reverse;
+}
+.anaimg{
+    object-fit: cover;
+    object-position: 5% 5%;
+}
+@keyframes top {
+    from {top: 0%;}
+    to {top: calc(100% - 30px);}
+}
+@keyframes down {
+    from {top: 0%; left: calc(100% - 10px);}
+    to {top: calc(100% - 30px); left: calc(100% - 10px);}
+}
+@keyframes left {
+    from {top: calc(100% - 10px); left: calc(100% - 30px);}
+    to {top: calc(100% - 10px); left: 0%;}
+}
+@keyframes right {
+    from {left: calc(100% - 30px);}
+    to {left: 0%;}
+}
+.information{
+    padding: 20px;
+}
+.infoholder11{
+    display: flex;
+}
+.infoholder111 li{
+    font-weight: 600;
+    font-size: 20px;
+}
+.infoholder111 span{
+    color: white;
+}
+.information h3{
+    color: white;
+    font-weight: 700;
+}
+.infoholder112 ul{
+    color: white;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%
+}
+.infoholder111 ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+    list-style: square;
+}
+.infoholder112 li{
+    font-weight: 400;
+    font-size: 17px;
+}
+@media screen and (max-width: 280px) {
+    .heoghtcon{
+        height: 250px !important;
+    }
+    .infoholder112 li{
+        font-size: 12px;
+    }
+    .infoholder111 li{
+        font-size: 15px;
     }
 }

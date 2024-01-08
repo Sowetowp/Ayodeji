@@ -42,9 +42,9 @@
     color: rgb(255, 170, 0);
     margin-top: 8px;
 }
-@media screen and (max-width: 776px) {
-    .hide{
-        display: none;
+@media screen and (max-width: 1024px) {
+  .hide{
+      display: none;
     }
 }
 

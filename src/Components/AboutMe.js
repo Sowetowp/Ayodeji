@@ -62,58 +62,46 @@ const AboutMe = (props) => {
                     <div className='move' style={{backgroundColor:`${prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}`, borderRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "50%"}}></div>
                 </div>
             </div>
-            <div className='container pooo'>
-                <div className='row rowww mt-5'>
-                    <div className='dd2 col-xl' data-aos="fade-up" data-aos-duration="1000">
-                        <div className='dd200 m-3'>
-                            <img src={image} className='shift'/>
-                            <div className='ana' style={{backgroundColor:`${prop2.length > 0 ? prop2 : hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`,borderRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "6px"}}>
-                                <div className='anb' style={{background: `${hcolor ? `linear-gradient(transparent, 10%, ${prop1.length > 0 ? prop1 : hcolor})` : "linear-gradient(transparent, 10%, rgb(20, 223, 166))"}`, borderBottomRightRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "3px", borderTopRightRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "3px"}}></div>
-                                <div className='anc' style={{background: `${hcolor ? `linear-gradient(transparent, 10%, ${prop1.length > 0 ? prop1 : hcolor})` : "linear-gradient(transparent, 10%, rgb(20, 223, 166))"}`, borderBottomLeftRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "3px", borderTopLeftRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "3px"}}></div>
-                                <div className='and' style={{background: `${hcolor ? `linear-gradient(transparent, 10%, ${prop1.length > 0 ? prop1 : hcolor})` : "linear-gradient(transparent, 10%, rgb(20, 223, 166))"}`, borderBottomLeftRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "3px", borderBottomRightRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "3px"}}></div>
-                                <div className='ane' style={{background: `${hcolor ? `linear-gradient(transparent, 10%, ${prop1.length > 0 ? prop1 : hcolor})` : "linear-gradient(transparent, 10%, rgb(20, 223, 166))"}`, borderTopRightRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "3px", borderTopLeftRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "3px"}}></div>
+            <div className='row pt-5' style={{position:"relative", zIndex:"2"}}>
+                <div className='col-md-6' data-aos="fade-up" data-aos-duration="1000">
+                    <div className='heoghtcon' style={{position:"relative", height:"360px", margin:"20px"}}>
+                        <div className='anb2' style={{background: `${hcolor ? `linear-gradient(90deg, transparent, 10%, ${prop1.length > 0 ? prop1 : hcolor})` : "90deg, linear-gradient(transparent, 10%, rgb(20, 223, 166))"}`, borderBottomRightRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "3px", borderTopRightRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "3px"}}></div>
+                        <div className='anc2' style={{background: `${hcolor ? `linear-gradient(270deg, transparent, 10%, ${prop1.length > 0 ? prop1 : hcolor})` : "270deg, linear-gradient(transparent, 10%, rgb(20, 223, 166))"}`, borderBottomLeftRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "3px", borderTopLeftRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "3px"}}></div>
+                        <div className='and2' style={{background: `${hcolor ? `linear-gradient(180deg, transparent, 10%, ${prop1.length > 0 ? prop1 : hcolor})` : "180deg, linear-gradient(transparent, 10%, rgb(20, 223, 166))"}`, borderBottomLeftRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "3px", borderBottomRightRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "3px"}}></div>
+                        <div className='ane2' style={{background: `${hcolor ? `linear-gradient(0deg, transparent, 10%, ${prop1.length > 0 ? prop1 : hcolor})` : "0deg, linear-gradient(transparent, 10%, rgb(20, 223, 166))"}`, borderTopRightRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "3px", borderTopLeftRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "3px"}}></div>
+                        <img className='anaimg' style={{width:"100%", height:"100%", border:`${prop2.length > 0 ? "solid 10px " + prop2 : hcolor2 ? "solid 10px " + hcolor2 : "solid 10px rgba(20, 223, 166, 0.171)"}`, position:"relative", borderBottomRightRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "3px", borderRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "3px"}} src={image}/>
+                    </div>
+                </div>
+                <div className='col-md-6' data-aos="fade-up" data-aos-duration="2000">
+                    <div className='information'>
+                        <h3>Hi, I am <span style={{color:`${prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}`}}>Amzat Abdulmalik</span></h3>
+                        <div className='infoholder11'>
+                            <div className='infoholder111'>
+                                <ul className=''>
+                                    <li style={{color:`${prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}`}}><span>First Name</span></li>
+                                    <li style={{color:`${prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}`}}><span>Last Name</span></li>
+                                    <li style={{color:`${prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}`}}><span>Age</span></li>
+                                    <li style={{color:`${prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}`}}><span>Nationality</span></li>
+                                    <li style={{color:`${prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}`}}><span>Languages</span></li>
+                                    <li style={{color:`${prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}`}}><span>Address</span></li>
+                                    <li style={{color:`${prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}`}}><span>Freelance</span></li>
+                                </ul>
+                            </div>
+                            <div className='infoholder112'>
+                                <ul>
+                                    <li>: Abdulmalik</li>
+                                    <li>: Amzat</li>
+                                    <li>: 23</li>
+                                    <li>: Nigerian</li>
+                                    <li>: English, Yoruba</li>
+                                    <li>: Lagos ikeja</li>
+                                    <li>: Available</li>
+                                </ul>
                             </div>
                         </div>
-                    </div>
-                    <div className='col-xl py-3 amhiaa' data-aos="fade-up" data-aos-duration="2000">
-                        <div className=''>
-                            <p className='hia ms-5'>Hi, I am <span style={{color:`${prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}`}}>Amzat Abdulmalik</span></p>
-                            <table className="table table-borderless ms-5 mt-3">
-                                <tbody>
-                                    <tr>
-                                        <td className='tdd' style={{color:`${prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}`}}><li><span>First Name</span></li></td>
-                                        <td className='tddd'>: Abdulmalik</td>
-                                    </tr>
-                                    <tr>
-                                        <td className='tdd' style={{color:`${prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}`}}><li><span>Last Name</span></li></td>
-                                        <td className='tddd'>: Amzat</td>
-                                    </tr>
-                                    <tr>
-                                        <td className='tdd' style={{color:`${prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}`}}><li><span>Age</span></li></td>
-                                        <td className='tddd'>: 23</td>
-                                    </tr>
-                                    <tr>
-                                        <td className='tdd' style={{color:`${prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}`}}><li><span>Nationality</span></li></td>
-                                        <td className='tddd'>: Nigerian</td>
-                                    </tr>
-                                    <tr>
-                                        <td className='tdd' style={{color:`${prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}`}}><li><span>Languages</span></li></td>
-                                        <td className='tddd'>: English, Yoruba</td>
-                                    </tr>
-                                    <tr>
-                                        <td className='tdd' style={{color:`${prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}`}}><li><span>Address</span></li></td>
-                                        <td className='tddd'>: Lagos ikeja</td>
-                                    </tr>
-                                    <tr>
-                                        <td className='tdd' style={{color:`${prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}`}}><li><span>Freelance</span></li></td>
-                                        <td className='tddd'>: Available</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <a style={{textDecoration:"none"}} href="https://drive.google.com/uc?export=download&id=1VdoYsoU6vuzyXVMafAyzAc8oGzsyjul4" download="cv.png">
-                                <button className='dre ms-5 btn' style={{background:`${prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}`, borderRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "6px"}}><span>DOWNLOAD RESUME</span></button>
-                            </a>
-                        </div>
+                        <a style={{textDecoration:"none"}} href="https://drive.google.com/uc?export=download&id=1VdoYsoU6vuzyXVMafAyzAc8oGzsyjul4" download="cv.png">
+                            <button className='dre' style={{background:`${prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}`, borderRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "6px"}}><span>DOWNLOAD RESUME</span></button>
+                        </a>
                     </div>
                 </div>
             </div>

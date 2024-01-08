@@ -183,7 +183,7 @@ const Reviews = (props) => {
             </div>
             <div className='container'>
                 <div className='row crrow' data-aos="fade-up" data-aos-duration="1000">
-                    <div className='col-md'>
+                    <div className='col-xl-4'>
                         <fieldset className='crfs' style={{borderRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "10px"}}>
                             <legend><img src={image1[counter1 % image1.length]} className="crimg" style={{borderColor:`${prop1 && prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}`}}/></legend>
                             <p className='reviewp1'>{name1[counter1 % name1.length]}</p>
@@ -198,7 +198,7 @@ const Reviews = (props) => {
                             <p className='reviewp3'>{quote1[counter1 % quote1.length]}</p>
                         </fieldset>
                     </div>
-                    <div className='col-md hide'>
+                    <div className='col-xl-4 hide'>
                         <fieldset className='crfs' style={{borderRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "10px"}}>
                             <legend><img src={image2[counter2 % image2.length]} className="crimg" style={{borderColor:`${prop1 && prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}`}}/></legend>
                             <p className='reviewp1'>{name2[counter2 % name2.length]}</p>
@@ -213,7 +213,7 @@ const Reviews = (props) => {
                             <p className='reviewp3'>{quote2[counter2 % quote2.length]}</p>
                         </fieldset>
                     </div>
-                    <div className='col-md crcol hide'>
+                    <div className='col-xl-4 crcol hide'>
                         <fieldset className='crfs' style={{borderRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "10px"}}>
                             <legend><img src={image3[counter3 % image3.length]} className="crimg" style={{borderColor:`${prop1 && prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}`}}/></legend>
                             <p className='reviewp1'>{name3[counter3 % name3.length]}</p>
