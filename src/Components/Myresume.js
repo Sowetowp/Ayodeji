@@ -111,9 +111,9 @@ const Myresume = (props) => {
                 </div>
                 <hr className='hrrrr' style={{width: "30px", height: "4px"}}></hr>
                 <div className='mrbox'>
-                  <p className='mrp1' style={{color:prop1 && prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}}>Bachelor Of Technology</p>
+                  <p className='mrp1' style={{color:prop1 && prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}}>Bachelor Of Engineering</p>
                   <p className='mrp2'>Olusegun Agagu University Of Science And Technology</p>
-                  <p className='mrp3'>Successfully completed a rigorous Bachelor of Technology in Civil Engineering program, gaining a strong foundation in the principles, theories, and practical applications of civil engineering.</p>
+                  <p className='mrp3'>Successfully completed a rigorous Bachelor of Engineering in Civil Engineering program, gaining a strong foundation in the principles, theories, and practical applications of civil engineering.</p>
                 </div>
               </div>
             </div>

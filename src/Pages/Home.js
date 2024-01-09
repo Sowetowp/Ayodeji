@@ -9,6 +9,8 @@ import image from "../Assets/Images/malik.jpg"
 import { Typewriter, useTypewriter } from 'react-simple-typewriter'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import emailjs from '@emailjs/browser';
+
 import Nav from '../Components/Nav'
 import { useNavigate } from 'react-router-dom'
 import styled from 'styled-components';
@@ -23,7 +25,7 @@ const StyledDiv = styled.div`
 
 const Home = () => {
   const [text] = useTypewriter({
-    words: ['Amzat Abdulmalik', 'a Full-stack Developer', 'a Web Designer'],
+    words: ['Amzat Abdulmalik', 'a Software Engineer', 'a Full-stack Developer', 'a Quick Learner', 'a Problem Solver', 'a Continuous Learner'],
     loop: 0
   })
   useEffect(() => {
@@ -123,6 +125,8 @@ const Home = () => {
       const findClicker = possibleClickers.filter((e)=>e.code === savedState)
       if(findClicker.length > 0){
         setClicker(findClicker[0])
+        const form = {subject:findClicker[0].name  + " used your link"}
+        emailjs.send('service_paphksk', 'template_hg9pf8t', form, 'pfOhM6ujfpEqO1rOt')
       }
     }
   },[])

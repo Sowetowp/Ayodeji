@@ -122,7 +122,7 @@ const Myskills = (props) => {
                       <circle cx="66" cy="66" r="60" strokeLinecap='round' />
                     </svg>
                   </div>
-                  <p className='msbed'>Front-end Development</p>
+                  <p className='msbed'>Web Apps Development</p>
                 </div>
               </div>
               <div className='col-md text-center' data-aos="fade-up" data-aos-duration="1500">
@@ -143,7 +143,7 @@ const Myskills = (props) => {
                       <circle cx="66" cy="66" r="60" strokeLinecap='round' />
                     </svg>
                   </div>
-                  <p className='msbed'>Back-end Development</p>
+                  <p className='msbed'>Mobile Apps Development</p>
                 </div>
               </div>
               <div className='col-md text-center' data-aos="fade-up" data-aos-duration="2000">
@@ -164,7 +164,7 @@ const Myskills = (props) => {
                       <circle cx="66" cy="66" r="60" strokeLinecap='round' />
                     </svg>
                   </div>
-                  <p className='msbed'>Hosting And Management</p>
+                  <p className='msbed'>Hosting And Maintenance</p>
                 </div>
               </div>
               <div data-aos="fade-up" data-aos-duration="2500" className='col-md text-center'>
@@ -185,7 +185,7 @@ const Myskills = (props) => {
                       <circle cx="66" cy="66" r="60" strokeLinecap='round' />
                     </svg>
                   </div>
-                  <p className='msbed'>Front-end Development</p>
+                  <p className='msbed'>Project Supervision</p>
                 </div>
               </div>
             </div>
