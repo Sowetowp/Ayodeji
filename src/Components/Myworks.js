@@ -1,9 +1,12 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import "../Styles/AWorks.css"
 import "../Styles/Aboutme.css"
-import canv from "../Assets/Images/portfolio-image-2.jpg"
-import canv2 from "../Assets/Images/portfolio-image-3.jpg"
-import canv3 from "../Assets/Images/portfolio-image-6.jpg"
+import canv from "../Assets/Images/block.jpg"
+import canv2 from "../Assets/Images/renarc.jpg"
+import canv1 from "../Assets/Images/lake.jpg"
+import canv3 from "../Assets/Images/meme.jpg"
+import canv4 from "../Assets/Images/ecom.jpg"
+import canv5 from "../Assets/Images/dash.jpg"
 
 const Myworks = (props) => {
   const { prop1, prop2, prop3 } = props;
@@ -49,52 +52,52 @@ const Myworks = (props) => {
       },[])
   const availableArray = [
     {
-      img: canv3,
-      title: "Candle",
-      body: "Creative Candle Light",
-      preview: "",
+      img: canv5,
+      title: "School portal",
+      body: "A School management system",
+      preview: "https://cosmic-tartufo-8dea38.netlify.app/",
       github: "",
-      stack: "node"
+      stack: "reactnodenative"
+    },
+    {
+      img: canv4,
+      title: "Ecommerce",
+      body: "An ecommerce website",
+      preview: "https://swpe.netlify.app/",
+      github: "",
+      stack: "reactnode"
     },
     {
       img: canv2,
-      title: "Candle",
-      body: "Creative Candle Light",
-      preview: "",
-      github: "",
-      stack: "flask"
-    },
-    {
-      img: canv,
-      title: "Candle",
-      body: "Creative Candle Light",
-      preview: "",
-      github: "",
-      stack: "anativenodereact"
-    },
-    {
-      img: canv2,
-      title: "Candle",
-      body: "Creative Candle Light",
-      preview: "",
-      github: "",
-      stack: "ahtml"
-    },
-    {
-      img: canv,
-      title: "Candle",
-      body: "Creative Candle Light",
-      preview: "",
-      github: "",
-      stack: "a"
+      title: "Buttons",
+      body: "Something to play with",
+      preview: "http://sowetowp.pythonanywhere.com/",
+      github: "https://github.com/Sowetowp/week1",
+      stack: "flaskhtmlcss"
     },
     {
       img: canv3,
-      title: "Candle",
-      body: "Creative Candle Light",
-      preview: "",
+      title: "Memeland",
+      body: "Memeland full site clone",
+      preview: "https://prismatic-zuccutto-f02cb2.netlify.app/",
       github: "",
-      stack: "a"
+      stack: "htmlcss"
+    },
+    {
+      img: canv1,
+      title: "NFT",
+      body: "A responsive NFT site clone",
+      preview: "https://tranquil-griffin-750644.netlify.app/",
+      github: "https://github.com/Sowetowp/lake",
+      stack: "htmlcss"
+    },
+    {
+      img: canv,
+      title: "Blockchain",
+      body: "A responsive blockchain template sample",
+      preview: "https://bucolic-fairy-19651e.netlify.app/",
+      github: "https://github.com/Sowetowp/cryptohtml",
+      stack: "htmlcss"
     }
   ]
   const [works, setWorks] = useState(availableArray)
@@ -132,14 +135,16 @@ const Myworks = (props) => {
                 <div style={{borderRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "8px"}} className='bgCanvas p-3'>
                   <div className='canvasImgContainer'>
                     <div className='canvasImgCover'>
-                      <button className="btngit" style={{backgroundColor:`${prop1 && prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgba(20, 223, 166)"}`}}>
+                      {e.github.length > 1 &&
+                      <a target='_blank' href={e.github}><button className="btngit" style={{backgroundColor:`${prop1 && prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgba(20, 223, 166)"}`}}>
                         <svg id="github" viewBox="0 0 24 24" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" fill="black" height="40" width="40">
                           <path d="M12,2.2467A10.00042,10.00042,0,0,0,8.83752,21.73419c.5.08752.6875-.21247.6875-.475,0-.23749-.01251-1.025-.01251-1.86249C7,19.85919,6.35,18.78423,6.15,18.22173A3.636,3.636,0,0,0,5.125,16.8092c-.35-.1875-.85-.65-.01251-.66248A2.00117,2.00117,0,0,1,6.65,17.17169a2.13742,2.13742,0,0,0,2.91248.825A2.10376,2.10376,0,0,1,10.2,16.65923c-2.225-.25-4.55-1.11254-4.55-4.9375a3.89187,3.89187,0,0,1,1.025-2.6875,3.59373,3.59373,0,0,1,.1-2.65s.83747-.26251,2.75,1.025a9.42747,9.42747,0,0,1,5,0c1.91248-1.3,2.75-1.025,2.75-1.025a3.59323,3.59323,0,0,1,.1,2.65,3.869,3.869,0,0,1,1.025,2.6875c0,3.83747-2.33752,4.6875-4.5625,4.9375a2.36814,2.36814,0,0,1,.675,1.85c0,1.33752-.01251,2.41248-.01251,2.75,0,.26251.1875.575.6875.475A10.0053,10.0053,0,0,0,12,2.2467Z"></path>
                         </svg>
-                      </button>
-                      <button className="btngit" style={{backgroundColor:`${prop1 && prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgba(20, 223, 166)"}`}}>
+                      </button></a>}
+                      {e.preview.length > 1 &&
+                      <a target='_blank' href={e.preview}><button className="btngit" style={{backgroundColor:`${prop1 && prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgba(20, 223, 166)"}`}}>
                       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M13 11L21.2 2.80005" stroke="#292D32" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path> <path d="M22 6.8V2H17.2" stroke="#292D32" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path> <path d="M11 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22H15C20 22 22 20 22 15V13" stroke="#292D32" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path> </g></svg>
-                      </button>
+                      </button></a>}
                     </div>
                     <img className='canvasImg' src={e.img}/>
                   </div>
