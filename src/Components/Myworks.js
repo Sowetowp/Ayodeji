@@ -7,6 +7,7 @@ import canv1 from "../Assets/Images/lake.jpg"
 import canv3 from "../Assets/Images/meme.jpg"
 import canv4 from "../Assets/Images/ecom.jpg"
 import canv5 from "../Assets/Images/dash.jpg"
+import canv6 from "../Assets/Images/we.jpg"
 
 const Myworks = (props) => {
   const { prop1, prop2, prop3 } = props;
@@ -78,7 +79,7 @@ const Myworks = (props) => {
     {
       img: canv3,
       title: "Memeland",
-      body: "Memeland full site clone",
+      body: "Memeland website clone",
       preview: "https://prismatic-zuccutto-f02cb2.netlify.app/",
       github: "",
       stack: "htmlcss"
@@ -97,6 +98,14 @@ const Myworks = (props) => {
       body: "A responsive blockchain template sample",
       preview: "https://bucolic-fairy-19651e.netlify.app/",
       github: "https://github.com/Sowetowp/cryptohtml",
+      stack: "htmlcss"
+    },
+    {
+      img: canv6,
+      title: "Wetransfer",
+      body: "A responsive clone of wetransfer login page",
+      preview: "https://calm-licorice-e9eb66.netlify.app/",
+      github: "https://github.com/Sowetowp/wetransfer",
       stack: "htmlcss"
     }
   ]
