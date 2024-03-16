@@ -116,6 +116,13 @@ const Home = () => {
       hope:"I hope you find my skills and experience align well with what you're looking for.", 
       look:"Looking forward to the possibility of working together! 🚀"
     },
+    {
+      code:"hjk",
+      name:"there", 
+      from: "making the journey all the way from my resume.", 
+      hope: "I hope you enjoy navigating through my portfolio and find it both entertaining and engaging.", 
+      look:" I'm eagerly anticipating your comments and feedback!"
+    },
   ]
   const [clicker, setClicker] = useState({})
   useEffect(()=>{
