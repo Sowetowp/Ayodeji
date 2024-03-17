@@ -4,7 +4,8 @@ import "../Styles/Myskills.css"
 import node from "../Assets/Images/node.fc4d4b87.svg"
 import js from "../Assets/Images/javascript.b472cbc1.svg"
 import ts from "../Assets/Images/typescript.97711300.svg"
-import react from "../Assets/Images/react.512a3a7e.svg"
+import react from "../Assets/Images/vite.svg"
+import reactn from "../Assets/Images/react.512a3a7e.svg"
 import git from "../Assets/Images/git.21d80414.svg"
 import md from "../Assets/Images/mongoDB.d8d2b67f.svg"
 import redux from "../Assets/Images/redux.2fdafc8e.svg"
@@ -252,7 +253,7 @@ const Myskills = (props) => {
               </div>
               <div className='col-md prog1'>
                 <div data-aos-offset="-200" data-aos="fade-up" data-aos-duration="2000">
-                  <p><img style={{width:"15px",height:"15px"}} src={react}/> React Native - <span style={{color:`${prop1 && prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}`}}>(95%)</span></p>
+                  <p><img style={{width:"15px",height:"15px"}} src={reactn}/> React Native - <span style={{color:`${prop1 && prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}`}}>(95%)</span></p>
                   <div className='ful' style={{backgroundColor:`${prop2 && prop2.length > 0 ? prop2 : hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`,borderRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "10px"}}>
                     <div className='se'  style={{backgroundColor:`${prop1 && prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}`, width: `${width}%`, borderRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "10px"}}></div>
                   </div>

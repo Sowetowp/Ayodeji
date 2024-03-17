@@ -8,6 +8,7 @@ import canv3 from "../Assets/Images/meme.jpg"
 import canv4 from "../Assets/Images/ecom.jpg"
 import canv5 from "../Assets/Images/dash.jpg"
 import canv6 from "../Assets/Images/we.jpg"
+import canv7 from "../Assets/Images/WhatsApp Image 2024-03-17 at 23.14.33_ac503209.jpg"
 
 const Myworks = (props) => {
   const { prop1, prop2, prop3 } = props;
@@ -65,6 +66,14 @@ const Myworks = (props) => {
       title: "Ecommerce",
       body: "An ecommerce website",
       preview: "https://swpe.netlify.app/",
+      github: "",
+      stack: "reactnode"
+    },
+    {
+      img: canv7,
+      title: "MEEZEE",
+      body: "Shopping website",
+      preview: "https://unique-crostata-9a9466.netlify.app/",
       github: "",
       stack: "reactnode"
     },
