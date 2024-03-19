@@ -127,7 +127,7 @@ const Mycontact = (props) => {
                         <p className='cup3'>Contact on mail</p>
                         <a href='mailto:ayodejiamzat@gmail.com' className='cua1'>ayodejiamzat@gmail.com</a>
                         <br></br>
-                        <a className='cua2' href='mailto:ayodejiamzat@gmail.com'>amzatabdulmalik4@gmail.com</a>
+                        <a className='cua2' href='mailto:amzatabdulmalik4@gmail.com'>amzatabdulmalik4@gmail.com</a>
                         </div>
                     </div>
                     <div className='cu3' style={{borderRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "10px"}}>
