@@ -123,7 +123,7 @@ const Myresume = (props) => {
                 <p className='text-white mreq'>Working Experience</p>
               </div>
               <div className='d-flex justify-content-start mrmov' data-aos="fade-up" data-aos-duration="1000">
-                <div className='mrdur' style={{backgroundColor:`${prop2 && prop2.length > 0 ? prop2 : hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`, borderRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "10px"}}><p>2021 - present</p></div>
+                <div className='mrdur' style={{backgroundColor:`${prop2 && prop2.length > 0 ? prop2 : hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`, borderRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "10px"}}><p>2017 - present</p></div>
                 <hr className='hrrr' style={{width: "30px", height: "4px"}}></hr>
                 <div className='hrd'>
                   <hr className='hrr' style={{width: "4px", height: "20px"}}></hr>
@@ -132,9 +132,9 @@ const Myresume = (props) => {
                 </div>
                 <hr className='hrrrr' style={{width: "30px", height: "4px"}}></hr>
                 <div className='mrbox'>
-                  <p className='mrp1' style={{color:prop1 && prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}}>Frontend and Backend Instructor</p>
-                  <p className='mrp2'>SOAIRAfrica</p>
-                  <p className='mrp3'>Since 2021, I have been actively engaged in instructing both frontend and backend technologies as part of the Soair Africa Bootcamp. In this role, I conduct comprehensive sessions within the six-month program, facilitating learning for cohorts ranging from 50 to 300 students per session. I provide hands-on guidance to ensure that students not only acquire but also master the skills necessary for success in the dynamic field of web development.</p>
+                  <p className='mrp1' style={{color:prop1 && prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}}>Full-Stack developer & Co-Founder</p>
+                  <p className='mrp2'>ITB Technologies</p>
+                  <p className='mrp3'>I co-founded ITB Technologies in 2017 with the vision of fostering a collaborative and stimulating environment for myself and two colleagues.  ITB provides a platform for us to challenge each other, hone our tech skills, and collectively take on freelance projects. Ultimately, ITB serves as a launchpad for our entrepreneurial ambitions, aiming to birth impactful tech companies in the future. Our first venture, Ignio, was established in 2023, marking the beginning of this exciting journey.</p>
                 </div>
               </div>
               <div className='d-flex justify-content-start mrmo' data-aos="fade-up" data-aos-duration="1000">
@@ -147,13 +147,13 @@ const Myresume = (props) => {
                 </div>
                 <hr className='hrrrr' style={{width: "30px", height: "4px"}}></hr>
                 <div className='mrbox'>
-                  <p className='mrp1' style={{color:prop1 && prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}}>Back-end Developer</p>
-                  <p className='mrp2'>SOAIRAfrica</p>
-                  <p className='mrp3'>Accomplished Back-end Developer at Soair Africa, where I leveraged my expertise in Node.js to design and develop high-performance, scalable and secure server-side systems. Collaborated with cross-functional teams to deliver innovative solutions, and ensured seamless data integration for clients resulting in outstanding results.</p>
+                  <p className='mrp1' style={{color:prop1 && prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}}>Senior Full-Stack Developer and Instructor</p>
+                  <p className='mrp2'>SOAIR Africa</p>
+                  <p className='mrp3'>My passion for knowledge extends beyond development.  I also thrive as an instructor, designing and delivering comprehensive 6-month programs. Facilitating learning for groups of 30 - 50 students, I provide hands-on guidance to ensure their mastery of both front-end and back-end technologies.</p>
                 </div>
               </div>
               <div className='d-flex justify-content-start mrmo' data-aos="fade-up" data-aos-duration="1000">
-                <div className='mrdur' style={{backgroundColor:`${prop2 && prop2.length > 0 ? prop2 : hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`, borderRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "10px"}}><p>2021 - present</p></div>
+                <div className='mrdur' style={{backgroundColor:`${prop2 && prop2.length > 0 ? prop2 : hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`, borderRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "10px"}}><p>2024 - present</p></div>
                 <hr className='hrrr' style={{width: "30px", height: "4px"}}></hr>
                 <div className='hrd'>
                   <hr className='hrr' style={{width: "4px", height: "20px"}}></hr>
@@ -162,9 +162,54 @@ const Myresume = (props) => {
                 </div>
                 <hr className='hrrrr' style={{width: "30px", height: "4px"}}></hr>
                 <div className='mrbox'>
-                  <p className='mrp1' style={{color:prop1 && prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}}>Front-end Developer</p>
-                  <p className='mrp2'>SOAIRAfrica</p>
-                  <p className='mrp3'>Expert Front-end Developer at Soair Africa, where I brought designs to life with my proficiency in HTML, CSS, JavaScript and React.js. Collaborated with cross-functional teams to develop and maintain user-friendly websites, and delivered visually stunning and high-performing web experiences for clients.</p>
+                  <p className='mrp1' style={{color:prop1 && prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}}>Senior Backend Developer</p>
+                  <p className='mrp2'>AdanianLabs</p>
+                  <p className='mrp3'>In my role as a Senior Backend Developer at AdanianLabs, I tackled a range of complex projects, significantly contributing to the company's technological backbone.  I played a key role in developing features for various applications, including a user-friendly website builder and a robust betting site. This experience honed my skills in building scalable and secure backend systems.</p>
+                </div>
+              </div>
+              <div className='d-flex justify-content-start mrmo' data-aos="fade-up" data-aos-duration="1000">
+                <div className='mrdur' style={{backgroundColor:`${prop2 && prop2.length > 0 ? prop2 : hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`, borderRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "10px"}}><p>2024 - present</p></div>
+                <hr className='hrrr' style={{width: "30px", height: "4px"}}></hr>
+                <div className='hrd'>
+                  <hr className='hrr' style={{width: "4px", height: "20px"}}></hr>
+                  <img src={circle} className="mrcir"/>
+                  <hr className='hrr2' style={{width: "4px", height: "130px"}}></hr>
+                </div>
+                <hr className='hrrrr' style={{width: "30px", height: "4px"}}></hr>
+                <div className='mrbox'>
+                  <p className='mrp1' style={{color:prop1 && prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}}>Web Development Instructor</p>
+                  <p className='mrp2'>NAFOWA Vocational Centre</p>
+                  <p className='mrp3'>I currently serve as an instructor at Nafowa, actively shaping the next generation of tech talent. I provide hands-on guidance to ensure students acquire and master both front-end and back-end technologies, empowering them for successful tech careers.</p>
+                </div>
+              </div>
+              <div className='d-flex justify-content-start mrmo' data-aos="fade-up" data-aos-duration="1000">
+                <div className='mrdur' style={{backgroundColor:`${prop2 && prop2.length > 0 ? prop2 : hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`, borderRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "10px"}}><p>2024 - present</p></div>
+                <hr className='hrrr' style={{width: "30px", height: "4px"}}></hr>
+                <div className='hrd'>
+                  <hr className='hrr' style={{width: "4px", height: "20px"}}></hr>
+                  <img src={circle} className="mrcir"/>
+                  <hr className='hrr2' style={{width: "4px", height: "130px"}}></hr>
+                </div>
+                <hr className='hrrrr' style={{width: "30px", height: "4px"}}></hr>
+                <div className='mrbox'>
+                  <p className='mrp1' style={{color:prop1 && prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}}>Senior Full-Stack Developer and Project Manager</p>
+                  <p className='mrp2'>NutureHub</p>
+                  <p className='mrp3'>Currently, I leverage my full-stack development expertise and leadership skills as a Senior Full-Stack Developer and Project Manager at NurtureHub, a dynamic tech agency. NurtureHub operates on a global scale, securing projects from around the world. My role lies at the heart of this process, where I collaborate with our talented team of techies to deliver exceptional solutions for a diverse clientele.</p>
+                </div>
+              </div>
+              <div className='d-flex justify-content-start mrmo' data-aos="fade-up" data-aos-duration="1000">
+                <div className='mrdur' style={{backgroundColor:`${prop2 && prop2.length > 0 ? prop2 : hcolor2 ? hcolor2 : "rgba(20, 223, 166, 0.171)"}`, borderRadius: typeof prop3 === "number" ? prop3 + "px" : typeof hrad === "number" ? hrad + "px" : "10px"}}><p>2024 - present</p></div>
+                <hr className='hrrr' style={{width: "30px", height: "4px"}}></hr>
+                <div className='hrd'>
+                  <hr className='hrr' style={{width: "4px", height: "20px"}}></hr>
+                  <img src={circle} className="mrcir"/>
+                  <hr className='hrr2' style={{width: "4px", height: "130px"}}></hr>
+                </div>
+                <hr className='hrrrr' style={{width: "30px", height: "4px"}}></hr>
+                <div className='mrbox'>
+                  <p className='mrp1' style={{color:prop1 && prop1.length > 0 ? prop1 : hcolor ? hcolor : "rgb(20, 223, 166)"}}>Senior Full-Stack Developer and Co-Founder</p>
+                  <p className='mrp2'>Ignio</p>
+                  <p className='mrp3'>I'm a co-founder and Senior Full-Stack Developer at Ignio, a tech company passionate about empowering startups. We understand the financial hurdles faced by new ventures, so Ignio offers initial technical support without upfront costs. Instead, we partner with startups through an equity model, aligning our success with theirs. This allows us to contribute our expertise and fuel innovation within the tech landscape.</p>
                 </div>
               </div>
             </div>
