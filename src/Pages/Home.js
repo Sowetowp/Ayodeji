@@ -123,6 +123,13 @@ const Home = () => {
       hope: "I hope you enjoy navigating through my portfolio and find it both entertaining and engaging.", 
       look:" I'm eagerly anticipating your comments and feedback!"
     },
+    {
+      code:"dca",
+      name:"Digication Hiring team", 
+      from: "making the journey all the way from my questionnaire.", 
+      hope: "I hope you enjoy navigating through my portfolio and find it both entertaining and engaging.", 
+      look:" I'm eagerly anticipating your comments and feedback!"
+    },
   ]
   const [clicker, setClicker] = useState({})
   useEffect(()=>{
