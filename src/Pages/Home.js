@@ -166,7 +166,7 @@ const Home = () => {
         <div className='inde'>
           <div data-aos="fade-up" data-aos-duration="1000" className='dphome'>
             <img src={image} className="homedp"/>
-            <div style={{background: `${col1 ? `linear-gradient(transparent, 10%, ${col1 && col1.length > 0 ? col1 : hcolor ? hcolor : "rgb(20, 223, 166))"})` : "linear-gradient(transparent, 10%, rgb(20, 223, 166))"}`}} className='spin'></div>
+            <div style={{background: `linear-gradient(transparent, 10%, ${col1 && col1.length > 0 ? col1 : hcolor ? hcolor : "rgb(20, 223, 166)"})`}} className='spin'></div>
           </div>
           <div data-aos="fade-up" data-aos-duration="2000" className='type text-center'>
             <p>Hi, I am <span style={{color:col1 && col1.length > 0 ? col1 : hcolor ? hcolor : "rgb(20, 223, 166)"}}>{text}</span></p>
