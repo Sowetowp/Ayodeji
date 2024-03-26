@@ -125,7 +125,7 @@ const Home = () => {
     },
     {
       code:"dca",
-      name:"Digication Hiring team", 
+      name:"Jeff", 
       from: "making the journey all the way from my questionnaire.", 
       hope: "I hope you enjoy navigating through my portfolio and find it both entertaining and engaging.", 
       look:" I'm eagerly anticipating your comments and feedback!"
